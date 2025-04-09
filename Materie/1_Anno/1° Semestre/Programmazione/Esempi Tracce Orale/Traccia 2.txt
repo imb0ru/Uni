@@ -1,0 +1,106 @@
+Realizzare l’operazione di somma tra gli elementi di 2 vettori
+di interi.
+Se entrambi gli elementi da sommare sono primi il risultato 
+e’ la loro somma, altrimenti la loro differenza.
+Il tipo di dato vettore deve essere rappresentato come 
+record composto da
+- un array di interi a 1 dimensione che contiene i valori 
+del vettore
+- un intero rappresentante la dimensione
+Progettare l’algoritmo in pseudocodice della funzione di
+spostamento (ed eventuali sotto-funzioni) e delle funzioni di
+accesso al tipo di dato Vettore.
+
+Record Vettore:
+- val, elenco di interi, array di interi a una dimensione
+- dim, dimensione dell'array, intero
+
+
+
+Funzione leggereValore:
+Input: v, record da cui leggere il valore, Vettore
+	 pos, posizione del valore da leggere, naturale
+Output: n, valore trovato nella posizione data, intero
+
+INIZIO
+n = elemento del campo val di v in posizione pos
+FINE
+------------------------------------------------------------------------
+Funzione scrivereValore:
+Input: v, record in cui scrivere il scrivere, Vettore
+	 pos, posizione del valore da leggere, naturale
+       n, valore da scrivere, intero
+Output: v
+
+INIZIO
+elemento del campo val di v in posizione pos = n
+FINE
+------------------------------------------------------------------------
+Funzione leggereDimensione:
+Input: v, record da cui leggere la dimensione, Vettore
+Output: d, dimensione dell'array, intero
+
+INIZIO
+d = campo dim di v
+FINE
+------------------------------------------------------------------------
+Funzione scrivereDimensione:
+Input: v, record in cui scrivere la dimensione, Vettore
+       d, dimensione dell'array da scrivere, intero
+Output: v 
+
+INIZIO
+campo dim di v = d
+FINE
+------------------------------------------------------------------------
+Funzione checkPrimo
+Input: n, valore da provare, intero
+Output: esito, flag che rappresenta l'essere o meno primo, naturale (0 oppure 1)
+Lavoro: i, indice di scorrimento dei numeri minori di n, naturale
+
+INIZIO
+i=1
+MENTRE(i<n)
+	SE(n%i==0)
+	ALLORA esito=1
+	ALTRIMENTI esito = 0
+	i=i+1
+FINE
+FINE
+-----------------------------------------------------------------------
+Funzione opVettori:
+Input: v1, primo vettore su cui operare, Vettore
+	 v2. secondo vettore su cui operare, Vettore
+Output: vo, vettore risultati, Vettore
+Lavoro: i, indice di scorrimen to dei vettori, naturale
+
+INIZIO
+SE(leggereDimensione(v1) = leggereDimensione(v2))
+ALLORA scrivereDimensione(vo, leggereDimensione(v1))
+	 i=1
+	 MENTRE(i<=leggereDimensione(v1))
+		SE(checkPrimo(leggereValore(v1,i))
+ 		ALLORA SE(checkPrimo(leggereValore(v2,i))
+			 ALLORA scrivereValore(vo,i,leggereValor(v1,i)+leggereValore(v2,i))
+			 ALTRIMENTI scrivereValore(vo,i,leggereValor(v1,i)-leggereValore(v2,i))
+			 FINE
+		FINE
+		i=i+1
+	 FINE
+FINE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

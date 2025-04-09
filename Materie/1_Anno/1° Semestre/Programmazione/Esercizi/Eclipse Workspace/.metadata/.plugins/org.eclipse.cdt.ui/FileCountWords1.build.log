@@ -1,0 +1,11 @@
+17:40:39 **** Incremental Build of configuration Debug for project FileCountWords1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FileCountWords1.o" "..\\src\\FileCountWords1.c" 
+..\src\FileCountWords1.c: In function 'main':
+..\src\FileCountWords1.c:18:10: warning: variable 'n' set but not used [-Wunused-but-set-variable]
+  char c, n;
+          ^
+gcc -o FileCountWords1.exe "src\\FileCountWords1.o" 
+
+17:40:40 Build Finished. 0 errors, 1 warnings. (took 1s.110ms)
+

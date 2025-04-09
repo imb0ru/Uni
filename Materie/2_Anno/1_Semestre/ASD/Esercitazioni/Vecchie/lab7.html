@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Laboratorio di Algoritmi e Strutture Dati</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+</head>
+<body bgcolor="#ffffff">
+
+<h2>Liste</h2>
+<ol>
+	<li>Sovraccaricare l'operatore != in  modo che l'espressione x != y restituisca  true se e solo se
+	le due liste x e y sono diverse</li>
+	<li>Definire e implementare nell'interfaccia i seguenti metodi:
+		<ol>
+			<li><code>clear()</code>: ende la lista vuota</li> 
+			<li><code>num_elements(p1, p2)</code>: calcola il numero di elementi compresi fra le posizioni p1 e p2</li> 
+			<li><code>exchange(p1, p2)</code>: scambia l'elemento in posizione p1 con quello in posizione p2</li>
+			<li><code>move_min_max()</code>: quando  la lista  è di elementi  di tipo intero,  sposta, nel
+				modo più efficiente possibile, il massimo in ultima posizione, e il minimo in prima posizione</li> 
+			<li>Scrivere una funzione che elimini da una lista L1 tutti gli elementi presenti
+				nella lista L2. <ul><LI>Se |L1|~|L2|=n, qual'è la complessità del vostro algoritmo?</LI>
+	</ol></li>
+	<li>Implementare il metodo Lista<T>::insertionSort che ordina la lista utilizzando l'algoritmo di ordinamento per inserzione (Nota: non cancellare ne creare nuovi nodi)</li>
+	<li>Cambiare la realizzazione  del metodo <code>Lista<T>::canclista</code> in modo  che dimezzi la
+	dimensione del vettore quando il numero di elementi della lista è minore di dimensione/2</li>
+
+	<li><B>[Polinomi]</B> Un  polinomio di grado d può  essere rappresentato con una  lista lineare di
+	d+1 elementi, in  cui ogni elemento rappresenta un coefficiente  del polinomio (l'elemento i-esimo
+	della lista è  il coefficiente dell'i-esimo termine, c_i x^d, del  polinomio). Definire una classe
+	C++ polynomial che metta a disposizione i seguenti metodi
+
+	<ul>
+		<li>polynomial() - crea un polinomio di grado zero</li>
+		<li>grado() - restituisce il grado di un polinomio</li>
+		<li>input(inStream) - acquisisce un polinomio dallo stream di input inStream. Possiamo assumere che l'input sia il grado del polinomio seguito dai valori dei coefficienti.</li>
+		<li>output(outStream) - visualizza il polinomio</li>
+		<li>somma(b) - somma con il polinomio b</li>
+		<li>moltiplica(b) - moltiplica con il polinomio b</li>
+		<li>valore(x) - restituisce il valore del polinomio nel punto x</li>
+	</ul>
+	</li>
+</ol>
+
+</body>
+</html>

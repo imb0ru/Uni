@@ -1,0 +1,128 @@
+//DEFINIZIONE DELLA STRUTTURA DEL PERCORSO
+Record Percorso:
+- lunghezza, lunghezza del percorso del gioco, intero 50<=len<=90
+- mappa, effettivo percorso del gioco, array a 1 dimensione di interi di dimensione lunghezza (0=normale, 1=oca, 2=ponte, 3=locanda, 4=pozzo, 5=prigione, 6=labirinto, 7=scheletro)
+
+
+
+Funzione LeggereLunghezza:
+ Input: percorso, percorso da cui leggere la lunghezza, Percorso
+ Output: len, lunghezza del percorso richiesta, intero 50<=len<=90
+
+INIZIO
+len = campo lunghezza di percorso
+FINE
++++++++++++++++++++++++++++++++++++++
+Funzione ScrivereLunghezza:
+ Input: percorso, percorso in cui scrivere la lunghezza, Percorso
+	    len, lunghezza da scrivere, intero 50<=len<=90
+ Output: percorso
+
+INIZIO
+campo lunghezza di percorso = len
+FINE
++++++++++++++++++++++++++++++++++++++
+Funzione ScrivereCasella:
+ Input: percorso, percorso in cui scrivere la casella, Percorso
+	    pos, posizione della casella da scrivere, intero
+        casella, tipo di casella del percorso da scrivere, intero
+ Output: percorso
+
+INIZIO
+elemento in posizione pos del campo mappa di percorso = casella
+FINE
++++++++++++++++++++++++++++++++++++++
+-Funzione LeggereCasella:
+ Input: percorso, percorso da cui leggere la casella, Percorso
+	    pos, posizione della casella da leggere, intero
+ Output: num, tipo di casella del percorso richiesta, intero
+
+INIZIO
+num = elemento in posizione pos del campo mappa di percorso
+FINE
++++++++++++++++++++++++++++++++++++++
+Funzione VerbalizzaCasella:
+ Input: percorso, percorso da cui leggere la casella, Percorso
+	    pos, posizione della casella da leggere, intero
+ Output: str, nome della casella in base al tipo, array di caratteri
+
+INIZIO
+se(LeggereCasella(p, pos) = 0)
+allora str = "normale/0"
+altrimenti se(LeggereCasella(p, pos) = 1)
+allora str = "oca/0"
+altrimenti se(LeggereCasella(p, pos) = 2)
+allora str = "ponte/0"
+altrimenti se(LeggereCasella(p, pos) = 3)
+allora str = "locanda/0"
+altrimenti se(LeggereCasella(p, pos) = 4)
+allora str = "pozzo/0"
+altrimenti se(LeggereCasella(p, pos) = 5)
+allora str = "prigione/0"
+altrimenti se(LeggereCasella(p, pos) = 6)
+allora str = "labirinto/0"
+altrimenti str = "scheletro/0" 
+FINE
+++++++++++++++++++++++++++++++++++++++++
+Funzione StampaPercorso:
+ Input: p, percorso di cui stampare la mappa, Percorso
+ Lavoro: i, indice di scorrimento dell'array, intero
+         n, numero di elementi per riga, intero
+		 x, indice di stampa della mappa, intero
+
+INIZIO
+i=1
+n=7
+MENTRE (i<=n)
+	StampaAVideo(LeggereCasella(p,i)) 
+	StampaAVideo("  ")	
+	i=i+1
+FINE 
+i=1
+StampaAVideo (//CARATTERE DI FINE RIGA)
+MENTRE (i<=n)
+	SE(Modulo(i,2)=0)
+	ALLORA j=n-1
+		    MENTRE (j>=0)
+				StampaAVideo (LeggereCasella(p,(i*n)+j)) 
+				StampaAVideo (" ")
+				j=j-1
+		    FINE
+	ALTRIMENTI  j=1
+			    MENTRE (j<=n)
+					StampaAVideo (LeggereCasella(p,(i*n)+j)) 
+					StampaAVideo (" ")
+					j=j+1
+				FINE
+	FINE
+FINE
+----------------------------------------------------------------------
+COEFFICIENTI COSTANTI PER IL POSIZIONAMENTO DELLE CASELLE SPECIALI:
+- COEFFPONTE, coefficiente di posizionamento della casella ponte, reale, = 0.06
+- COEFFLOCANDA, coefficiente di posizionamento della casella locanda, reale, = 0.21
+- COEFFPOZZO, coefficiente di posizionamento della casella pozzo, reale, = 0.34
+- COEFFPRIGIONE, coefficiente di posizionamento della casella prigione, reale, = 0.46
+- COEFFLABIRINTO, coefficiente di posizionamento della casella labirinto, reale, = 0.57
+- COEFFSCHELETRO, coefficiente di posizionamento della casella scheletro, reale, = 0.65
+----------------------------------------------------------------------
+Funzione Modulo:
+ Input: a, primo numero da modulare, intero
+        b, secondo numero da modulare, intero
+ Output: m, risultato del modulo, intero
+
+INIZIO
+m=a
+MENTRE(m>=b)
+	m=m-b
+FINE
+----------------------------------------------------------------------
+Funzione ScambioCaselle
+ Input: percorso, percorso in cui scambiare le caselle, Percorso
+        pos, posizione della prima casella da scambiare, intero
+ Output: percorso
+ Lavoro: temp, intero di appoggio per lo scambio, intero
+
+INIZIO
+temp = LeggereCasella(percorso, pos)
+percorso = ScrivereCasella(percorso, pos, LeggereCasella(percorso, pos+1))
+percorso = ScrivereCasella(percorso, pos+1, temp)

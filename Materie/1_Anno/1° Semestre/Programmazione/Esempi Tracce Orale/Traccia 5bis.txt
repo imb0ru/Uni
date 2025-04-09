@@ -1,0 +1,28 @@
+pos1 = 1
+pos2 = 1
+esito = falso
+SE(len1 > len2)
+ALLORA MENTRE(pos1 <= (len1-len2+1) and esito=Falso)
+		esito = Vero
+		postemp=pos1
+		MENTRE(pos2<=len2 and esito = Vero)
+    			SE(carattere in posizione postemp di Stringa1 = carattere in posizione pos2 di Stringa2)
+    			ALLORA pos2 = pos2 + 1
+				 postemp=postemp+1
+			ALTRIMENTI esito = Falso
+				     pos2=1
+		FINE
+	  pos1=pos1+1
+	  FINE
+ALTRIMENTI MENTRE(pos2 <= (len2-len1+1) and esito=Falso)
+		esito = Vero
+		postemp=pos2
+		MENTRE(pos1<=len1 and esito = Vero)
+    			SE(carattere in posizione postemp di Stringa2 = carattere in posizione pos1 di Stringa1)
+    			ALLORA pos1 = pos2 + 1
+				 postemp=postemp+1
+			ALTRIMENTI esito = Falso
+				     pos1=1
+		FINE
+	  pos2=pos2+1
+FINE

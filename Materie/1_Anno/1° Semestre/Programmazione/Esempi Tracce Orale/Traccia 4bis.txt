@@ -1,0 +1,82 @@
+Traccia: 
+Realizzare una funzione che riceve come parametro di input un array di numeri interi e individua 
+le quaterne consecutive il cui prodotto sia minore della media di tutti gli elementi del vettore
+
+Record Quaterne:
+- q, elenco delle posizioni iniziali di ogni quaterna valida, array di interi
+- dim, numero di valori presenti dell'array, naturale
+
+Funzione Main:
+Input: v, elenco di numeri interi, array di interi
+       n, dimensione dell'elenco di numeri interi, naturale
+Output: qt, quaterne valide, Quaterne
+Lavoro: m, media dei valori dell'elenco, reale
+        i, indice di scorrimento dell'array, naturale
+
+INIZIO
+v=inserisciValori(v,n)
+m=calcolaMedia(v,n)
+
+campo dim di qt = n-3
+qt=individuaQuaterne(v,n,m,qt)
+FINE
+----------------------------------------------------------------------------------
+Funzione inserisciValori:
+Input: v, elenco di numeri interi, array di interi
+       n, dimensione dell'elenco di numeri interi, naturale
+Output: v
+Lavoro: i, indice di scorrimento dell'elenco, naturale
+
+INIZIO
+i=1
+MENTRE(i<=n)
+	elemento di v in posizione i = leggiDaTastiera()
+	i=i+1
+FINE
+FINE
+----------------------------------------------------------------------------------
+Funzione calcolaMedia:
+Input: v, elenco di numeri interi, array di interi
+       n, dimensione dell'elenco di numeri interi, naturale
+Output: m, media dei valori dell'elenco, reale
+Lavoro: i, indice di scorrimento dell'elenco, naturale
+	  s, somma degli elementi dell'elenco, intero
+
+INIZIO
+i=1
+MENTRE(i<=n)
+	s=s+elemento di v in posizione i
+	i=i+1
+FINE
+m=s/n
+FINE
+-----------------------------------------------------------------------------------
+Funzione individuaQuaterne:
+Input: v, elenco di numeri interi, array di interi
+       n, dimensione dell'elenco di numeri interi, naturale
+	 m, media degli elementi dell'elenco, reale
+       qt, quaterne valide, Quaterne
+Output: qt 
+Lavoro: p, prodotto degli elementi della potenziale quaterna, intero
+	  i, indice di scorrimento dell'array
+	  j, indice per il calcolo della quaterna, naturale
+	  x, indice di scorrimento della quaterna, naturale
+
+INIZIO
+i=1
+x=1
+MENTRE(i<=n-3)
+	j=i
+	p=1
+	MENTRE(j<=j+3)
+		p=p*elemento di v in posizione j
+		j=j+1
+	FINE
+	SE(p<m)
+	ALLORA elemento del campo q di qt in posizione x = j
+		 x=x+1
+	FINE
+	i=i+1
+FINE
+campo dim di qt = x-1
+FINE

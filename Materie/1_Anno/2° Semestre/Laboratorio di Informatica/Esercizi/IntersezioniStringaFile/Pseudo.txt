@@ -1,0 +1,41 @@
+Record Sequenza:
+	dim, lunghezza della sequenza, intero >0
+	val, sequenza, array di caratteri
+	correct, flag di correttezza della sequenza, booleano
+
+Funzione cancellaSottosequenze:
+Input: seq, sequenza da elaborare, Sequenza
+Output: seq
+Lavoro: i, indice di scorrimento dei caratteri, intero >0
+	  j, indice di scorrimento per la cancellazione, intero >0
+	  x, variabile di appoggio per lo scambio, carattere
+
+seq=isCorrect(seq, 1)
+i=1
+mentre(i<=LeggereDimensione(seq))
+	se(LeggereValore(seq,i) == "(")
+	allora j=i+1
+		 mentre(j<=LeggereDimensione(seq) and isCorrect(seq)==True and LeggereValore(seq,j) != ")")
+		 	se(LeggereValore(seq,j) != "(")
+			allora se(j=i+1)
+				   allora seq=ScrivereValore(seq,"*"j)
+				   altrimenti x=j
+				  		     mentre(x<=leggereDimensione(seq)
+				  					seq=scrivereValore(seq, leggereValore(seq, x+1),x);
+									x=x+1;
+				   fine
+				   seq=ScrivereDimensione(seq, LeggereDimensione(seq)-1)  	
+				   j=j+1
+			altrimenti j=LeggereDimensione(seq)+1
+				     seq=setCorrect(seq, 0) 
+			fine
+		 fine
+		 se(isCorrect(seq)==True and LeggereValore(seq,j-1) != ")")
+		 allora seq=setCorrect(seq, 0) 
+			  i=LeggereDimensione(seq)+1
+		 altrimenti i=j
+		 fine
+	 altrimenti i=i+1
+	 fine
+fine
+

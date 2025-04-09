@@ -1,0 +1,8 @@
+18:50:48 **** Rebuild of configuration Debug for project 2 pile ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\testpilavettore.o" "..\\src\\testpilavettore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\testpilapuntatore.o" "..\\src\\testpilapuntatore.cpp" 
+g++ -o "2 pile.exe" "src\\testpilapuntatore.o" "src\\testpilavettore.o" 
+
+18:50:49 Build Finished. 0 errors, 0 warnings. (took 759ms)
+

@@ -1,0 +1,10 @@
+10:30:07 **** Incremental Build of configuration Debug for project Alberi nari funzia ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\testTree.o" "..\\src\\testTree.cpp" 
+In file included from ..\src\testTree.cpp:1:0:
+..\src\treePt.h:257:6: error: redeclaration of 'void treePt<T>::printNTree(treeNode<T>*, std::vector<bool>&, int, bool)' may not have default arguments [-fpermissive]
+ void treePt<T>::printNTree(treeNode<T>* x, vector<bool>& flag, int depth = 0, bool isLast = false)
+      ^~~~~~~~~
+
+10:30:07 Build Failed. 1 errors, 0 warnings. (took 361ms)
+

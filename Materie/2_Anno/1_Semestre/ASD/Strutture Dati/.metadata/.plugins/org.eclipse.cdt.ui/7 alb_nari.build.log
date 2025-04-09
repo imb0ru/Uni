@@ -1,0 +1,261 @@
+00:06:28 **** Incremental Build of configuration Debug for project 7 alb_nari ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\testalberolistadin.o" "..\\src\\testalberolistadin.cpp" 
+In file included from ..\src\testalberolistadin.cpp:1:0:
+..\src\alberoListaDin.h: In instantiation of 'class alberoListaDin<int>':
+..\src\testalberolistadin.cpp:5:25:   required from here
+..\src\alberoListaDin.h:21:5: error: 'alberoListaDin<T>::~alberoListaDin() [with T = int]' marked 'override', but does not override
+     ~alberoListaDin() override {
+     ^
+..\src\alberoListaDin.h:70:39: error: 'alberoListaDin<T>::posizione alberoListaDin<T>::radiceAlbero() const [with T = int; alberoListaDin<T>::posizione = alberoListaDin<int>]' marked 'override', but does not override
+ typename alberoListaDin<T>::posizione alberoListaDin<T>::radiceAlbero() const {
+                                       ^~~~~~~~~~~~~~~~~
+In file included from ..\src\alberoListaDin.h:5:0,
+                 from ..\src\testalberolistadin.cpp:1:
+..\src\alberoAstratto.h:13:20: error: invalid abstract return type 'alberoListaDin<int>'
+  virtual posizione radiceAlbero() =0;
+                    ^~~~~~~~~~~~
+In file included from ..\src\testalberolistadin.cpp:1:0:
+..\src\alberoListaDin.h:13:7: note:   because the following virtual functions are pure within 'alberoListaDin<int>':
+ class alberoListaDin : public alberoAstratto<T, alberoListaDin<T>> {
+       ^~~~~~~~~~~~~~
+In file included from ..\src\alberoListaDin.h:5:0,
+                 from ..\src\testalberolistadin.cpp:1:
+..\src\alberoAstratto.h:10:15: note: 	void alberoAstratto<T, P>::creaAlbero() [with T = int; P = alberoListaDin<int>]
+  virtual void creaAlbero() =0;
+               ^~~~~~~~~~
+..\src\alberoAstratto.h:11:15: note: 	bool alberoAstratto<T, P>::alberoVuoto() const [with T = int; P = alberoListaDin<int>]
+  virtual bool alberoVuoto() const =0;
+               ^~~~~~~~~~~
+..\src\alberoAstratto.h:12:15: note: 	void alberoAstratto<T, P>::insRadice(alberoAstratto<T, P>::tipoelem) [with T = int; P = alberoListaDin<int>; alberoAstratto<T, P>::tipoelem = int]
+  virtual void insRadice(tipoelem) =0;
+               ^~~~~~~~~
+..\src\alberoAstratto.h:13:20: note: 	alberoAstratto<T, P>::posizione alberoAstratto<T, P>::radiceAlbero() [with T = int; P = alberoListaDin<int>; alberoAstratto<T, P>::posizione = alberoListaDin<int>]
+  virtual posizione radiceAlbero() =0;
+                    ^~~~~~~~~~~~
+..\src\alberoAstratto.h:19:15: note: 	void alberoAstratto<T, P>::cancSottoAlbero(alberoAstratto<T, P>::posizione&) [with T = int; P = alberoListaDin<int>; alberoAstratto<T, P>::posizione = alberoListaDin<int>]
+  virtual void cancSottoAlbero(posizione&) =0;
+               ^~~~~~~~~~~~~~~
+..\src\alberoAstratto.h:14:20: error: invalid abstract return type 'alberoListaDin<int>'
+  virtual posizione padre(posizione) const =0;
+                    ^~~~~
+..\src\alberoAstratto.h:14:20: error: invalid abstract parameter type 'alberoListaDin<int>'
+..\src\alberoAstratto.h:15:15: error: invalid abstract parameter type 'alberoListaDin<int>'
+  virtual bool foglia(posizione) const =0;
+               ^~~~~~
+..\src\alberoAstratto.h:16:20: error: invalid abstract return type 'alberoListaDin<int>'
+  virtual posizione primoFiglio(posizione) const =0;
+                    ^~~~~~~~~~~
+..\src\alberoAstratto.h:16:20: error: invalid abstract parameter type 'alberoListaDin<int>'
+..\src\alberoAstratto.h:17:15: error: invalid abstract parameter type 'alberoListaDin<int>'
+  virtual bool ultimoFratello(posizione) const =0;
+               ^~~~~~~~~~~~~~
+..\src\alberoAstratto.h:18:20: error: invalid abstract return type 'alberoListaDin<int>'
+  virtual posizione succFratello(posizione) const =0;
+                    ^~~~~~~~~~~~
+..\src\alberoAstratto.h:18:20: error: invalid abstract parameter type 'alberoListaDin<int>'
+In file included from ..\src\testalberolistadin.cpp:1:0:
+..\src\alberoListaDin.h:70:39: error: invalid abstract return type 'alberoListaDin<int>'
+ typename alberoListaDin<T>::posizione alberoListaDin<T>::radiceAlbero() const {
+                                       ^~~~~~~~~~~~~~~~~
+..\src\alberoListaDin.h:75:39: error: invalid abstract return type 'alberoListaDin<int>'
+ typename alberoListaDin<T>::posizione alberoListaDin<T>::padre(posizione p) const {
+                                       ^~~~~~~~~~~~~~~~~
+..\src\alberoListaDin.h:75:39: error: invalid abstract parameter type 'alberoListaDin<int>'
+..\src\alberoListaDin.h:83:6: error: invalid abstract parameter type 'alberoListaDin<int>'
+ bool alberoListaDin<T>::foglia(posizione p) const {
+      ^~~~~~~~~~~~~~~~~
+..\src\alberoListaDin.h:88:39: error: invalid abstract return type 'alberoListaDin<int>'
+ typename alberoListaDin<T>::posizione alberoListaDin<T>::primoFiglio(posizione p) const {
+                                       ^~~~~~~~~~~~~~~~~
+..\src\alberoListaDin.h:88:39: error: invalid abstract parameter type 'alberoListaDin<int>'
+..\src\alberoListaDin.h:96:6: error: invalid abstract parameter type 'alberoListaDin<int>'
+ bool alberoListaDin<T>::ultimoFratello(posizione p) const {
+      ^~~~~~~~~~~~~~~~~
+..\src\alberoListaDin.h:104:39: error: invalid abstract return type 'alberoListaDin<int>'
+ typename alberoListaDin<T>::posizione alberoListaDin<T>::succFratello(posizione p) const {
+                                       ^~~~~~~~~~~~~~~~~
+..\src\alberoListaDin.h:104:39: error: invalid abstract parameter type 'alberoListaDin<int>'
+..\src\alberoListaDin.h:119:6: error: invalid abstract parameter type 'alberoListaDin<int>'
+ void alberoListaDin<T>::insPrimoSottoAlbero(posizione p, const alberoListaDin<T>& sottoAlbero) {
+      ^~~~~~~~~~~~~~~~~
+..\src\alberoListaDin.h:131:6: error: invalid abstract parameter type 'alberoListaDin<int>'
+ void alberoListaDin<T>::insSottoAlbero(posizione p, const alberoListaDin<T>& sottoAlbero) {
+      ^~~~~~~~~~~~~~~~~
+..\src\alberoListaDin.h:143:6: error: invalid abstract parameter type 'alberoListaDin<int>'
+ void alberoListaDin<T>::cancSottoAlbero(posizione p) {
+      ^~~~~~~~~~~~~~~~~
+..\src\testalberolistadin.cpp: In function 'int main()':
+..\src\testalberolistadin.cpp:5:25: error: cannot declare variable 'albero' to be of abstract type 'alberoListaDin<int>'
+     alberoListaDin<int> albero;
+                         ^~~~~~
+..\src\testalberolistadin.cpp:11:25: error: cannot declare variable 'sottoAlbero1' to be of abstract type 'alberoListaDin<int>'
+     alberoListaDin<int> sottoAlbero1, sottoAlbero2, sottoAlbero3;
+                         ^~~~~~~~~~~~
+..\src\testalberolistadin.cpp:11:39: error: cannot declare variable 'sottoAlbero2' to be of abstract type 'alberoListaDin<int>'
+     alberoListaDin<int> sottoAlbero1, sottoAlbero2, sottoAlbero3;
+                                       ^~~~~~~~~~~~
+..\src\testalberolistadin.cpp:11:53: error: cannot declare variable 'sottoAlbero3' to be of abstract type 'alberoListaDin<int>'
+     alberoListaDin<int> sottoAlbero1, sottoAlbero2, sottoAlbero3;
+                                                     ^~~~~~~~~~~~
+..\src\testalberolistadin.cpp:16:52: error: cannot allocate an object of abstract type 'alberoListaDin<int>'
+     albero.insPrimoSottoAlbero(albero.radiceAlbero(), sottoAlbero1);
+                                                    ^
+..\src\testalberolistadin.cpp:17:47: error: cannot allocate an object of abstract type 'alberoListaDin<int>'
+     albero.insSottoAlbero(albero.radiceAlbero(), sottoAlbero2);
+                                               ^
+..\src\testalberolistadin.cpp:18:66: error: cannot allocate an object of abstract type 'alberoListaDin<int>'
+     albero.insSottoAlbero(albero.primoFiglio(albero.radiceAlbero()), sottoAlbero3);
+                                                                  ^
+..\src\testalberolistadin.cpp:22:52: error: cannot allocate an object of abstract type 'alberoListaDin<int>'
+     std::cout << "Radice: " << albero.radiceAlbero().radice->getElemento() << std::endl;
+                                                    ^
+..\src\testalberolistadin.cpp:24:55: error: cannot allocate an object of abstract type 'alberoListaDin<int>'
+     auto pos = albero.primoFiglio(albero.radiceAlbero());
+                                                       ^
+In file included from ..\src\listaPuntatore.h:6:0,
+                 from ..\src\nodoAlbero.h:4,
+                 from ..\src\alberoListaDin.h:6,
+                 from ..\src\testalberolistadin.cpp:1:
+..\src\listaLineare.h: In instantiation of 'class listaLineare<alberoListaDin<int>, nodo<alberoListaDin<int> >*>':
+..\src\listaPuntatore.h:11:7:   required from 'class listaPuntatore<alberoListaDin<int> >'
+..\src\nodoAlbero.h:28:20:   required from 'class nodoAlbero<int, alberoListaDin<int> >'
+..\src\alberoListaDin.h:24:13:   required from 'alberoListaDin<T>::~alberoListaDin() [with T = int]'
+..\src\testalberolistadin.cpp:5:25:   required from here
+..\src\listaLineare.h:17:19: error: invalid abstract return type 'alberoListaDin<int>'
+  virtual tipoelem leggiLista (posizione) const=0;
+                   ^~~~~~~~~~
+..\src\listaLineare.h:18:15: error: invalid abstract parameter type 'alberoListaDin<int>'
+  virtual void scriviLista (tipoelem, posizione)=0; // scrive un elemento nella posizione scelta
+               ^~~~~~~~~~~
+..\src\listaLineare.h:23:15: error: invalid abstract parameter type 'alberoListaDin<int>'
+  virtual void insLista (tipoelem, posizione) =0; // inserisce un elemento nella lista
+               ^~~~~~~~
+In file included from ..\src\nodoAlbero.h:4:0,
+                 from ..\src\alberoListaDin.h:6,
+                 from ..\src\testalberolistadin.cpp:1:
+..\src\listaPuntatore.h: In instantiation of 'class listaPuntatore<alberoListaDin<int> >':
+..\src\nodoAlbero.h:28:20:   required from 'class nodoAlbero<int, alberoListaDin<int> >'
+..\src\alberoListaDin.h:24:13:   required from 'alberoListaDin<T>::~alberoListaDin() [with T = int]'
+..\src\testalberolistadin.cpp:5:25:   required from here
+..\src\listaPuntatore.h:116:38: error: invalid abstract return type 'alberoListaDin<int>'
+ typename listaPuntatore<T>::tipoelem listaPuntatore<T>::leggiLista (typename listaPuntatore<T>::posizione p) const{
+                                      ^~~~~~~~~~~~~~~~~
+..\src\listaPuntatore.h:127:6: error: invalid abstract parameter type 'alberoListaDin<int>'
+ void listaPuntatore<T>::scriviLista (typename listaPuntatore<T>::tipoelem e, typename listaPuntatore<T>::posizione p){
+      ^~~~~~~~~~~~~~~~~
+..\src\listaPuntatore.h:168:6: error: invalid abstract parameter type 'alberoListaDin<int>'
+ void listaPuntatore<T>::insLista (typename listaPuntatore<T>::tipoelem e, typename listaPuntatore<T>::posizione p){
+      ^~~~~~~~~~~~~~~~~
+..\src\listaPuntatore.h:214:39: error: invalid abstract parameter type 'alberoListaDin<int>'
+ typename listaPuntatore<T>::posizione listaPuntatore<T>::cercaElemento(typename listaPuntatore<T>::tipoelem e) const{
+                                       ^~~~~~~~~~~~~~~~~
+In file included from ..\src\testalberolistadin.cpp:1:0:
+..\src\alberoListaDin.h: In instantiation of 'alberoListaDin<T>::posizione alberoListaDin<T>::radiceAlbero() const [with T = int; alberoListaDin<T>::posizione = alberoListaDin<int>]':
+..\src\testalberolistadin.cpp:16:52:   required from here
+..\src\alberoListaDin.h:70:39: error: invalid abstract return type for member function 'alberoListaDin<T>::posizione alberoListaDin<T>::radiceAlbero() const [with T = int; alberoListaDin<T>::posizione = alberoListaDin<int>]'
+ typename alberoListaDin<T>::posizione alberoListaDin<T>::radiceAlbero() const {
+                                       ^~~~~~~~~~~~~~~~~
+..\src\alberoListaDin.h:71:12: error: invalid cast to abstract class type 'alberoListaDin<int>'
+     return posizione(radice);
+            ^~~~~~~~~~~~~~~~~
+In file included from ..\src\listaPuntatore.h:7:0,
+                 from ..\src\nodoAlbero.h:4,
+                 from ..\src\alberoListaDin.h:6,
+                 from ..\src\testalberolistadin.cpp:1:
+..\src\nodo.h: In instantiation of 'class nodo<alberoListaDin<int> >':
+..\src\alberoListaDin.h:156:28:   required from 'void alberoListaDin<T>::cancSottoAlbero(nodoAlbero<T, alberoListaDin<T> >*) [with T = int]'
+..\src\alberoListaDin.h:23:28:   required from 'alberoListaDin<T>::~alberoListaDin() [with T = int]'
+..\src\testalberolistadin.cpp:5:25:   required from here
+..\src\nodo.h:11:2: error: invalid abstract parameter type 'alberoListaDin<int>'
+  nodo (const tipoelem e) { elemento = e; };
+  ^~~~
+..\src\nodo.h:14:7: error: invalid abstract parameter type 'alberoListaDin<int>'
+  void setElemento (tipoelem e) { elemento = e; };
+       ^~~~~~~~~~~
+..\src\nodo.h:15:11: error: invalid abstract return type 'alberoListaDin<int>'
+  tipoelem getElemento () const { return elemento; };
+           ^~~~~~~~~~~
+..\src\nodo.h:21:11: error: cannot declare field 'nodo<alberoListaDin<int> >::elemento' to be of abstract type 'alberoListaDin<int>'
+  tipoelem elemento;
+           ^~~~~~~~
+In file included from ..\src\testalberolistadin.cpp:1:0:
+..\src\alberoListaDin.h: In instantiation of 'void alberoListaDin<T>::cancSottoAlbero(nodoAlbero<T, alberoListaDin<T> >*) [with T = int]':
+..\src\alberoListaDin.h:23:28:   required from 'alberoListaDin<T>::~alberoListaDin() [with T = int]'
+..\src\testalberolistadin.cpp:5:25:   required from here
+..\src\alberoListaDin.h:156:28: error: no matching function for call to 'alberoListaDin<int>::cancSottoAlbero(listaPuntatore<alberoListaDin<int> >::posizione)'
+             cancSottoAlbero(figli.primoLista());
+             ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+..\src\alberoListaDin.h:143:6: note: candidate: void alberoListaDin<T>::cancSottoAlbero(alberoListaDin<T>::posizione) [with T = int; alberoListaDin<T>::posizione = alberoListaDin<int>]
+ void alberoListaDin<T>::cancSottoAlbero(posizione p) {
+      ^~~~~~~~~~~~~~~~~
+..\src\alberoListaDin.h:143:6: note:   no known conversion for argument 1 from 'listaPuntatore<alberoListaDin<int> >::posizione {aka nodo<alberoListaDin<int> >*}' to 'alberoListaDin<int>::posizione {aka alberoListaDin<int>}'
+..\src\alberoListaDin.h:152:6: note: candidate: void alberoListaDin<T>::cancSottoAlbero(nodoAlbero<T, alberoListaDin<T> >*) [with T = int]
+ void alberoListaDin<T>::cancSottoAlbero(nodoAlbero<T, alberoListaDin<T>>* p) {
+      ^~~~~~~~~~~~~~~~~
+..\src\alberoListaDin.h:152:6: note:   no known conversion for argument 1 from 'listaPuntatore<alberoListaDin<int> >::posizione {aka nodo<alberoListaDin<int> >*}' to 'nodoAlbero<int, alberoListaDin<int> >*'
+..\src\alberoListaDin.h: In instantiation of 'alberoListaDin<T>::posizione alberoListaDin<T>::padre(alberoListaDin<T>::posizione) const [with T = int; alberoListaDin<T>::posizione = alberoListaDin<int>]':
+..\src\testalberolistadin.cpp:31:1:   required from here
+..\src\alberoListaDin.h:75:39: error: invalid abstract return type for member function 'alberoListaDin<T>::posizione alberoListaDin<T>::padre(alberoListaDin<T>::posizione) const [with T = int; alberoListaDin<T>::posizione = alberoListaDin<int>]'
+ typename alberoListaDin<T>::posizione alberoListaDin<T>::padre(posizione p) const {
+                                       ^~~~~~~~~~~~~~~~~
+..\src\alberoListaDin.h:77:16: error: invalid cast to abstract class type 'alberoListaDin<int>'
+         return posizione(p.radice->getPadre());
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\alberoListaDin.h:79:12: error: invalid cast to abstract class type 'alberoListaDin<int>'
+     return posizione();
+            ^~~~~~~~~~~
+..\src\alberoListaDin.h: In instantiation of 'bool alberoListaDin<T>::foglia(alberoListaDin<T>::posizione) const [with T = int; alberoListaDin<T>::posizione = alberoListaDin<int>]':
+..\src\testalberolistadin.cpp:31:1:   required from here
+..\src\alberoListaDin.h:84:56: error: 'int listaPuntatore<alberoListaDin<int> >::lunghezza' is private within this context
+     return p.radice != nullptr && p.radice->getFigli().lunghezza() == 0;
+                                                         
+In file included from ..\src\nodoAlbero.h:4:0,
+                 from ..\src\alberoListaDin.h:6,
+                 from ..\src\testalberolistadin.cpp:1:
+..\src\listaPuntatore.h:69:9: note: declared private here
+     int lunghezza;
+         ^~~~~~~~~
+In file included from ..\src\testalberolistadin.cpp:1:0:
+..\src\alberoListaDin.h:84:68: error: expression cannot be used as a function
+     return p.radice != nullptr && p.radice->getFigli().lunghezza() == 0;
+                                                                     
+..\src\alberoListaDin.h: In instantiation of 'alberoListaDin<T>::posizione alberoListaDin<T>::primoFiglio(alberoListaDin<T>::posizione) const [with T = int; alberoListaDin<T>::posizione = alberoListaDin<int>]':
+..\src\testalberolistadin.cpp:31:1:   required from here
+..\src\alberoListaDin.h:88:39: error: invalid abstract return type for member function 'alberoListaDin<T>::posizione alberoListaDin<T>::primoFiglio(alberoListaDin<T>::posizione) const [with T = int; alberoListaDin<T>::posizione = alberoListaDin<int>]'
+ typename alberoListaDin<T>::posizione alberoListaDin<T>::primoFiglio(posizione p) const {
+                                       ^~~~~~~~~~~~~~~~~
+..\src\alberoListaDin.h:89:39: error: cannot allocate an object of abstract type 'alberoListaDin<int>'
+     if (p.radice != nullptr && !foglia(p)) {
+                                 ~~~~~~^~~
+..\src\alberoListaDin.h:90:16: error: invalid cast to abstract class type 'alberoListaDin<int>'
+         return posizione(p.radice->getFigli().primoLista());
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\alberoListaDin.h:92:12: error: invalid cast to abstract class type 'alberoListaDin<int>'
+     return posizione();
+            ^~~~~~~~~~~
+..\src\alberoListaDin.h: In instantiation of 'bool alberoListaDin<T>::ultimoFratello(alberoListaDin<T>::posizione) const [with T = int; alberoListaDin<T>::posizione = alberoListaDin<int>]':
+..\src\testalberolistadin.cpp:31:1:   required from here
+..\src\alberoListaDin.h:98:50: error: 'class alberoListaDin<int>' has no member named 'getFigli'
+         return p.radice == p.radice->getPadre()->getFigli().ultimoLista();
+                                                   
+..\src\alberoListaDin.h: In instantiation of 'alberoListaDin<T>::posizione alberoListaDin<T>::succFratello(alberoListaDin<T>::posizione) const [with T = int; alberoListaDin<T>::posizione = alberoListaDin<int>]':
+..\src\testalberolistadin.cpp:31:1:   required from here
+..\src\alberoListaDin.h:104:39: error: invalid abstract return type for member function 'alberoListaDin<T>::posizione alberoListaDin<T>::succFratello(alberoListaDin<T>::posizione) const [with T = int; alberoListaDin<T>::posizione = alberoListaDin<int>]'
+ typename alberoListaDin<T>::posizione alberoListaDin<T>::succFratello(posizione p) const {
+                                       ^~~~~~~~~~~~~~~~~
+..\src\alberoListaDin.h:106:48: error: 'class alberoListaDin<int>' has no member named 'getFigli'
+         return posizione(p.radice->getPadre()->getFigli().succLista(p.radice->getPosizioneLista()));
+                                                 
+..\src\alberoListaDin.h:106:79: error: 'class nodoAlbero<int, alberoListaDin<int> >' has no member named 'getPosizioneLista'
+         return posizione(p.radice->getPadre()->getFigli().succLista(p.radice->getPosizioneLista()));
+                                                                     ~~~~~~~~~~^~~~~~~~~~~~~~~~~
+..\src\alberoListaDin.h:106:16: error: invalid cast to abstract class type 'alberoListaDin<int>'
+         return posizione(p.radice->getPadre()->getFigli().succLista(p.radice->getPosizioneLista()));
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\alberoListaDin.h:108:12: error: invalid cast to abstract class type 'alberoListaDin<int>'
+     return posizione();
+            ^~~~~~~~~~~
+
+00:06:28 Build Failed. 61 errors, 0 warnings. (took 367ms)
+

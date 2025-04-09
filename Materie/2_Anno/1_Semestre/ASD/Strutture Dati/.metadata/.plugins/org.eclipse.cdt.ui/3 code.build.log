@@ -1,0 +1,8 @@
+18:50:49 **** Rebuild of configuration Debug for project 3 code ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\testcodapuntatore.o" "..\\src\\testcodapuntatore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\testcodavettore.o" "..\\src\\testcodavettore.cpp" 
+g++ -o "3 code.exe" "src\\testcodapuntatore.o" "src\\testcodavettore.o" 
+
+18:50:49 Build Finished. 0 errors, 0 warnings. (took 817ms)
+

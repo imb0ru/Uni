@@ -1,0 +1,259 @@
+#include "listapuntatore.h"
+
+// IMPLEMENTAZIONE
+// costruttori
+template <class T>
+listaPuntatore<T>::listaPuntatore (){
+	this->creaLista ();
+}
+
+
+template <class T>
+listaPuntatore<T>::listaPuntatore (const listaPuntatore<T>& l) {
+	this->lista = l.lista;
+	this->lunghezza = l.lunghezza;
+}
+
+
+template <class T>
+listaPuntatore<T>::~listaPuntatore() {
+	nodo<T>* temp = lista->getSucc();
+	while (temp != lista) {
+		nodo<T>* next = temp->getSucc();
+		delete temp;
+		temp = next;
+	}
+	delete lista;
+}
+
+
+// operatori
+template <class T>
+void listaPuntatore<T>::creaLista () {
+	this->lunghezza = 0;
+	this->lista = new nodo<T> ();
+	this->lista->setSucc(this->lista);
+	this->lista->setPrec(this->lista);
+}
+
+
+template <class T>
+bool listaPuntatore<T>::listaVuota () const{
+	return (lista == primoLista());
+}
+
+
+template <class T>
+typename listaPuntatore<T>::tipoelem listaPuntatore<T>::leggiLista (typename listaPuntatore<T>::posizione p) const{
+	if (!this->listaVuota()){
+		return p->getElemento();
+	}
+	else{
+		throw emptyListException();
+	}
+}
+
+
+template <class T>
+void listaPuntatore<T>::scriviLista (typename listaPuntatore<T>::tipoelem e, typename listaPuntatore<T>::posizione p){
+	if (!this->listaVuota()){
+		p->setElemento (e);
+	}
+	else{
+		throw emptyListException();
+	}
+}
+
+
+template <class T>
+typename listaPuntatore<T>::posizione listaPuntatore<T>::primoLista () const{
+	return lista->getSucc();
+}
+
+
+template <class T>
+typename listaPuntatore<T>::posizione listaPuntatore<T>::ultimoLista () const{
+	return (this->lista->getPrec());
+}
+
+
+template <class T>
+bool listaPuntatore<T>::fineLista (typename listaPuntatore<T>::posizione p) const{
+	return (p == lista->getPrec());
+}
+
+
+template <class T>
+typename listaPuntatore<T>::posizione listaPuntatore<T>::succLista (typename listaPuntatore<T>::posizione p) const{
+	return (p->getSucc());
+}
+
+
+template <class T>
+typename listaPuntatore<T>::posizione listaPuntatore<T>::predLista (typename listaPuntatore<T>::posizione p) const{
+	return (p->getPrec());
+}
+
+
+template <class T>
+void listaPuntatore<T>::insLista (typename listaPuntatore<T>::tipoelem e, typename listaPuntatore<T>::posizione p){
+	if (this->listaVuota()){
+		nodo<T>* nuovoNodo = new nodo<T> (e);
+		lista->setSucc(nuovoNodo);
+		lista->setPrec(nuovoNodo);
+		nuovoNodo->setSucc(lista);
+		nuovoNodo->setPrec(lista);
+		lunghezza++;
+	}
+	else{
+		nodo<T>* nuovoNodo = new nodo<T> (e);
+		if (p == lista){
+			nuovoNodo->setSucc(lista->getSucc());
+			nuovoNodo->setPrec(lista);
+			lista->getSucc()->setPrec(nuovoNodo);
+			lista->setSucc(nuovoNodo);
+			lunghezza++;
+		}
+		else{
+			nuovoNodo->setPrec(p->getPrec());
+			nuovoNodo->setSucc(p);
+			p->getPrec()->setSucc(nuovoNodo);
+			p->setPrec(nuovoNodo);
+			lunghezza++;
+		}
+	}
+}
+
+
+template <class T>
+void listaPuntatore<T>::cancLista (typename listaPuntatore<T>::posizione p){
+	if(!this->listaVuota()){
+		(this->predLista(p))->setSucc(this->succLista(p));
+		(this->succLista(p))->setPrec(this->predLista(p));
+		lunghezza --;
+		delete p;
+		p = nullptr;
+	}
+	else{
+		throw emptyListException();
+	}
+}
+
+
+// funzioni di servizio
+template <class T>
+typename listaPuntatore<T>::posizione listaPuntatore<T>::cercaElemento(typename listaPuntatore<T>::tipoelem e) const{
+	nodo<T>* temp = new nodo<T>;
+	temp = this->lista->getSucc();
+	do{
+		if (temp->getElemento() == e)
+			return temp;
+		temp = temp->getSucc();
+	}while (temp != this->lista);
+	return nullptr;
+}
+
+
+template <class T>
+int listaPuntatore<T>::lunghezzaLista() const{
+	return this->lunghezza;
+}
+
+
+// sovraccarico operatori
+template <class T>
+bool listaPuntatore<T>::operator==(const listaPuntatore<T>& l) const {
+	if (this->lunghezza != l.lunghezza) {
+		return false;
+	}
+
+	nodo<T>* temp1 = l.lista->getSucc();
+	nodo<T>* temp2 = this->lista->getSucc();
+
+	while (temp1 != l.lista) {
+		if (!(temp1->getElemento() == temp2->getElemento())) {
+			return false;
+		}
+
+		temp1 = temp1->getSucc();
+		temp2 = temp2->getSucc();
+
+		if (temp1 == l.lista && temp2 != this->lista) {
+			return false;
+		}
+	}
+	return true;
+}
+
+
+template <class T>
+bool listaPuntatore<T>::palindroma() const {
+    if (this->lunghezza < 2) {
+        return true; // Una lista con 0 o 1 elemento è palindroma
+    }
+
+    nodo<T>* inizio = this->primoLista();
+    nodo<T>* fine = this->ultimoLista();
+
+    while (inizio != fine && inizio->getPrec() != fine) {
+        if (inizio->getElemento() != fine->getElemento()) {
+            return false;
+        }
+
+        inizio = inizio->getSucc();
+        fine = fine->getPrec();
+    }
+
+    return true;
+}
+
+// All'interno della tua classe listaPuntatore
+template <class T>
+void listaPuntatore<T>::inverti() {
+    if (!this->listaVuota() && this->lunghezza > 1) {
+        typename listaPuntatore<T>::posizione left = this->primoLista();
+        typename listaPuntatore<T>::posizione right = this->ultimoLista();
+
+        while (left != right && right != this->precedente(left)) {
+            typename listaPuntatore<T>::tipoelem temp = this->leggiLista(left);
+            this->scriviLista(this->leggiLista(right), left);
+            this->scriviLista(temp, right);
+
+            left = this->successivo(left);
+            right = this->precedente(right);
+        }
+    }
+}
+
+
+template <class T>
+void listaPuntatore<T>::aggiungiInTesta(const tipoelem &valore) {
+    this->insLista(valore, this->primoLista());
+}
+
+template <class T>
+void listaPuntatore<T>::aggiungiInCoda(const tipoelem &valore) {
+    this->insLista(valore, this->successivo(this->ultimoLista()));
+}
+
+template <class T>
+void listaPuntatore<T>::rimuoviTesta() {
+    if (!this->listaVuota()) {
+        this->cancLista(this->primoLista());
+    }
+}
+
+template <class T>
+void listaPuntatore<T>::rimuoviCoda() {
+    if (!this->listaVuota()) {
+        this->cancLista(this->precedente(this->ultimoLista()));
+    }
+}
+
+template <class T>
+void listaPuntatore<T>::svuotaLista() {
+    while (!this->listaVuota()) {
+        this->cancLista(this->primoLista());
+    }
+}
+

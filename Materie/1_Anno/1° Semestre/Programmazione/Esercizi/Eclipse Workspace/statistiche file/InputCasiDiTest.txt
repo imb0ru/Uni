@@ -1,0 +1,51 @@
+PROGETTO CASI DI TEST STATISTICHE FILE
+
+Funzione Separatore, input char c:
+1) ' '
+2) ,
+3) ;
+4) .
+5) :
+6) \n
+7) \t
+8) \0
+9) 0
+10) -
+11) &
+12) _
+13) a
+14) Z
+15) ?
+16) \r
+
+Funzione ContareParole, input char * s:
+1)"ciao\0"
+2)"ciao \0"
+3)"testo testo  \0"
+4)"testo testo\0"
+5)"testo testo
+testo\0"
+6)"testo testo \0"
+7) "9999999\0"
+8) "9999999 \0"
+9) " \0"
+10) "\0"
+11) "         \0" 
+
+Funzione TrovareParola:
+1)"ciao\0", 0
+2)"ciao\0", 5
+3)"ciao ciao\0", 0
+4)"ciao ciao\0", 5
+5)"ciao ciao\0", 9
+6)"ciao\0", -1
+7)"\0", 3
+
+Funzione TrovareFrequenza:
+1) [], 5
+2) [4], 5
+3) [4,4,3,2], 4
+4) [0,0,0,0,0,0], 1
+5) [1,1,1,1], 1
+6) [4,6,3,5,5] -1
+7) [-1,-1] 1

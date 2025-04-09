@@ -1,0 +1,386 @@
+Gestire l'orario delle vostre lezioni Marco Ferrara
+
+Record Tabella:
+righe, numero di righe della tabella, naturale >0
+colonne, numero delle colonne della tabella, naturale >0
+orario, elenco di lezioni, array di righe*colonne di Lezione
+
+Record Lezione:
+materia, array di 25 caratteri
+aula, carattere, 2 oppure 4
+oraInizio, reale
+oraFine, reale
+
+Lezione b = {
+materia = '-'
+aula = '-'
+oraInizio = 0
+oraFine = 0
+}
+
+Funzioni di Accesso Tabella:
+1)leggereNRighe
+       Input: tab, tabella di cui leggere le righe, Tabella
+       Output: r, numero di righe della tabella, naturale>0
+
+              r=campo righe di tab
+
+2)leggereNColonne
+       Input: tab, tabella di cui leggere le colonne, Tabella
+       Output: c, numero di colonne della tabella, naturale>0
+
+              c=campo colonne di tab
+
+3)leggereLezione
+       Input: tab, tabella di cui leggere la lezione, Tabella
+              r, riga dove è presente la lezione, naturale>0
+              c, colonna dove è presente la lezione, naturale>0
+       Output: l, lezione da leggere, Lezione
+
+              l = elemento di tab in campo orario in riga r e colonna c
+
+4)scrivereNRighe
+       Input: tab, tabella in cui scrivere le righe, Tabella
+              nuovar, nuovo numero di righe della tabella, naturale>0
+       Output: tab
+
+              campo righe di tab=nuovar
+
+5)scrivereNColonne
+       Input: tab, tabella in cui scrivere le colonne, Tabella
+              nuovac, nuovo numero di colonne della tabella, naturale>0
+              Output: tab
+
+              campo colonne di tab=nuovac
+
+6)scrivereLezione
+       Input: tab, tabella in cui scrivere la lezione, Tabella
+              r, riga dove è presente la lezione, naturale>0
+              c, colonna dove è presente la lezione, naturale>0
+              l, lezione da leggere, Lezione
+       Output: tab
+
+              elemento di tab in campo orario in riga r e colonna c = l
+
+
+Funzioni di Accesso Lezione:
+1)leggereAula
+       Input: l, lezione da cui leggere l'aula, Lezione
+       Output: a, aula richiesta, carattere (2 o 4)
+
+              a=campo aula di l
+
+2)leggereMateria
+       Input: l, lezione da cui leggere la materia, Lezione
+       Output: m, materia richiesta, array di caratteri
+
+              m=campo materia di l
+
+3)leggereOraInizio
+       Input: l, lezione da cui leggere l'ora di inizio, Lezione
+       Output: o, ora richiesta, float
+
+              o=campo oraInizio di l
+
+4)leggereOraFine
+       Input: l, lezione da cui leggere l'ora di fine, Lezione
+       Output: o, ora richiesta, float
+
+              o=campo oraFine di l
+
+5)scrivereAula
+       Input: l, lezione in cui scrivere l'aula, Lezione
+              a, aula da scrivere, carattere (2 o 4)
+       Output: l
+
+              campo aula di l=a
+
+6)scrivereMateria
+       Input: l, lezione in cui scrivere la materia, Lezione
+              m, materia da scrivere, array di caratteri
+       Output: l
+
+              campo materia di l=m
+
+7)scrivereOraInizio
+       Input: l, lezione in cui scrivere l'ora di inizio, Lezione
+              o, ora da scrivere, float
+       Output: l
+
+              campo oraInizio di l = o
+
+8)scrivereOraFine
+       Input: l, lezione in cui scrivere l'ora di fine, Lezione
+              o, ora da scrivere, float
+       Output: l
+
+              campo oraFine di l=o
+
+
+Funzioni Tabella:
+1)newLezione
+       Input: t, orario da riempire, Tabella
+              r, riga dove inserire la lezione, naturale>0
+              c, colonna dove inserire la lezione, naturale>0
+              m, materia della lezione, array di max 25 caratteri
+              a, aula della lezione, carattere (2 o 4)
+              oi, ora inizio della lezione, float
+              of, ora fine della lezione, float
+       Output: t
+       Lavoro: l, lezione da inserire, Lezione
+
+              a = //leggere da Tastiera
+              m = //leggere da Tastiera
+              oi = //leggere da Tastiera
+              of = //leggere da Tastiera
+              l=scrivereMateria(l,m)
+              l=scrivereAula(l,a)
+              l=scrivereOraFine(l,of)
+              l=scrivereOraInizio(l,oi)
+              t=scrivereLezione(t,r,c,l)
+
+
+2)newOrario
+       Input: t, orario da riempire, Tabella
+              rig, righe totali della tabella, naturale>0
+              col, colonne totali della tabella, naturale>0
+       Output: t
+       Lavoro: posr, indice di scorrimento delle righe nella tabella, naturale>0
+               posc, indice di scorrimento delle colonne nella tabella, naturale>0
+
+              t=scrivereNRighe(t,rig)
+              t=scrivereNColonne(t,col)
+              posc=1
+              mentre(posc<=leggereNColonne(t))
+                     posr=1
+                     mentre(posr<=leggereNRighe(t))
+                            t=InserireLezione(t,posr,posc)
+                            posr=posr+1
+                     fine
+                     posc=posc+1
+              fine
+
+
+3)altOrario
+       Input: t, orario da modificare, Tabella
+              r, riga della lezione da modificare, naturale>0
+              c, colonna della lezione da modificare, naturale>0
+       Output: t
+
+              r = //leggere da tastiera
+              c = //leggere da tastiera
+              t=newLezione(t,r,c)
+
+
+4)remLezione
+       Input: t, orario in cui cancellare la lezione, Tabella
+              r, riga in cui è presente la lezione da cancellare, naturale>0
+              c, colonna in cui è presente la lezione da cancellare, naturale>0
+              b, buco da inserire, Buco
+       Output:t
+              //Input r
+              //Input c
+              t=scrivereLezione(t,r,c,b)
+              
+              
+5)remOrario
+       Input: t, orario in cui cancellare la lezione, Tabella
+              b, buco da inserire, Buco
+       Output:t
+       Lavoro: posr, indice di scorrimento delle righe nella tabella, naturale>0
+               posc, indice di scorrimento delle colonne nella tabella, naturale>0
+
+              posc=1
+              mentre(posc<=leggereNColonne(t))
+                     posr=1
+                     mentre(posr<=leggereNRighe(t))
+                            t=scrivereLezione(t,r,c,b)
+                            posr=posr+1
+                     fine
+                     posc=posc+1
+              fine
+
+
+6)stampaLezione
+	Input: l, lezione di cui stampare i dettagli, Lezione
+	
+	//Visualizza a Video leggereMateria(l)
+    //Visualizza a Video leggereAula(l)
+    //Visualizza a Video "Ora di inizio: "leggereOraInizio(l)
+    //Visualizza a Video "Oradi di fine: "leggereOraFine(l)
+    //Visualizza andata a capo
+	
+
+7)stampaOrario
+       Input: t, orario da visualizzare, Tabella
+       Lavoro: posr, indice di scorrimento delle righe nella tabella, naturale>0
+               posc, indice di scorrimento delle colonne nella tabella, naturale>0
+               l, lezione generica nell'orario, Lezione
+       posc=1
+       mentre(posc<=leggereNColonne(t))
+       		  giorniSettimana(posc)
+              posr=1
+              mentre(posr<=leggereNRighe(t))
+                     l=leggereLezione(t,r,c)
+                     stampaLezione(l)
+                     posr=posr+1
+              fine
+              posc=posc+1
+       fine
+
+
+8)consultaOrario
+       Input: t, tabella da consultare, Tabella
+              tc, tipo consultazione da effettuare, naturale (1,2,3)
+       Lavoro: lg, lezioni risultato della consultazione per ora/giorno, array di Lezione
+               tg, tabella risultato della consultazione per materia, Tabella
+               pos, indice di scorrimento nell'array, naturale>0
+
+              tc= //leggere da tastiera
+              se(tc=1)
+              allora lg=ConsultaOrarioPerGiorno(t)
+              altrimenti se (tc=2)
+                     allora lg=ConsultaOrarioPerOra(t)
+                     altrimenti lg=ConsultaOrarioPerMateria(t)
+                     fine
+              fine
+
+
+9)stampaArrayLezioniConsult12
+	Input: l, elenco di lezioni risultato della consultazione 1/2, array di Lezione
+	Lavoro: pos, indice di scorrimento dell'array, naturale
+	
+		pos=0
+		mentre(leggereMateria(elemento di l in posizione pos)!='1')
+			//Visualizza a video "Lezione n°"pos
+			stampaLezione(elemento di l in posizione pos)
+		fine
+	
+	
+10)ConsultaOrarioPerGiorno
+       Input: t, orario da consultare, Tabella
+              c, colonna da consultare, naturale>0
+       Output: lg, lezioni del giorno indicato, array di Lezione
+       Lavoro: posr, indice di scorrimento delle righe nella tabella, naturale>0
+       		   fine, lezione simbolo della fine dell'array, Lezione
+       		   
+       		  scrivereMateria(fine, '1')
+              c=//leggere da tasiera
+              posr=1
+              mentre(posr<=leggereNRighe(t))
+                     elemento di lg in posizione posr = leggereLezione(t,posr,c)
+                     posr=posr+1
+              fine
+			  stampaArrayLezioniConsult12(lg)
+
+11)ConsultaOrarioPerOra
+       Input: t, orario da consultare, Tabella
+              r, riga da consultare, naturale>0
+       Output: lg, lezioni dell'ora indicata, array di Lezione
+       Lavoro: posc, indice di scorrimento delle colonne nella tabella, naturale>0
+               fine, lezione simbolo della fine dell'array, Lezione
+              
+       		  scrivereMateria(fine, '1')             
+              r = //leggere da tastiera
+              posc=1
+              mentre(posc<=leggereNColonne(t))
+                     elemento di lg in posizione posc = leggereLezione(t,r,posc)
+                     posc=posc+1
+              fine
+			  stampaArrayLezioniConsult12(lg)
+
+12)ConsultaOrarioPerMateria
+       Input: t, orario da consultare, Tabella
+              m, materia da consultare, array di max 25 caratteri
+       Output: tg, lezioni della materia indicata, Tabella
+       Lavoro: posr, indice di scorrimento delle righe nella tabella, naturale>0
+               posc, indice di scorrimento delle colonne nella tabella, naturale>0
+               poslc, indice di scorrimento delle colonne della tabella risultato della consultazione, naturale>0
+               poslr, indice di scorrimento delle righe della tabella risultato della consultazione, naturale>0
+
+              m=//leggere da tastiera m
+              tg=scrivereNRighe(tg,leggereNRighe(t))
+              tg=scrivereNColonne(tg,leggereNColonne(t))
+              posc=1
+              poslc=1
+              posclr=1
+              mentre(posc<=leggereNColonne(t))
+                     posr=1
+                     mentre(posr<=leggereNRighe(t))
+                            se(m=leggereMateria(leggereLezione(t,r,c)))
+                            allora scrivereLezione(tg, poslc, posrc, leggereLezione(t,r,c))
+                                   poslc=posl+1
+                                   posrc=posrc+1
+                            fine
+                            posr=posr+1
+                     fine
+                     posc=posc+1
+              fine
+              stampaOrario(tg)
+
+
+13)VerificaBuco
+       Input: t, orario nel quale verificare il buco, Tabella
+              r, riga nella quale verificare il buco, naturale>0
+              c, colonna nella quale verificare il buco, naturale>0
+              b, buco da confrontare, Buco
+       Output: esito, vero se buco altrimenti falso, booleano
+
+              se(leggereMateria(leggereLezione(t,r,c)) = leggereMateria(b))
+              allora esito = vero
+              altrimenti esito = falso
+              fine
+
+14)giorniSettimana
+	Input: i, numero del giorno della settimana da stampare, naturale >0
+              
+	se(i=1)
+    allora //Visualizza a Video "Lezioni del lunedi"
+    altrimenti se(i=2)
+       		   allora //Visualizza a Video "Lezioni del martedi"
+       		   altrimenti se(i=3)
+       		  			  allora //Visualizza a Video "Lezioni del mercoledi"
+       		  			  altrimenti se(i=4)
+       		  						 allora //Visualizza a Video "Lezioni del giovedi"
+       		  						 altrimenti se(i=5)
+       		  									allora //Visualizza a Video "Lezioni del venerdi"
+       		  									altrimenti //Visualizza a Video "Lezioni del sabato"
+       		  									fine
+       		  						 fine
+       		  			 fine
+       		  fine
+    fine
+    
+    
+Funzione Main:
+Input: t, tabella dell'orario da creare, Tabella
+Lavoro: risp, risposta al menu, intero
+	t=newOrario()
+	//Visualizza a schermo menu di scelta operazioni
+	risp=Input()
+	se(risp=1)
+	allora t=altOrario()
+	altrimenti se(risp=2)
+			   allora t=remLezione()
+			   altrimenti se(risp=3)
+			   			  allora t=remOrario()
+			   			  altrimenti se(risp=4)
+			   			  			 allora stampaOrario()
+			   			  			 altrimenti consultaOrario()
+			   			  			 fine
+			   			  fine
+			   fine
+    fine
+	
+
+
+
+
+
+
+
+
+
+
+
+                     

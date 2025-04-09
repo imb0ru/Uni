@@ -1,0 +1,8 @@
+Come si svolge l'esame:
+
+
+La durata dell'esame è di tre ore.
+
+Prima parte: una macchina di Turing da defininire sul simulatore.
+Superata questa prova si procede alla seconda parte.
+Seconda parte: una serie di domande ed esercizi sul programma.

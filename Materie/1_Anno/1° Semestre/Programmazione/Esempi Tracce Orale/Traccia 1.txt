@@ -1,0 +1,89 @@
+Realizzare l’operazione di ricerca di un valore in una tabella.
+Il tipo di dato tabella deve essere rappresentato come record composto da
+- un vettore di interi a 1 dimensione che contiene i valori della tabella
+- un intero rappresentante le righe occupate
+- un intero rappresentante le colonne occupate
+Progettare l’algoritmo in pseudocodice della funzione di ricerca e delle funzioni di accesso al tipo 
+di dato Tabella.
+
+Record Tabella:
+v, elenco di valori contenenti nella tabella, array di interi a una dimensione
+r, numero di righe della tabella, intero, >0
+c, numero di colonne della tabella, intero, >0
+
+
+Funzione leggereRighe:
+Input: t, tabella dei valori, Tabella
+Output: nr, numero di righe della tabella, intero, >0
+
+INIZIO
+nr=campo r di t
+FINE
+-----------------------------------------------------------------------------
+Funzione scrivereRighe:
+Input: t, tabella dei valori, Tabella
+       nr, numero di righe da scrivere, intero, >0
+Output: t
+
+INIZIO
+campo r di t=nr
+FINE
+-----------------------------------------------------------------------------
+Funzione leggereColonne:
+Input: t, tabella dei valori, Tabella
+Output: nc, numero di colonne della tabella, intero, >0
+
+INIZIO
+nc=campo c di t
+FINE
+-----------------------------------------------------------------------------
+Funzione scrivereColonne:
+Input: t, tabella dei valori, Tabella
+       nc, numero di colonne da scrivere, intero, >0
+Output: t
+
+INIZIO
+campo c di t=nc
+FINE
+-----------------------------------------------------------------------------
+Funzione leggereValore:
+Input: t, tabella dei valori, Tabella
+	 posr, riga in cui cercare il valore, intero >0
+	 posc, colonna in cui cercare il valore, intero >0
+Output: val, valore trovato, intero
+
+INIZIO
+val=elemento del campo v di t in posizione (posr-1)*leggereColonne(t)+
+(posc)
+FINE
+----------------------------------------------------------------------------
+Funzione scrivereValore:
+Input: t, tabella dei valori, Tabella
+	 posr, riga in cui scrivere il valore, intero >0
+	 posc, colonna in cui scrivere il valore, intero >0
+       val, valore da scrivere, intero
+Output: t
+
+INIZIO
+elemento del campo v di t in posizione (posr-1)*leggereColonne(t)+(posc-1)=val
+FINE
+---------------------------------------------------------------------------
+Funzione cercareValore:
+Input: val, valore da ricercare nella tabella, intero
+	 t, tabella dei valori, Tabella
+Output: presente, flag di presenza del valore cercato, naturale(0 oppure 1)
+Lavoro: posr, indice di scorrimento delle righe della tabella, naturale
+	  posc, indice di scorrimento delle colonne della tabella, natrale
+
+INIZIO
+posr=1
+MENTRE(posr<=leggereRighe(t) AND presente=0)
+	posc=1
+	MENTRE(posc<=leggereColonne(t) e presente=0)
+		SE(leggereValore(t,posr,posc)=val)
+		ALLORA presente=1
+		FINE
+		posc=posc+1
+	FINE
+	posr=posr+1
+FINE

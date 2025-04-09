@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1668505290 source:c:\users\marco\onedrive\desktop\cartelle desktop\universita\materie\programmazione\esercizi\ciao\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+

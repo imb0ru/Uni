@@ -1,0 +1,88 @@
+Realizzare l’operazione di azzeramento degli elementi pari presenti in una tabella.
+Il tipo di dato tabella deve essere rappresentato come record composto da
+- un vettore di interi a 1 dimensione che contiene i valori della tabella
+- un intero rappresentante le righe occupate
+- un intero rappresentante le colonne occupate
+Progettare l’algoritmo in pseudocodice della funzione di azzeramento e delle funzioni di accesso 
+al tipo di dato Tabella.
+
+Record Tabella:
+- val, elenco dei valori della tabbella, array di interi a una dimensione
+- r, righe della tabella, intero
+- c, colonne della tabella, intero
+
+
+
+Funzione leggereRighe:
+Input: t, tabella dei valori, Tabella
+Output: nr, numero di righe della tabella, intero, >0
+
+INIZIO
+nr=campo r di t
+FINE
+-----------------------------------------------------------------------------
+Funzione scrivereRighe:
+Input: t, tabella dei valori, Tabella
+       nr, numero di righe da scrivere, intero, >0
+Output: t
+
+INIZIO
+campo r di t=nr
+FINE
+-----------------------------------------------------------------------------
+Funzione leggereColonne:
+Input: t, tabella dei valori, Tabella
+Output: nc, numero di colonne della tabella, intero, >0
+
+INIZIO
+nc=campo c di t
+FINE
+-----------------------------------------------------------------------------
+Funzione scrivereColonne:
+Input: t, tabella dei valori, Tabella
+       nc, numero di colonne da scrivere, intero, >0
+Output: t
+
+INIZIO
+campo c di t=nc
+FINE
+-----------------------------------------------------------------------------
+Funzione leggereValore:
+Input: t, tabella dei valori, Tabella
+	 posr, riga in cui cercare il valore, intero >0
+	 posc, colonna in cui cercare il valore, intero >0
+Output: val, valore trovato, intero
+
+INIZIO
+val=elemento del campo v di t in posizione (posr-1)*leggereColonne(t)+
+(posc-1)
+FINE
+----------------------------------------------------------------------------
+Funzione scrivereValore:
+Input: t, tabella dei valori, Tabella
+	 posr, riga in cui scrivere il valore, intero >0
+	 posc, colonna in cui scrivere il valore, intero >0
+       val, valore da scrivere, intero
+Output: t
+
+INIZIO
+elemento del campo v di t in posizione (posr-1)*leggereColonne(t)+(posc-1)=val
+FINE
+---------------------------------------------------------------------------
+Funzione azzeraPari:
+Input: t, tabella dei valori, Tabella
+Output: t
+Lavoro: posr, indice di scorrimento delle righe, intero
+        posc, indice di scorrimento delle colonne, intero
+
+posr=1
+MENTRE(posr<=leggereRighe(t))
+	posc=1
+	MENTRE(posc<=leggereColonne(t))
+		SE(leggereValore(t,posr,posc)%2==0)
+		ALLORA scrivereValore(t,posr,posc,0)
+		FINE
+		posc=posc+1
+      FINE
+	posr=posr+1
+FINE

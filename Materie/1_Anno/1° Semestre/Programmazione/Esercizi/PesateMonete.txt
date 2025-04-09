@@ -1,0 +1,46 @@
+FERRARA MARCO CdL INFORMATICA A-L
+
+Traccia: Date 5 monete, trovare se 1dalle 5 è falsa o meno con massimo 3 pesate
+Record Vettore
+dim, dimensione array, intero >0
+val, array di interi
+
+Input:
+- monete, elenco di pesi da confrontare, record vettore
+
+Output:
+- esito, intero:
+	- se c'è una moneta mi indica quale 1<=esito<=n 
+	- se non sono sufficienti le pesate me lo dice -1
+	- se non ci sono monete false me lo dice 0
+
+1) confronto due coppie di pesi, se sono entrambe uguali
+	1.1) confronto un peso precedente qualunque con l'ultimo peso rimanente, se sono uguali tutte le monete sono vere, altrimenti l'ultima è falsa
+2) altrimenti confronto un peso della prima coppia con l'ultimo peso 
+	2.1) se sono uguali l'altro elemento della prima coppia è la moneta falsa
+	2.2) altrimenti il 1o elemento della prima coppia confrontato con l'ultimo peso è la moneta falsa
+2) altrimenti confronto un peso della seconda coppia con l'ultimo peso 
+	2.1) se sono uguali l'altro elemento della seconda coppia è la moneta falsa
+	2.2) altrimenti il 1o elemento della seconda coppia confrontato con l'ultimo peso è la moneta falsa
+
+
+Pseudocodice:
+se (elemento di monete in campo val in posizione 1 = elemento di monete in campo val in posizione 2)
+	allora se (elemento di monete in campo val in posizione 3 = elemento di monete in campo val in posizione 4)
+		allora se (elemento di monete in campo val in posizione 1 = elemento di monete in campo val in posizione 5)
+			allora esito = 0
+			altrimenti esito = 5
+			fine
+	altrimenti se (elemento di monete in campo val in posizione 3 = elemento di monete in campo val in posizione 5)
+		allora esito = 4
+		altrimenti esito = 3
+	fine
+altrimenti se (elemento di monete in campo val in posizione 1 = elemento di monete in campo val in posizione 5)
+	allora esito = 2
+	altrimenti esito = 1
+	fine
+fine
+
+Pseudocodice V2:
+
+

@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/workspace/append=true
+environment/workspace/appendContributed=true
+environment/workspace/path/delimiter=;
+environment/workspace/path/operation=append
+environment/workspace/path/value=${PATH}

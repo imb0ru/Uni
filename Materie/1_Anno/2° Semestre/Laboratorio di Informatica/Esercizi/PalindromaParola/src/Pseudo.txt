@@ -1,0 +1,21 @@
+Funzione checkSequenza
+
+Input: stringa, sequenza di caratteri alfanumerici di cui verificare se è palindroma o meno, array di caratteri
+       C, lunghezza della stringa in input, intero    
+Output: Esito, indica se la stringa è palindroma o meno, intero
+Lavoro: poss, indice di scorrimento da sinistra a destra della stringa, intero
+		posf, indice di scorrimento da destra a sinistra della stringa, intero
+		
+ALGORITMO
+
+Esito=1
+poss=1
+mentre (poss<=C and Esito==1)
+ posf=C
+ se (elemento in posizione poss di stringa== elemento in posizione posf di stringa)
+  poss=poss+1
+  posf=posf-1
+ altrimenti
+  Esito=0
+ fine
+fine

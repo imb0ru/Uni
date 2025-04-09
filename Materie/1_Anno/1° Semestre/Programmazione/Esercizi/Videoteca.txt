@@ -1,0 +1,252 @@
+Record Attore:
+nome, nome dell'attore, array di caratteri max 25
+cognome, cognome dell'attore, array di caratteri max 25
+dataNascita, data di nascita dell'attore, array di 10 caratteri 
+provinciaNascita, provincia di nascita dell'attore, array di 2 caratteri
+
+Record Regista:
+nome, nome del regista, array di caratteri max 25
+cognome, cognome del regista, array di caratteri max 25
+dataNascita, data di nascita del regista, array di 10 caratteri 
+provinciaNascita, provincia di nascita del regista, array di 2 caratteri
+
+Record Film:
+titolo, titolo del film, array di caratteri max 50
+annoProduzione, anno di produzione del film, naturale di 4 cifre
+genere, genere del film, array di caratteri max 20
+nazionalita, nazionalita del film, array di 3 caratteri
+linguaOriginale, lingua originale del film, array di 3 caratteri
+nAttoriPresenti, numero di attori presenti, naturale>0
+attoriPresenti, attori che recitano nel film, array di Attore
+registaFilm, regista del film, Regista
+
+Record Disponibilita:
+filmDisponibile, film disponibile in videoteca, Film
+costo, prezzo del film, float
+supporto, tipo di supporto del film, naturale (1=DVD, 2=Blu Ray, 3=VHS)
+
+Record Videoteca:
+nome, nome della videoteca, array di caratteri max 50
+indirizzo, indirizzo della videoteca, array di caratteri max 50
+filmPresenti, film presenti in videoteca, array di Disponibilita
+
+
+
+
+Funzioni di Accesso Attore:
+1)LeggiNomeAttore
+    Input: att, attore di cui leggere il nome, Attore
+    Output: nom, nome dell'attore richiesto, array di max 25 caratteri
+
+        nom = campo nome di att
+
+2)ScriviNomeAttore
+    Input: att, attore in cui scrivere il nome, Attore
+           nom, nome da inserire nell'attore, array di max 25 caratteri
+    Output: att
+
+        campo nome di att = nom
+
+3)LeggiCognomeAttore
+    Input: att, attore di cui leggere il cognome, Attore
+    Output: cog, cognnome dell'attore richiesto, array di max 25 caratteri
+
+        cog = campo cognome di att
+
+4)ScriviCognomeAttore
+    Input: att, attore in cui scrivere il cognome, Attore
+           cog, cognome da inserire nell'attore, array di max 25 caratteri
+    Output: att
+
+        campo cognome di att = cog
+
+5)LeggiDataNascitaAttore
+    Input: att, attore di cui leggere la data di nascita, Attore
+    Output: birth, data di nascita dell'attore richiesto, array di 10 caratteri
+
+        birth = campo dataNascita di att
+
+6)ScriviDataNascitaAttore
+    Input: att, attore in cui scrivere la data di nascita, Attore
+           birth, data di nascita da inserire nell'attore, array di 10 caratteri
+    Output: att
+
+         campo dataNascita di att = birth
+
+7)LeggiProvNascitaAttore
+    Input: att, attore di cui leggere la provincia di nascita, Attore
+    Output: prov, provincia di nascita dell'attore richiesto, array di 2 caratteri
+
+        prov = campo provinciaNascita di att
+
+8)ScriviProvNascitaAttore
+    Input: att, attore in cui scrivere la provincia di nascita, Attore
+           prov, provincia di nascita da inserire nell'attore, array di 2 caratteri
+    Output: att
+
+         campo provinciaNascita di att = birth
+
+
+
+
+Funzioni di Accesso Regista:
+1)LeggiNome
+    Input: reg, regista di cui leggere il nome, Regista
+    Output: nom, nome del regista richiesto, array di max 25 caratteri
+
+        nom = campo nome di reg
+
+2)ScriviNomeRegista
+    Input: reg, regista in cui scrivere il nome, Regista
+           nom, nome da inserire nel regista, array di max 25 caratteri
+    Output: reg
+
+        campo nome di reg = nom
+
+3)LeggiCognomeRegista
+    Input: reg, regista di cui leggere il cognome, Regista
+    Output: cog, cognnome del regista richiesto, array di max 25 caratteri
+
+        cog = campo cognome di reg
+
+4)ScriviCognomeRegista
+    Input: reg, regista in cui scrivere il cognome, Regista
+           cog, cognome da inserire nel regista, array di max 25 caratteri
+    Output: reg
+
+        campo cognome di reg = cog
+
+5)LeggiDataNascitaRegista
+    Input: reg, regista di cui leggere la data di nascita, Regista
+    Output: birth, data di nascita del regista richiesto, array di 10 caratteri
+
+        birth = campo dataNascita di reg
+
+6)ScriviDataNascitaRegista
+    Input: reg, regista in cui scrivere la data di nascita, Regista
+           birth, data di nascita da inserire nel regista, array di 10 caratteri
+    Output: reg
+
+         campo dataNascita di reg = birth
+
+7)LeggiProvNascitaRegista
+    Input: reg, regista di cui leggere la provincia di nascita, Regista
+    Output: prov, provincia di nascita del regista richiesto, array di 2 caratteri
+
+        prov = campo provinciaNascita di reg
+
+8)ScriviProvNascitaRegista
+    Input: reg, regista in cui scrivere la provincia di nascita, Regista
+           prov, provincia di nascita da inserire nel regista, array di 2 caratteri
+    Output: reg
+
+         campo provinciaNascita di reg = birth
+
+
+
+
+Funzioni di Accesso Film:
+1)LeggiTitoloFilm
+    Input: f, film di cui leggere il titolo, Film
+    Output: t, titolo del film richiesto, array di max 50 caratteri
+
+        t = campo titolo di f
+
+2)ScriviTitoloFilm
+    Input: f, film in cui scrivere il titolo, Film
+           t, titolo da inserire nel film, array di max 50 caratteri
+    Output: f
+
+        campo titolo di f = t
+
+3)LeggiAnnoProdFilm
+    Input: f, film di cui leggere  l'anno di produzione, Film
+    Output: a, anno di produzione del film richiesto, naturale di 4 cifre
+
+        a = campo annoProduzione di f
+
+4)ScriviAnnoProdFilm
+    Input: f, film in cui scrivere l'anno di produzione, Film
+           a, anno di produzione da inserire nel film, naturale di 4 cifre
+    Output: f
+
+        campo annoProduzione di f = a
+
+5)LeggiGenereFilm
+    Input: f, film di cui leggere il genere, Film
+    Output: g, genere del film richiesto, array di max 20 caratteri
+
+        g = campo genere di f
+
+6)ScriviGenereFilm
+    Input: f, film in cui scrivere il genere, Film
+           g, genere da inserire nel film, array di max 20 caratteri
+    Output: f
+
+        campo genere di f = g
+
+7)LeggiNazionalitaFilm
+    Input: f, film di cui leggere la nazionalita, Film
+    Output: n, nazionalita del film richiesto, array di 3 caratteri
+
+        n = campo nazionalita di f
+
+8)SciviNazionalitaFilm
+    Input: f, film in cui scrivere la nazionalita, Film
+           n, nazionalita da inserire nel film, array di 3 caratteri
+    Output: f
+
+        campo nazionalita di f = n
+
+9)LeggiLinguaOriginaleFilm
+    Input: f, film di cui leggere la lingua originale, Film
+    Output: l, lingua originale del film richiesto, array di 3 caratteri
+
+        l = campo linguaOriginale di f
+
+10)ScriviLinguaOriginaleFilm
+    Input: f, film in cui scrivere la lingua originale, Film
+           l, lingua originale da inserire nel film, array di 3 caratteri
+    Output: f
+
+        campo linguaOriginale di f = l
+
+11)LeggiNAttoriPresenti
+    Input: f, film di cui leggere il numero di attori presenti, Film
+    Output, n, numero di attori presenti nel film, naturale > 0
+    
+        n = campo nAttoriPresenti di f
+
+12)ScriviNAttoriPresenti
+    Input: f, film in cui scrivere il numero di attori presenti, Film
+           n, numero di attori presenti da scrivere nel film, naturale > 0
+    Output: f
+     campo nAttoriPresenti di f = n
+
+13)LeggiAttoriPresenti
+    Input: f, film da cui leggere gli attori presenti, Film
+    Output: a, attori presenti nel film, array di Attore
+
+        a = campo attoriPresenti di f
+
+14)ScriviAttoriPresenti
+    Input: f, film in cui scrivere gli attori presenti, Film
+           a, lista di attori presenti da inserire nel film, array di Attore
+    Output: f
+
+        campo attoriPresenti di f = a
+
+15)LeggiRegistaFilm
+    Input: f, film di cui leggere il regista, Film
+    Output: r, regista presente nel film, Regista
+
+        r = campo registaFilm di f
+
+16)ScriviRegistaFilm
+    Input: f, film in cui inserire il regista, Film
+           r, regista da inserire nel film, Regista
+    Output: f
+
+        campo registaFilm di f = r
+
+    

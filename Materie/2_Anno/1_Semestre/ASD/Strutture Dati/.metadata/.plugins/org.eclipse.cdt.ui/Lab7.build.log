@@ -1,0 +1,9 @@
+21:29:52 **** Incremental Build of configuration Debug for project Lab7 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\listapuntatore.o" "..\\src\\listapuntatore.cpp" 
+g++ -o Lab7.exe "src\\listapuntatore.o" 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+
+21:29:52 Build Failed. 1 errors, 0 warnings. (took 433ms)
+

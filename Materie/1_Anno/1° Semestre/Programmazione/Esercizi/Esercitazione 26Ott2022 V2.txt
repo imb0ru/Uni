@@ -1,0 +1,104 @@
+Realizzare gli algoritmi delle seguenti operazioni sul tipo di dato vettore (quello visto nella lezione
+del 21 ottobre):
+- Somma degli elementi di un vettore
+- Moltiplicazione degli elementi di un vettore
+- Cancellazione di un elemento del vettore
+- Stampa degli elementi di un vettore
+- Spostamento a destra o sinistra di tutti gli elementi di un vettore
+
+Record Vettore:
+val, elenco di elementi, array di interi
+n, numero di elementi presenti nell'elenco, naturale >0
+
+1) Somma
+Dati di Input: Vet, vettore degli elementi da sommare, record vettore
+
+Dati di Output: som, valore della somma degli elementi, intero
+
+pos=1
+som=0
+mentre(pos<=elemento di vet in campo n)
+	som = som + elemento di vet in campo val in posizione pos
+	pos=pos+1
+fine
+
+
+2) Moltiplicazione
+Dati di Input: Vet, vettore degli elementi da moltiplicare, record vettore
+
+Dati di Output: prod, valore del prodotto degli elementi, intero
+
+pos=1
+prod=1
+mentre(pos<=elemento di vet in campo n)
+	prod = prod * elemento di vet in campo val in posizione pos
+	pos=pos+1
+fine
+
+5.1) Shift a sinistra
+Dati di Input: Vet, vettore da shiftare, record vettore
+	
+pos=1
+temp = elemento di vet in campo val in posizione 1
+mentre(pos<=n)
+	se(pos=posshift)
+	allora elemento di vet in campo val in posizione pos = temp
+	altrimenti elemento di vet in campo val in posizione pos = elemento di vet in campo val in posizione pos+1
+	pos=pos+1			
+fine
+
+
+5.2) Shift a destra
+Dati di Input: Vet, vettore da shiftare, record vettore
+
+pos=campo n di vet
+temp = elemento di vet in campo val in posizione campo n di vet
+mentre(pos>=1)
+	se(pos=1)
+	allora elemento di vet in campo val in posizione campo n di vet = temp
+	altrimenti elemento di vet in campo val in posizione pos = elemento di vet in campo val in posizione pos-1
+	pos=pos-1		
+fine
+
+
+3) Cancellazione
+Dati di Input: Vet, vettore da cui cancellare un elemento, record vettore
+		   valcanc, elemento da cancellare, intero
+
+x=falso
+pos=1
+mentre((pos<=campo n di val) AND (x=falso))
+	se(elemento in posizione pos del campo val di vet = valcanc)
+	allora se(pos<n)
+		allora //sposto a sinistra gli elementi del campo valori di v della posizione pos+1
+		fine
+		campo n di vet = campo n di vet - 1
+	fine
+	pos=pos+1
+fine
+
+y=campo dim di vet
+esegui
+V=CancellareElemento(V, valcanc)
+finchè(y!=campo dim di vet)
+
+
+4) Stampa Elementi
+Dati di Input: Vet, vettore degli elementi da stampare, record vettore
+
+pos=1
+mentre(pos<=elemento di vet in campo n)
+	//Visualizzo l'elemento di vet in campo val in posizione pos
+	pos=pos+1
+fine
+
+pos=1
+mentre(pos<=elemento di vet in campo n)
+	scrivi elemento di vet in campo val in posizione pos
+	pos=pos+1
+fine
+
+
+
+
+

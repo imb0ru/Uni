@@ -1,0 +1,19 @@
+Base: 10
+Input: 12-345-6789
+Output: 6789
+Output atteso: 6789
+
+Base: 8
+Input: 3-5-7
+Output: 7
+Output atteso: 7
+
+Base: 2
+Input: 1010-11-12
+Output: 10
+Output atteso: -1
+
+Base: 3
+Input: 2-4-8-16
+Output: -1
+Output atteso: -1

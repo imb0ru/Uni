@@ -1,0 +1,72 @@
+Traccia Esame Capolista
+
+Input: Risultati, matrice che contiene i risultati (valori 0,1 o 2) di ogni squadra (sulle colonne) di tutte le giornate (le righe) del campionato, array a due dimensioni di interi compresi fra 0 e 2
+	 NumSquadre, numero di squadre che partecipano al campionato, intero >1
+	 NumGiornate, numero di giornate disputate, intero >0
+
+Output: LeCapolista, contiene il nome delle squadre capolista di ogni giornata del campionato, array a 1 dimensione di interi >0 <=NumSquadre
+
+g=1
+mentre(g<=NumGiornate)
+	ClassificaGiornata=CalcolaClassificaGiornata(Risultati, NumSquadre, NumGiornate, g)
+	LeCapolista in posizione g =TrovareMassimo(ClassificaGiornata, NumSquadre)
+	g=g+1
+fine
+
+
+Funzione TrovareMassimo
+Input: Classifica, punteggi di tutte le squadre, array a 1 dimensione di in interi >=0
+	 Dimensione, numero di squadre che partecipano al campionato, intero >1 
+Output: Capolista, squadra in testa al campionato, intero >0 <=NumSquadre
+
+Max = 1° elemento di Classifica
+Capolista = 1
+i=2
+mentre(i<=Dimensione)
+	se(elemento di classifica in posizione i > Max)
+	allora Max = elemento di classifica in posizione i
+		 capolista = i
+	fine
+	i=i+1
+fine
+
+
+Funzione: CalcolareClassificaGiornata
+Input: Risultati
+	 NumGiornate
+ 	 NumSquadre
+ 	 giornata, la giornata in cui calcolare la classifica, intero >0 >=NumGiornate
+Output: ClassificaGiornata, punteggi di tutte le squadre fino alla giornata g, array a 1 dimensione di interi >0
+
+i=1
+mentre(i<=NumSquadre)
+	Classifica giornata in posizione i = SommaPunti(Risultati, i, g)
+	i=i+1
+fine
+
+
+Funzione SommaPunti
+Input: Risultati
+ 	 squadra, la squadra di cui voglio calcolare il punteggio, intero >0 <=NumSquadre
+	 giornata
+Output: punti ottenuti da squadra fino alla giornata giornata, intero >=0
+
+punti=0
+i=1
+mentre(i<=giornata)
+	punti = punti + elemento di risultati in posizione i e squadra
+	i=i+1
+fine
+
+
+
+
+TEST SUI VALORI LIMITE
+TEST PER CLASSI DI EQUIVALENZA -> Non Validi                Validi                   Non Validi
+					    ]-inf,0]			]0, NumGiornate]		 ]Num Giornate, +inf]
+					    
+                                  -5				7				 NumGiornate+1
+
+					    ]-inf,0]			]0, NumSquadre]		 ]Num Squadre, +inf]
+					    
+                                  -5				7				 NumSquadre+1

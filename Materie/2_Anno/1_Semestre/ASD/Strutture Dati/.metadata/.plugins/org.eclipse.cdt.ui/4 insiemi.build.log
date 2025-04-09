@@ -1,0 +1,7 @@
+18:50:50 **** Rebuild of configuration Debug for project 4 insiemi ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\testinsiemi.o" "..\\src\\testinsiemi.cpp" 
+g++ -o "4 insiemi.exe" "src\\testinsiemi.o" 
+
+18:50:50 Build Finished. 0 errors, 0 warnings. (took 549ms)
+

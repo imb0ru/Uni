@@ -1,0 +1,37 @@
+Videoteca
+-Inserimento
+-Modifica
+-Stampa Info
+-Ricerca
+-Ordinamento
+-cancellazione
+
+Record Video:
+link, array di 100 caratteri
+autore, nome di chi ha girato il video, array di 50 caratteri
+durata, durata del video in minuti, reale
+data di creazione, array di 8 caratteri
+titolo, array di 25 caratteri
+genere, array di 15 caratteri
+luogo, array di 15 caratteri
+lingua originale, array di 3 caratteri
+risoluzione, array di 8 caratteri
+identificativo, intero >0
+
+
+Inserimento:
+1 Stampa InterfInsert
+Stampa nuovo identificativo
+inserire tutti i campi
+salvare il video
+stampare messaggio
+se si svuoto schermo
+	ripeti 1
+
+Pseudocodice Inserimento
+risposta='s'
+mentre(risposta='s')
+	stampa(InterfInsert())
+	identificativo = leggereDimensione(videoteca)+1
+	stampa(identificativo)
+	

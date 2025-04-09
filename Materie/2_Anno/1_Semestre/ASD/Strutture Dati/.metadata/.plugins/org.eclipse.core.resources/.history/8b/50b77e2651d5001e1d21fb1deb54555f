@@ -1,0 +1,305 @@
+#include "Tree.h"
+#include "TreeNode.h"
+#include <stdexcept>
+#include <iostream>
+
+#ifndef TREEPT_H
+#define TREEPT_H
+
+template<class T>
+class treePt : public Tree<T, treeNode<T> *> {
+public:
+    typedef typename Tree<T, treeNode<T> *>::ElementType ElementType;
+    typedef typename Tree<T, treeNode<T> *>::Node Node;
+
+    treePt();
+    treePt(treePt<T> &);
+    ~treePt();
+
+    bool isEmpty() const;
+    void insertRoot(ElementType);
+    Node readRoot() const;
+    Node parent(Node) const;
+    bool isLeaf(Node) const;
+    Node firstChild(Node) const;
+    bool isLastSibling(Node) const;
+    Node nextSibling(Node) const;
+    void insertFirstSubTree(Node, Tree<ElementType, treeNode<T> *> &);
+    void insertSubTree(Node, Tree<ElementType, treeNode<T> *> &);
+    void deleteSubTree(Node);
+    void writeNode(Node, ElementType);
+    ElementType readNode(Node) const;
+    int numberOfNodes() const { return this->numNodes; }
+    void insertFirstChild(Node, ElementType);
+    void insert(Node, ElementType);
+    void printTree() const;
+    void printNTree(treeNode<T>* x, vector<bool>& flag, int depth = 0, bool isLast = false);
+
+    int inner(const Node&);
+private:
+    treeNode<T> *root;
+    int numNodes;
+    void copy(Node, Node);
+    void print(Node n, std::string prefix) const;
+};
+
+template<typename T>
+int treePt<T>::inner(const Node& node) {
+    int count = 0;
+    if (!node)
+        return count;
+
+    Node current_child = node->getFirstChild();
+    const T parent_value = node->getValue();
+
+    while (current_child) {
+        if (current_child->getValue() > parent_value)
+            ++count;
+        count += inner(current_child);
+        current_child = current_child->getSibling();
+    }
+    return count;
+}
+
+template <class T>
+treePt<T>::~treePt() {
+    if (numNodes > 0) deleteSubTree(root);
+}
+
+template<class T>
+treePt<T>::treePt() {
+    numNodes = 0;
+    root = nullptr;
+}
+
+template<class T>
+treePt<T>::treePt(treePt<T> &a) {
+    root = nullptr;
+    root = new treeNode<T>();
+    numNodes = 0;
+    writeNode(root, a.readNode(a.getRoot()));
+    if (!a.isLeaf(a.getRoot()))  copy(root, a.firstChild(a.root()));
+    numNodes++;
+}
+
+template<class T>
+void treePt<T>::copy(Node n, Node toCopy) {
+    if (toCopy != nullptr) {
+        if (toCopy->getSibling() != nullptr)
+            copy(n, toCopy->getSibling());
+        insertFirstChild(n, toCopy->getValue());
+        if (toCopy->getFirstChild() != nullptr)
+            copy(firstChild(n), toCopy->getFirstChild());
+    }
+}
+
+template<class T>
+bool treePt<T>::isEmpty() const {
+    return (root == nullptr);
+}
+
+template<class T>
+void treePt<T>::insertRoot(ElementType e) {
+    if (isEmpty()) {
+        root = new treeNode<T>;
+        root->setValue(e);
+        root->setSibling(nullptr);
+        root->setParent(nullptr);
+        root->setFirstChild(nullptr);
+        numNodes++;
+    }
+}
+
+template<class T>
+typename treePt<T>::Node treePt<T>::readRoot() const {
+    if (!isEmpty())
+        return root;
+    else
+        throw std::out_of_range("EMPTY TREE");
+}
+
+template<class T>
+void treePt<T>::insertFirstChild(Node n, ElementType e) {
+    Node newNode = new treeNode<T>();
+    newNode->setSibling(n->getFirstChild());
+    n->setFirstChild(newNode);
+    newNode->setParent(n);
+    newNode->setValue(e);
+    numNodes++;
+}
+
+template <class T>
+void treePt<T>::insert(Node n, ElementType e) {
+    if (n != root) {
+        Node newNode = new treeNode<T>();
+        newNode->setSibling(n->getSibling());
+        n->setSibling(newNode);
+        newNode->setParent(n->getParent());
+        newNode->setValue(e);
+        numNodes++;
+    } else
+        std::cout << "THE ROOT CANNOT HAVE SIBLINGS" << std::endl;
+}
+
+template<class T>
+void treePt<T>::writeNode(Node n, ElementType e) {
+    n->setValue(e);
+}
+
+template<class T>
+typename treePt<T>::ElementType treePt<T>::readNode(Node n) const {
+    return n->getValue();
+}
+
+template<class T>
+typename treePt<T>::Node treePt<T>::parent(Node n) const {
+    if (!isEmpty()) {
+        if (n->getParent() != nullptr) {
+            return n->getParent();
+        } else
+            throw std::out_of_range("THE ROOT HAS NO PARENT");
+    } else
+        throw std::out_of_range("EMPTY TREE");
+}
+
+template<class T>
+bool treePt<T>::isLeaf(Node n) const {
+    if (!isEmpty())
+        return (n->getFirstChild() == nullptr);
+    else
+        throw std::out_of_range("EMPTY TREE");
+}
+
+template<class T>
+typename treePt<T>::Node treePt<T>::firstChild(Node n) const {
+    if (!isEmpty()) {
+        if (n->getFirstChild() != nullptr) {
+            return n->getFirstChild();
+        } else
+            throw std::out_of_range("THE NODE IS A LEAF");
+    } else
+        throw std::out_of_range("EMPTY TREE");
+}
+
+template<class T>
+bool treePt<T>::isLastSibling(Node n) const {
+    if (!isEmpty())
+        return (n->getSibling() == nullptr);
+    else
+        throw std::out_of_range("EMPTY TREE");
+}
+
+template<class T>
+typename treePt<T>::Node treePt<T>::nextSibling(Node n) const {
+    if (!isEmpty()) {
+        if (n->getSibling() != nullptr) {
+            return n->getSibling();
+        } else
+            throw std::out_of_range("THE NODE HAS NO NEXT SIBLING");
+    } else
+        throw std::out_of_range("EMPTY TREE");
+}
+
+
+template<class T>
+void treePt<T>::insertFirstSubTree(Node n, Tree<ElementType, treeNode<T> *> &a) {
+    if (!isEmpty() && !a.isEmpty()) {
+        treeNode<T> *r1 = new treeNode<T>();
+        writeNode(r1, a.readNode(a.readRoot()));
+        if (!a.isLeaf(a.readRoot()))
+            copy(r1, a.firstChild(a.readRoot()));
+        r1->setParent(n);
+        r1->setSibling(n->getFirstChild());
+        n->setFirstChild(r1);
+        numNodes++;
+    } else
+        throw std::out_of_range("ONE OF THE TWO TREES IS EMPTY, IMPOSSIBLE OPERATION");
+}
+
+
+template<class T>
+void treePt<T>::insertSubTree(Node n, Tree<ElementType, treeNode<T> *> &a) {
+    if (!isEmpty() && !a.isEmpty()) {
+        if (n != root) {
+            treeNode<T> *r1 = new treeNode<T>();
+            writeNode(r1, a.readNode(a.readRoot()));
+            if (!a.isLeaf(a.readRoot()))
+                copy(r1, a.firstChild(a.readRoot()));
+            r1->setSibling(n->getSibling());
+            r1->setParent(n->getParent());
+            n->setSibling(r1);
+            numNodes++;
+        } else
+            throw std::out_of_range("THE ROOT CANNOT HAVE SIBLINGS");
+    } else
+        throw std::out_of_range("ONE OF THE TWO TREES IS EMPTY, IMPOSSIBLE OPERATION");
+}
+
+template<class T>
+void treePt<T>::deleteSubTree(Node n) {
+    if (!isEmpty()) {
+        while (n->getFirstChild() != nullptr) {
+            deleteSubTree(n->getFirstChild());
+        }
+        if (n != root) {
+            if (n->getSibling() == nullptr)
+                n->getParent()->getFirstChild()->setSibling(nullptr);
+            if (n->getParent()->getFirstChild() == n)
+                n->getParent()->setFirstChild(n->getSibling());
+        }
+        delete n;
+        numNodes--;
+    } else
+        throw std::out_of_range("EMPTY TREE");
+}
+
+template<class T>
+void treePt<T>::printNTree(treeNode<T>* x, vector<bool>& flag, int depth = 0, bool isLast = false)
+{
+    // Condizione quando il nodo è nullo
+    if (x == nullptr)
+        return;
+
+    // Loop per stampare le profondità del nodo corrente
+    for (int i = 1; i < depth; ++i) {
+
+        // Condizione quando la profondità è in esplorazione
+        if (flag[i] == true) {
+            cout << "|    ";
+        }
+
+        // Altrimenti stampa gli spazi vuoti
+        else {
+            cout << "     ";
+        }
+    }
+
+    // Condizione quando il nodo corrente è il nodo radice
+    if (depth == 0)
+        cout << x->getValue() << '\n';
+
+    // Condizione quando il nodo è l'ultimo nodo della profondità in esplorazione
+    else if (isLast) {
+        cout << "+--- " << x->getValue() << '\n';
+
+        // Nessun altro figlio lo trasforma in profondità non esplorata
+        flag[depth] = false;
+    }
+    else {
+        cout << "+--- " << x->getValue() << '\n';
+    }
+
+    int it = 0;
+    for (auto i = x->getChildren().begin();
+    i != x->getChildren().end(); ++i, ++it) {
+
+        // Chiamata ricorsiva per i nodi figlio
+        printNTree(*i, flag, depth + 1,
+            it == (x->getChildren().size()) - 1);
+    }
+    flag[depth] = true;
+}
+
+
+#endif
+

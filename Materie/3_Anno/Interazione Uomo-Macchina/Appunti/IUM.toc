@@ -1,0 +1,30 @@
+\contentsline {chapter}{\numberline {1}Introduzione}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Interfaccia Utente}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}HCI – Human-Computer Interaction}{2}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Accettabilità di un sistema software}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Definizione di Jacob Nielsen - 1993}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Definizione di ISO 9241-11 - 1998}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Confronto tra le due definizioni}{7}{section.2.3}%
+\contentsline {section}{\numberline {2.4}User eXperience (UX) nell'ISO 9241-210}{7}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Obiettivi dell'usabilità}{8}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Dalla Usability alla User eXperience}{8}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Migliorare l'interfaccia utente}{9}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Come ottenere l'usabilità}{9}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Human-Centred Design Prosess - ISO 9241-210}{10}{section.2.9}%
+\contentsline {chapter}{\numberline {3}Requisiti, tecniche di raccolta dati e analisi dei task}{12}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Requisiti di prodotto}{12}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Tecniche di raccolta dati}{14}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Interviste}{14}{subsection.3.2.1}%
+\contentsline {paragraph}{Esempio di esecuzione di un'intervista}{16}{paragraph*.2}%
+\contentsline {subsection}{\numberline {3.2.2}Focus Group}{17}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Osservazione sul campo}{18}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Scenari d'uso}{19}{subsection.3.2.4}%
+\contentsline {paragraph}{Esempio di scenario d'uso}{19}{paragraph*.3}%
+\contentsline {subsection}{\numberline {3.2.5}Questionari}{20}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Confronto di tecniche di raccolta dati}{20}{subsection.3.2.6}%
+\contentsline {section}{\numberline {3.3}Caso d'uso}{21}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Analisi dei task}{21}{subsection.3.3.1}%
+\contentsline {subsubsection}{Tipi e Livelli}{22}{subsubsection*.4}%
+\contentsline {subsection}{\numberline {3.3.2}Scenario vs Caso}{22}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {4}UCD Sprint}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Discovery}{24}{section.4.1}%

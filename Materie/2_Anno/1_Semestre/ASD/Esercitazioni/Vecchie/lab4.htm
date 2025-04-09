@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>Laboratorio di Algoritmi e Strutture Dati</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<p><b>Obiettivi</b>: classi: costruttori e composizione di classi</p>
+
+1) Definire la classe esame nel file <b>esame.h</b> contenente le seguenti componenti:
+<ul>
+<li>metodi
+	<ul>
+		<li>costruttore di default esame()</li>
+		<li>costruttore esame(string): imposta solo il nome dell'esame</li>
+		<li>costruttore esame(string,int): imposta nome e voto ottenuto dell'esame</li>
+		<li>getEsame: restituisce il nome dell'esame</li>
+		<li>setEsame(string nome): imposta il nome dell'esame</li>
+		<li>getVoto: restituisce il voto ottenuto per l'esame se sostenuto</li>
+		<li>setVoto: imposta il voto ottenuto per l'esame</li>
+		<li>isSostenuto: restituisce true se l'esame è stato sostenuto</li>
+	</ul>
+</li>
+<li>campi di esemplare
+	<ul>
+		<li>Nome esame: stringa</li>
+		<li>Sostenuto: boolean</li>
+		<li>Voto esame: intero</li>
+	</ul>
+</li>
+</ul>
+
+<b>esame.h</b>
+<pre> #ifndef _ESAME_H
+ #define _ESAME_H
+ 
+ #include <string>
+
+ class esame{
+ public:
+   esame();
+   esame(string);
+   esame(string, int);
+   // ... da completare ... 
+ private:
+   string nome;
+   // ... da completare ... 
+ };
+
+#endif // _ESAME_H 
+</pre>
+
+2) Implementare la classe esame nel file <b>esame.cpp</b>
+
+<b>esame.cpp</b>
+<pre> #include <esame.h>
+
+ esame::esame(){}
+ // ... da completare ... 
+</pre>
+
+
+3) Testare la classe esame utilizando un tester <b>TestEsame.cpp</b><br/>
+
+4)   Definire    la   classe   studente    nel   file   <b>studente.h</b>   e    implementarla   nel
+file <b>studente.cpp</b>: (Si suppone che uno studente debba fare al massimo 5 esami)
+<ul>
+	<li>metodi:
+		<ul>
+			<li>costruttore di default studente(): imposta i nomi di default dei 5 esami e i rispettivi flag
+			sostenuto a false</li>
+			<li>costruttore  studente(nome1, nome2,  nome3, nome4,  nome5): imposta  in nomi  dei  5 esami
+			usando i parametri nome1, ... e i rispettivi flag	sostenuto a false</li>
+			<li>setMatricola, setNome, getMatricola, getNome</li>
+			<li>getNumEsami: restituisce 5 (numero massimo di esami da sostenere)</li>
+			<li>setEsame(Voto,i): imposta il voto dell'esame i-esimo</li>
+			<li>getVotoEsame(i), getNomeEsame(i), getSostenuto(i)</li>
+			<li>getMedia(): restituisce la media degli esami sostenuti</li>
+			<li>printStudente():  visualizza  tutte le  informazioni  dello  studente  compresi gli  esami
+			sostenuti e i rispettivi voti</li>
+		</ul>
+	</li>
+	<li>campi di esemplare
+		<ul>
+			<li>matricola: string</li>
+ 			<li>nome: string</li>
+			<li>esami: vettore di 5 esami</li>
+			<li>const numesami: intero</li>
+		</ul>
+	</li>
+</ul>
+
+
+<p>5) Testare la classe studente utilizando un tester Studente.cpp</p>
+
+6) Definire la classe studenti avente come campo di esemplare un vettore di 3 studenti e implementare
+alcuni metodi di set, get e print.
+
+</html>

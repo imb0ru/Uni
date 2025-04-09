@@ -1,0 +1,68 @@
+Realizzare l’operazione di inserimento di un elemento in una posizione data di un vettore.
+Il tipo di dato vettore deve essere rappresentato come record composto da
+- un array di interi a 1 dimensione che contiene i valori del vettore
+- un intero rappresentante la dimensione
+Progettare l’algoritmo in pseudocodice della funzione di inserimento e delle funzioni di accesso 
+al tipo di dato Vettore.
+
+Record Vettore:
+- val, elenco di valori, array di interi a 1 dimensione
+- dim, numero di valori presenti, intero
+
+
+
+Funzione leggereDimensione:
+Input: v, vettore da cui leggere la dimensione, Vettore
+Output: d, dimensione del vettore, intero
+
+INIZIO
+d=campo dim di v
+FINE
+--------------------------------------------------------------------
+Funzione scrivereDimensione:
+Input: v, vettore in cui scrivere la dimensione, Vettore
+       d, dimensione del vettore da scrivere, intero
+Output: v
+
+INIZIO
+campo dim di v = d
+FINE
+--------------------------------------------------------------------
+Funzione leggereValore:
+Input: v, vettore da cui leggere il valore, Vettore
+	 i, posizone del valore da leggere, intero
+Output: n, valore cercato, intero
+
+INIZIO
+n=elemento di v in campo val in posizione i
+FINE
+--------------------------------------------------------------------
+Funzione scrivereValore:
+Input: v, vettore da cui leggere il valore, Vettore
+	 i, posizone del valore da leggere, intero
+       n, valore da scrivere, intero
+Output: v
+
+INIZIO
+elemento di v in campo val in posizione i = n
+FINE
+--------------------------------------------------------------------
+Funzione inserisciNuovoValore:
+Input: v, vettore da cui leggere il valore, Vettore
+	 i, posizone del valore da leggere, intero
+       n, valore da scrivere, intero
+Output: v
+Lavoro: j, indice di scorrimento del vettore, intero
+	  t, variabile di appoggio per lo scambio
+
+INIZIO
+j= leggereDimensione(v)
+scrivereDimensione(v,j+1)
+MENTRE(j>i)
+	temp=leggereValore(v,j)
+	scrivereValore(v, j, leggereValore(v,j-1))
+	scrivereValore(v,j-1,temp)
+	j=j-1
+FINE
+scrivereValore(v,i,n)
+FINE

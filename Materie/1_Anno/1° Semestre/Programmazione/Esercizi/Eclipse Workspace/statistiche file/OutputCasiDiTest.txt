@@ -1,0 +1,50 @@
+OUTPUT CASI DI TEST STATISTICHE FILE
+
+Funzione Separatore:
+1) test superato
+2) test superato
+3) test superato
+4) test superato
+5) test superato
+6) test superato
+7) test superato
+8) test superato
+9) test superato
+10) test superato
+11) test superato
+12) test superato
+13) test superato
+14) test superato
+15) test superato
+16) test superato
+
+Funzione ContareParole:
+1) test non superato, attesa 1 parola, ricevuto 0
+2) test superato
+3) test non superato, attese 2 parole, ricevuto 3
+4) test non superato, attese 2 parole, ricevuto 1
+5) test non superato, attese 3 parole, ricevuto 2
+6) test superato
+7) test superato
+8) test non superato, attese 0 parole, ricevuto 1
+9) test non superato, attese 0 parole, ricevuto 1
+10) test superato 
+11) test non superato, attese 0 parole, ricevuto 7
+
+Funzione TrovareParola:
+1) test superato
+2) test superato
+3) test superato
+4) test superato
+5) test superato
+6) test non superato, indice negativo non rilevato come errore
+7) test non superato, indice eccede la lunghezza della stringa non rilevato come errore
+
+Funzione TrovareFrequenza:
+1) test superato
+2) test superato
+3) test superato
+4) test superato
+5) test superato
+6) test non superato, lunghezza negativa non rilevata come errore
+7) test non superato, lunghezza negativa non rilevata come errore

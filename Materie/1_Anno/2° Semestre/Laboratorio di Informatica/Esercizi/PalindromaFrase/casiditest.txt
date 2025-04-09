@@ -1,0 +1,4 @@
+itopinonavevanonipoti -> palindroma okay
+Ai, la toccatina a Gina, a me non mi tocca mai. -> palindroma okay
+Amore, Roma, Roma, amore. -> palindroma, no okay
+

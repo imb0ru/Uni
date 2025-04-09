@@ -1,0 +1,136 @@
+Record ricorrenza{
+	int valore
+	int n_ripetizioni
+}
+
+main(){
+	vettore=input()
+	conteggi=ContaRicorrenze(vettore, n_elementi)
+	indicePiùFrequente=ElementoPiùRicorrente(conteggi)
+	indiceMenoFrequenti=ElementoMenoRicorrente(conteggi, n_elementi)
+}
+______________________________________________________________________________________________________________________________
+
+INPUT       
+	v_ricorrenze      | Un array nel quale salvo tutti i valori trovati insieme alla loro frequenza | tipo: ARRAY di Ricorrenze
+	lunghezza_vettore | Il numero massimo di ricorrenze possibili all'interno del vettore           | tipo: INT
+\
+VARIABILI DI LAVORO
+	c                 | indice per scorrere il vettore dei conteggi                          | tipo: INT
+	frequenza_minima | numero di ricorrenze massimo trovato                                 | tipo: INT
+\
+OUTPUT
+	indice   | l'indice della ricorrenza col minor numero di ripetizioni | tipo: INT
+\
+*PSEUDOCODICE*
+ElementoMenoRicorrente(v_ricorrenze, lunghezza_vettore)
+	indice
+	frequenza_minima=lunghezza_vettore
+	FINCHE(v_ricorrenze[c].n_ripetizioni!=0)
+		SE(v_ricorrenze[c].n_ripetizioni<frequenza_minima){
+			indice=c
+			frequenza_massima=v_ricorrenze[c].n_ripetizioni
+		}
+	RESTITUISCI indice
+}
+**************
+______________________________________________________________________________________________________________________________
+
+INPUT       
+	v_ricorrenze   | Un array nel quale salvo tutti i valori trovati insieme alla loro frequenza | tipo: ARRAY di Ricorrenze
+\
+VARIABILI DI LAVORO
+	c                 | indice per scorrere il vettore dei conteggi                          | tipo: INT
+	frequenza_massima | numero di ricorrenze massimo trovato                                 | tipo: INT
+\
+OUTPUT
+	indice   | l'indice della ricorrenza col maggior numero di ripetizioni  | tipo: INT
+\
+*PSEUDOCODICE*
+ElementoPiùRicorrente(v_ricorrenze){
+	indice
+	frequenza_massima=0
+	FINCHE(v_ricorrenze[c].n_ripetizioni!=0)
+		SE(v_ricorrenze[c].n_ripetizioni>frequenza_massima){
+			indice=c
+			frequenza_massima=v_ricorrenze[c].n_ripetizioni
+		}
+	RESTITUISCI indice
+}
+**************
+______________________________________________________________________________________________________________________________
+
+INPUT       
+	v_ricerca | il vettore in cui cercare l'elemento | tipo: ARRAY
+	l         | numero di elementi del vettore di ricerca | tipo: int
+\
+VARIABILI DI LAVORO
+	elemento         | valore prelevato dal vettore da conteggiare 				    | tipo: INT
+	presente         | una flag per sapere se il valore è stato già contato precedentemente | tipo: BOOL
+	i	           | indice per scorrere il vettore da conteggiare                        | tipo: INT
+	c                | indice per scorrere il vettore dei conteggi                          | tipo: INT
+	elementi_trovati | numero di elementi DIVERSI trovati                                   | tipo: INT
+\
+OUTPUT
+	v_ricorrenze   | Un array nel quale salvo tutti i valori trovati insieme alla loro frequenza | tipo: ARRAY di Ricorrenze
+\
+*PSEUDOCODICE*
+ContaRicorrenze(v_ricerca, l){
+	//inizializzazione output	
+	v_ricorrenze
+
+	//dati di lavoro
+	elemento
+	
+	//variabili di iterazione
+	presente
+	elementi_trovati=0
+	i=0
+	FINCHE(i<l){
+		elemento=v_ricerca[i]
+
+		//variabili di iterazione
+		c=0
+		presente=false
+
+		//Provo a trovarlo
+		FINCHE(c<elementi_trovati E !presente){
+			SE(v_ricorrenze[c].valore==elemento)
+				presente=true
+			c++
+		}
+
+		//Gestisco le possibilità
+		SE(presente)
+			v_ricorrenze[c].n_ripetioni++
+		ALTRIMENTI{
+			v_ricorrenze[elementi_trovati].valore=elemento
+			v_ricorrenze[elementi_trovati].n_ripetioni=1
+			elementi_trovati++
+		}
+		i++
+	}
+	// inizializzo il resto dell'array
+	FINCHE(elementi_trovati<l){
+		v_ricorrenze[elementi_trovati].n_ripetioni=0
+		elementi_trovati++
+	}
+	
+	RESTITUISCI v_ricorrenze
+}
+**************
+OUTPUT
+	n_elementi
+	vettore_interi
+\
+*PSEUDOCODICE*
+Input(){
+	scanf(%d,&n_elementi)
+	c=0
+	vettore_interi[n_elementi]
+	FINCHE(c<n_elementi)
+		scanf(%d,&vettore_interi[c])
+
+	RESTITUISCI vettore_interi
+**************
+______________________________________________________________________________________________________________________________

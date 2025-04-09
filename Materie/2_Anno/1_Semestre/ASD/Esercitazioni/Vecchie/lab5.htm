@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>Laboratorio di Algoritmi e Strutture Dati</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body bgcolor="#ffffff">
+
+
+<h2>1 Liste</h2>
+
+<h3>Esercizio 1.1</h3>
+Implementare
+<ul>
+	<li>una funzione per calcolare la lunghezza di una lista;</li>
+	<li>una funzione in grado di invertire l'ordine di una lista L senza utilizzare una lista
+	di supporto;</li>
+	<li>una funzione che stabilisca se una lista è palindroma.</li>
+</ul>
+<pre>
+ int lunghezza(Lista);
+ void inverti(Lista &);
+ bool palindoma(Lista);
+</pre>
+
+Le funzioni possono anche essere implementate come metodi della classe
+astratta LinearList.
+<h3>Esercizio 1.2</h3>
+<b>Liste lineari ordinate</b>: <i>particolare tipo di lista in cui l'ordine sequenziale
+degli elementi è legato ad una relazione d'ordine definita sugli elementi</i>.<br />
+Esempio: se gli elementi sono stringhe si suppone che l'odinamento sia per chiave
+alfabetica. A tale scopo sarà necessario definire gli operatori '<', '<=' e '>' 
+per il tipo di dato stringa (Tali operatori sono già definiti per il tipo di dato <b>string</b>,
+definito nella libreria <b>string</b>. ).
+<ul>
+	<li>Modificare l'operatore <b>insLista</b> per liste lineari ordinate (oppure
+	definire un nuovo operatore insListaOrdinata);</li>
+	<li>implementare l'algoritmo di <i>ricerca lineare</i> ordinata;</li>
+	<li>implementare l'algoritmo di <i>fusione</i> di liste ordinate;</li>
+	<li>applicare le funzioni a liste lineari di stringhe ordinate per chiave alfabetica.</li>
+</ul>
+
+In particolare completare la seguente classe
+<pre>
+template &lt;class T&gt;
+class Ordered_list{
+public:
+  insert(T); // inserisce un elemento
+  remove(T); // rimuove un elemento
+  bool search(T); // cerca un elemento
+  merge(Ordered_list&lt;T&gt; &);  // fonde con una lista ordinata
+private:
+  List&lt;T&gt; L;
+}
+</pre>
+
+
+<h3>Suggerimenti per la realizzazione con cursori</h3>
+<p>Definire la variabile SPAZIO come membro della classe lista di tipo <b>static</b>.</p>
+<p>Di norma oggetti diversi della stessa classe non condividono risorse di memoria. Per poter
+realizzare una <i>comunicazione di ambiente condiviso</i> bisogna dichiarare l'attributo 
+(comune a tutte le istanze) come static. Gli attributi static possono essere visti come elementi propri della classe, 
+non dell'istanza.</p>
+
+<pre>
+class Lista
+  {
+
+  public:
+    ...
+    Lista();    //costruttore
+    ~Lista();   //distruttore
+
+    // operatori
+    void crealista();
+    ...
+
+  private:
+    Static componenteSpazio SPAZIO[100];
+    // metodi per la manipolazione dell'attributo SPAZIO
+    ...
+    // altri dati privati
+  };
+</pre>
+
+componenteSpazio è un tipo strutturato costituito da una componente 'elemento' di tipo tipoelem e da una 
+componente successivo di tipo posizione. 
+
+</body>
+</html>

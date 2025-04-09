@@ -1,0 +1,87 @@
+Leggere da tastiera un vettore di n numeri interi (n>10)
+Calcolare il valore piu’ presente e quello meno presente nel vettore.
+Visualizzare i risultati ottenuti.
+Proporre una soluzione organizzata in almeno 5 funzioni inclusa la funzione main.
+--------------------------------------------------------------------------------
+Funzione Main
+Input:
+v, vettore di interi di cui dobbiamo..., array di interi
+n, diimensione di v, naturale>0
+Output:
+menoF, l'elemento di v meno presente, intero
+piuF, l'elemento di v più presente, intero
+
+Pseudo
+n=LeggiNaturale(n)
+v=LeggiVettore(v,n)
+menoF=CalcolaMenoF(v,n)
+piuF=CalcolaPiuF(v,n)
+VisualizzaRisultati(menoF,piuF)
+--------------------------------------------------------------------------------
+Funzione LeggiNaturale
+Input: n, numero naturale letto da tastiera, naturale>0
+Output: n, dimensione del vettore, naturale>0
+
+RIPETI
+	n=LeggiDaTastiera()
+	SE(n<=10)
+	ALLORA //Scrivi a schermo "Errore, inserisci un numero >10"
+FINCHE(n<=10)
+--------------------------------------------------------------------------------
+Funzione LeggiVettore
+Input: v, elementi del vettore letti da tastiera, naturale
+	 n, dimensione di v
+Output v, vettore di interi, array di interi
+
+pos=1
+MENTRE(pos<=n)
+	elemento di v in posizione pos = LeggiDaTastiera()
+	pos=pos+1
+FINE
+--------------------------------------------------------------------------------
+Funzione CalcolaMenoF
+Input: v
+	 n
+Output: menoF, elemento meno presente nel vettore, intero
+
+fminima=+infinito
+pos=1
+MENTRE(pos<=n)
+	frequenza=CalcolareFrequenza(v,n,elemento di v in posizione pos)
+	SE(frequenza<fminima)
+	ALLORA fminima=frequenza
+		 menoF=elemento di v in posizione pos
+	FINE
+	pos=pos+1
+FINE
+--------------------------------------------------------------------------------
+Funzione CalcolaPiuF
+Input: v
+	 n
+Output: piuF, elemento piu presente nel vettore, intero
+
+fmassima=-infinito
+pos=1
+MENTRE(pos<=n)
+	frequenza=CalcolareFrequenza(v,n,elemento di v in posizione pos)
+	SE(frequenza>fmassima)
+	ALLORA fmassima=frequenza
+		 piuF=elemento di v in posizione pos
+	FINE
+	pos=pos+1
+FINE
+--------------------------------------------------------------------------------
+Funzione CalcolaFrequenza
+Input: v
+	 n
+	 el, elemento da cercare, intero
+Output: frequenza
+
+frequenza=0
+pos=1
+MENTRE(pos<=n)
+	SE(elemento di v in posizione pos = el)
+	ALLORA frequenza=frequenza+1
+	FINE
+	pos=pos+1
+FINE

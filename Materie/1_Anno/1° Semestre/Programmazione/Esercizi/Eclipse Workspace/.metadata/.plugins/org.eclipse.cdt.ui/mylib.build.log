@@ -1,0 +1,26 @@
+16:17:15 **** Rebuild of configuration Debug for project mylib ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\mylib.o" "..\\src\\mylib.c" 
+..\src\mylib.c: In function 'swaparrayelem':
+..\src\mylib.c:56:9: warning: return makes integer from pointer without a cast [-Wint-conversion]
+  return v;
+         ^
+..\src\mylib.c: In function 'ascsortarray':
+..\src\mylib.c:66:4: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   v=swaparrayelem(v, i, min);
+    ^
+..\src\mylib.c:68:9: warning: return makes integer from pointer without a cast [-Wint-conversion]
+  return v;
+         ^
+..\src\mylib.c: In function 'descsortarray':
+..\src\mylib.c:78:4: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+   v=swaparrayelem(v, i, max);
+    ^
+..\src\mylib.c:80:9: warning: return makes integer from pointer without a cast [-Wint-conversion]
+  return v;
+         ^
+gcc -o mylib.exe "src\\main.o" "src\\mylib.o" 
+
+16:17:15 Build Finished. 0 errors, 5 warnings. (took 495ms)
+

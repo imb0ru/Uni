@@ -1,0 +1,90 @@
+#include <stdio.h>
+
+Struct ricorrenza{
+	int valore;
+	int n_ripetizioni;
+}
+
+int main(){
+	vettore=input();
+	conteggi=ContaRicorrenze(vettore, n_elementi);
+	indicePiùFrequente=ElementoPiùRicorrente(conteggi);
+	indiceMenoFrequenti=ElementoMenoRicorrente(conteggi, n_elementi);
+}
+
+int ElementoMenoRicorrente(v_ricorrenze, lunghezza_vettore){
+	int indice;
+	int frequenza_minima=lunghezza_vettore
+	FINCHE(v_ricorrenze[c].n_ripetizioni!=0)
+		SE(v_ricorrenze[c].n_ripetizioni<frequenza_minima){
+			indice=c
+			frequenza_massima=v_ricorrenze[c].n_ripetizioni
+		}
+	RESTITUISCI indice
+}
+
+int ElementoPiùRicorrente(v_ricorrenze){
+	int indice
+	int frequenza_massima=0
+	FINCHE(v_ricorrenze[c].n_ripetizioni!=0)
+		SE(v_ricorrenze[c].n_ripetizioni>frequenza_massima){
+			indice=c
+			frequenza_massima=v_ricorrenze[c].n_ripetizioni
+		}
+	RESTITUISCI indice
+}
+
+Ricorrenza[]ContaRicorrenze(v_ricerca, l){
+	//inizializzazione output	
+	Ricorenze v_ricorrenze[l]
+
+	//dati di lavoro
+	elemento
+	
+	//variabili di iterazione
+	presente
+	elementi_trovati=0
+	i=0
+	FINCHE(i<l){
+		elemento=v_ricerca[i]
+
+		//variabili di iterazione
+		c=0
+		presente=false
+
+		//Provo a trovarlo
+		FINCHE(c<elementi_trovati E !presente){
+			SE(v_ricorrenze[c].valore==elemento)
+				presente=true
+			c++
+		}
+
+		//Gestisco le possibilità
+		SE(presente)
+			v_ricorrenze[c].n_ripetioni++
+		ALTRIMENTI{
+			v_ricorrenze[elementi_trovati].valore=elemento
+			v_ricorrenze[elementi_trovati].n_ripetioni=1
+			elementi_trovati++
+		}
+		i++
+	}
+	// inizializzo il resto dell'array
+	FINCHE(elementi_trovati<l){
+		v_ricorrenze[elementi_trovati].n_ripetioni=0
+		elementi_trovati++
+	}
+	
+	RESTITUISCI v_ricorrenze
+}
+
+Input(){
+	scanf(%d,&n_elementi);
+	int c=0;
+	vettore_interi[n_elementi]
+	while(c<n_elementi)
+		scanf(%d,&vettore_interi[c])
+		
+
+	return vettore_interi
+}

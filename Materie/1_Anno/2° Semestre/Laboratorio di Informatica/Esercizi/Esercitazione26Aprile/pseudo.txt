@@ -1,0 +1,124 @@
+Funzione controllare_validita_carattere:
+ Input: numero, numero da convalidare, intero
+        base, base su cui convalidare il carattere, intero
+ Output: esito, esito della convalida, intero
+
+INIZIO
+esito = 0
+
+SE(c >= 0 AND c <= base - 1) 
+ALLORA esito = 1
+FINE
+
+FINE
+------------------------------------------------------------
+Funzione convertire_numero_in_decimale:
+ Input: stringa, stringa da convertire, array di caratteri
+        base, base su cui convertire i caratteri della stirnga, intero
+ Output: numero, numero convertito in decimale della stringa, intero
+ Lavoro: i, indice di scorrimento dei caratteri della stringa, intero
+	     cifra, singola cifra del numero, intero
+INIZIO
+lunghezza = calcolare_lunghezza_stringa(stringa)
+numero = 0
+i = 1
+
+MENTRE(i <= lunghezza)
+	SE(controllare_validita_carattere(convertire_stringa_a_intero(elemento di stringa in posizione i, 10), base) = 0)
+    ALLORA numero -1
+    ALTRIMENTI cifra = convertire_stringa_a_intero(elemento di stringa in posizione i, 10)
+               numero = numero + cifra * elevare_a_potenza(base, lunghezza - i - 1)
+	FINE
+    i = i + 1
+FINE
+FINE
+------------------------------------------------------------------
+Funzione calcolare_lunghezza_stringa:
+ Input: stringa, stringa di cui calcolare la lunghezza, array di caratteri
+ Output: lunghezza, lunghezza della stringa, intero
+ Lavoro: FINE_STRINGA, carattere di fine stringa, carattere, = '/0'
+
+INIZIO 
+lunghezza = 1
+MENTRE(elemento in posizione lunghezza di stringa != FINE_STRINGA)
+	lunghezza=lunghezza+1
+FINE 
+FINE
+------------------------------------------------------------------
+Funzione elevare_a_potenza:
+ Input: base, base della potenza, intero
+ 		esponente, esponente della potenza, intero
+ Output: base
+ 
+INIZIO
+MENTRE(esponente > 0)
+	base = base * base
+	esponente = esponente - 1
+FINE
+FINE  
+------------------------------------------------------------------
+Funzione convertire_carattere_a_intero:
+ Input: carat, carattere da convertire in intero, carattere
+ Output: numero, carattere convertito in intero, intero
+ Lavoro: array_caratteri_ascii, array che contiene i caratteri ascii, array di caratteri
+
+//	QUESTA FUNZIONE PRENDE IN INPUT IL CARATTERE DA CONVERTIRE IN DECIMALE
+//  CERCA E SALVA LA SUA POSIZIONE ALL'INTERNO DELL'ARRAY DI CARATTERI ASCII
+//  CERCA E SALVA LA POSIZIONE DEL CARATTERE '0' ALL'INTERNO DELL'ARRAY DI CARATTERI ASCII
+//  SOTTRAE LA POSIZIONE DEL CARATTERE DA CONVERTIRE ALLA POSIZIONE DEL CARATTERE '0'.
+//  IL RISULTATO DELLA SOTTRAZIONE SARA' IL CARTTERE CONVERTITO IN INTERO
+------------------------------------------------------------------
+Funzione separare_sottostringa_fino_a_separatore:
+ Input: stringa, stringa da cui calcolare la sottostringa fino al separatore, array di caratteri
+ 		separatore, separatore delle sottostringhe, carattere
+ Output: sottostringa, sottostringa di stringa, array di caratteri
+ Lavoro: i, indice di scorrimento dei caratteri della stringa, intero
+
+INIZIO
+i=1
+MENTRE(elemento di stringa in posizione i != separatore)
+	elemento di sottostringa in posizione i = elemento di stringa in posizione i
+	elemento di stringa in posizione i = ""
+	i = i + 1
+FINE
+FINE
+------------------------------------------------------------------
+Funzione main:
+ Input: NOME_FILE_INPUT, nome del file da cui prendere la stringa, array di caratteri, = "input.txt"
+ 		riga, valore della riga letta dal file, array di caratteri
+ 		lunghezza, lunghezza della riga letta, intero
+ 		base, base delle cifre da prendere in input dal file, intero
+ Output: massimo, cifra massima in decimale tra quelle lette dal file, intero
+ Lavoro: token, sottostringa di riga prima di '-', array di caratteri
+         FINE_STRINGA, carattere di fine stringa, carattere, = '/0'
+         i, indice di scorrimento dei caratteri, intero
+         numero, token convertito in decimale, intero 
+ 
+INIZIO
+massimo = 0
+stampare_a_video("Inserire la base dei valori presenti nel file: ")
+base = leggere_da_tastiera()
+
+riga = leggere_riga_da_file()
+lunghezza = calcolare_lunghezza_stringa(riga)
+
+token = separare_sottostringa_fino_a_separatore(riga, '-')
+MENTRE(calcolare_lunghezza_stringa(token) != 1)
+	i = 1
+	MENTRE(elemento di token in posizione i != '\0')
+    	numero = convertire_numero_in_decimale(token, base)
+        SE(numero = -1)
+        ALLORA massimo = -1
+        	   i = 1
+               token = '\0'
+        ALTRIMENTI SE(num > massimo)
+            	   ALLORA massimo = num
+            	   token = separare_sottostringa_fino_a_separatore(riga, '-')
+            	   
+		FINE
+		i = i + 1
+	FINE
+FINE
+
+stampare_a_video("Il massimo valore in base 10 nella stringa è ", massimo)
+FINE

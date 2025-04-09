@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Laboratorio di Algoritmi e Strutture Dati</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+</head>
+<body bgcolor="#ffffff">
+<h2>Dizionari</h2>
+<h3>Esercizio 1</h3>
+Estendere la classe <tt>hash_table</tt> aggiungendo i seguenti metodi
+<ul>
+	<li><tt>containsValue(const E&  e)</tt>: restustuisce  true se  una o più  chiavi sono  mappate al
+	valore e nel dizionario</li>
+	<li><tt>values()</tt>: restituisce la lista dei valori memorizzati nel dizionario</li>
+	<li><tt>keys()</tt>: restituisce la lista delle chiavi memorizzate nel dizionario</li>
+	<li>resize(): raddoppia la dimensione interna della tabella. Esistono due strategie:
+		<ol>
+			<li>creare la nuova tabella; iterare su tutti gli elementi nella vecchia tabella e reinserirli
+			nella nuova</li>
+			<li><b>incremental resizing:</b>  creare la  nuova tabella e  conservarsi la  vecchia intatta;
+			effettuare ogni  operazione di  ricerca o  eliminazione su entrambe  le tabelle;  effettuare i
+			nuovi inserimenti  solo nella nuova tabella;  al verificarsi di un  nuovo inserimento spostare
+			anche  k elemeti  dalla  vecchia tabella  alla  nuova; deallocare  la  vecchia tabella  quando
+			diventa vuota.</li>
+		</ol>
+	</li>
+</ul>
+
+<h3>Esercizio 2</h3>
+Dati due insiemi di interi S1 e S2, facendo uso di un dizionario, stabilire se S1 è un sottoinsieme di S2 o se sono esattamente uguali.

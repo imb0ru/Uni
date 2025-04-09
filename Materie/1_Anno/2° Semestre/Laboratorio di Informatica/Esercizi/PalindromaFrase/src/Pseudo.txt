@@ -1,0 +1,20 @@
+Funzione verificaPalindromo
+
+Input: stringa, sequenza di caratteri alfanumerici di cui verificare se è palindroma o meno, array di caratteri
+       C, lunghezza della stringa in input, intero    
+Output: Esito, indica se la stringa è palindroma o meno, intero
+Lavoro: pos, indice di scorrimento da sinistra a destra della stringa, intero
+		
+ALGORITMO
+
+Esito=1
+pos=1
+mentre (pos<=C and Esito==1)
+ se (elemento in posizione pos di stringa== elemento in posizione C-pos di stringa)
+  poss=poss+1
+ altrimenti
+  Esito=0
+ fine
+fine
+
+

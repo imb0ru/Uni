@@ -1,0 +1,98 @@
+Realizzare gli algoritmi delle seguenti operazioni sul tipo di dato vettore (quello visto nella lezione
+del 21 ottobre):
+- Somma degli elementi di un vettore
+- Moltiplicazione degli elementi di un vettore
+- Cancellazione di un elemento del vettore
+- Stampa degli elementi di un vettore
+- Spostamento a destra o sinistra di tutti gli elementi di un vettore
+
+Record Vettore:
+val, elenco di elementi, array di interi
+n, numero di elementi presenti nell'elenco, naturale >0
+
+1) Somma
+Dati di Input: Vet, vettore degli elementi da sommare, record vettore
+
+Dati di Output: som, valore della somma degli elementi, intero
+
+pos=1
+som=0
+mentre(pos<=elemento di vet in campo n)
+	som = som + elemento di vet in campo val in posizione pos
+	pos=pos+1
+fine
+
+
+2) Moltiplicazione
+Dati di Input: Vet, vettore degli elementi da moltiplicare, record vettore
+
+Dati di Output: prod, valore del prodotto degli elementi, intero
+
+pos=1
+prod=1
+mentre(pos<=elemento di vet in campo n)
+	prod = prod * elemento di vet in campo val in posizione pos
+	pos=pos+1
+fine
+
+
+5.1) Shift a Sinistra
+Dati di Input: Vet, vettore da shiftare, record vettore
+		   poscanc, posizione dell'elemento da cui far partire lo shift
+
+pos=1
+se(poscanc<=elemento di vet in campo n)
+allora mentre(pos<=elemento di vet in campo n)
+		se(poscanc=pos)
+		allora poscanc=pos
+			mentre(poscanc<n)
+				elemento di vet in campo val in posizione poscanc = elemento di vet in campo val in posizione poscanc + 1
+				poscanc=poscanc+1 
+			fine
+			elemento di vet in campo n = elemento di vet in campo n - 1
+			pos=elemento di vet in campo n +1
+		altrimenti	pos=pos+1
+	 fine
+fine
+
+5.2) Shift a Destra
+Dati di Input: Vet, vettore da shiftare, record vettore
+		   poscanc, posizione dell'elemento da cui far partire lo shift
+
+pos=1
+se(poscanc<=elemento di vet in campo n)
+allora mentre(pos<=elemento di vet in campo n)
+		se(poscanc=pos)
+		allora poscanc=pos
+			mentre(poscanc>0)
+				elemento di vet in campo val in posizione poscanc = elemento di vet in campo val in posizione poscanc - 1
+				poscanc=poscanc+1 
+			fine
+			elemento di vet in campo n = elemento di vet in campo n - 1
+			pos=elemento di vet in campo n +1
+		altrimenti	pos=pos+1
+	 fine
+fine
+
+4) Stampa Elementi
+Dati di Input: Vet, vettore degli elementi da stampare, record vettore
+
+pos=1
+mentre(pos<=elemento di vet in campo n)
+	//Visualizzo l'elemento di vet in campo val in posizione pos
+	pos=pos+1
+fine
+
+pos=1
+mentre(pos<=elemento di vet in campo n)
+	scrivi elemento di vet in campo val in posizione pos
+	pos=pos+1
+fine
+
+
+
+3) Cancellazione
+Dati di Input: Vet, vettore da cui cancellare un elemento, record vettore
+		   poscanc, posizione dell'elemento da cancellare
+
+shiftleft(vet, poscanc)

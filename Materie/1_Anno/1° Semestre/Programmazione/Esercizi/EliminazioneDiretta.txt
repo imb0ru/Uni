@@ -1,0 +1,41 @@
+Dati n giocatori di tennis, 
+realizzare una funzione in grado di realizzare 
+il meccanismo di eliminazione diretta del tabellone di un torneo.
+
+Record Vettore
+dim, dimensione array, intero >0 
+val, array di reali
+
+Input:
+-giocatori, punti medi dei giocatori partecipanti, record vettore potenze di 2
+
+Lavoro:
+-esiti, contiene i vincitori, record vettore reali
+
+Output:
+-winner, partecipante vincitore, naturale
+
+Criterio: punti medi carriera
+
+Procedimento:
+1)per ogni due giocatori genero un numero che stabilisce chi dei due vince
+2)il vincitore viene copiato in testa all'array
+3)il numero di giocatori diventa il numero di vincitori del turno corrente
+4)ripeto i procedimenti finchè n non diventa 1, l'elemento in posizione 1 sarà il vincitore
+
+Presudocodice:
+mentre(elemento di giocatori in campo dim>1)
+	pos=1
+	posv=1
+	mentre(pos<elemento di giocatori in campo dim)
+		se(elemento di giocatori in campo val in posizione pos<=elemento di giocatori in campo val in posizione pos+1)
+			allora elemento di esiti in campo val posizione posv = elemento di giocatori in campo val in posizione pos
+		altrimenti elemento di esiti in campo val in posizione posv =  elemento di giocatori in campo val in posizione pos+1
+		fine
+		posv=posv+1
+		pos=pos+2
+	fine
+	elemento di giocatori in campo dim=elemento di giocatori in campo dim/2
+	giocatori = esiti
+fine
+winner = elemento di esiti in campo val in posizione 1

@@ -1,0 +1,192 @@
+//ABBIAMO DECISO DI OPTARE PER LA LETTURA RECORD PER RECORD PER OTTIMIZZARE LA GESTIONE DELLA MATRICE DAL FILE BINARIO
+
+Struttura file__binario_matrice: 
+righe
+colonne
+mat11 mat12 mat13 mat1c
+...
+...
+matr1 matr2 ... matrc
+
+righe
+colonne
+mat11 mat12 mat13 mat1c
+...
+...
+matr1 matr2 ... matrc
+-------------------------------------------------------------------------------------------------------------------
+Record Matrice:
+- righe, numero di righe della matrice, intero
+- colonna, numero di colonne della matrice, intero
+- mat, valori della matrice, array bidimensionale di interi di dimensione righe, colonne
+
+//Funzioni di accesso
+Funzione scrivere_righe:
+ Input: mat, matrice in cui scrivere le righe, Matrice
+        r, righe della matrice, intero
+ Output: mat
+
+INZIO
+campo righe di mat = r
+FINE
+--------------------------------------------------------------
+Funzione leggere_righe:
+ Input: mat, matrice da cui leggere le righe, Matrice
+ Output: r, righe della matrice, intero
+
+INZIO
+r = campo righe di mat
+FINE
+--------------------------------------------------------------
+Funzione scrivere_colonne:
+ Input: mat, matrice in cui scrivere le colonne, Matrice
+        c, colonne della matrice, intero
+ Output: mat
+
+INZIO
+campo colonne di mat = c
+FINE
+--------------------------------------------------------------
+Funzione leggere_colonne:
+ Input: mat, matrice da cui leggere le colonne, Matrice
+ Output: c, colonne della matrice, intero
+
+INZIO
+c = campo colonne di mat
+FINE
+--------------------------------------------------------------
+Funzione leggere_valore:
+ Input: mat, matrice da cui leggere il valore, Matrice
+        r, riga del valore, intero
+        c, colonna del valore, intero
+ Output: val, valore della matrice in posizione r e c, intero
+
+INIZIO
+val = elemento del campo valori di mat in posizione r e c
+FINE
+---------------------------------------------------------------
+Funzione scrivere_valore:
+ Input: mat, matrice in cui scrivere il valore, Matrice
+        r, riga del valore, intero
+        c, colonna del valore, intero
+        val, valore della matrice in posizione r e c, intero
+ Output: mat
+
+INIZIO
+elemento del campo valori di mat in posizione r e c = val
+FINE
+---------------------------------------------------------------
+Funzione leggere_matrice_da_file_binario:
+ Input: nome_file, nome del file binario, array di caratteri
+ Output: mat, matrice letta dal file, Matrice
+ Lavoro: fp, file binario su cui lavorare, file binario, struttura sopra citata
+
+INIZIO
+fp = aprire_file_in_lettura(nome_file)
+
+mat = leggere_record_da_file(Matrice, 1, fp)
+
+chiudere_file(fp)
+FINE
+-----------------------------------------------------
+Funzione scrivere_matrice_su_file_binario:
+Input: nome_file, nome del file binario, array di caratteri
+       mat, matrice letta dal file, Matrice
+Output: fp, file binario su cui scrivere, file binario, struttura sopra citata
+
+INIZIO
+fp = aprire_file_in_scrittura_append(nome_file)
+
+fp = scrivere_record_su_file(mat, Matrice, 1, fp)
+
+chiudere_file(fp)
+FINE
+--------------------------------------------------------
+Funzione inizializzare_matrice:
+ Input: mat, matrice da inizializzare, Matrice
+ Output: mat
+ Lavoro: r, indice di scorrimento delle righe, intero
+         c, indice di scorrimento delle colonne, intero
+INIZIO
+mat = scrivere_righe(mat, genera_numero_casuale(1,10))
+mat = scrivere_colonne(mat, genera_numero_casuale(1,10))
+
+r=1
+MENTRE(r<=leggere_righe(mat))
+    c=1
+    MENTRE(c<=leggere_colonne(mat))
+        mat = scrivere_valore(mat, r, c, genera_numero_casuale(1,10))
+        c=c+1
+    FINE
+    r=r+1
+FINE
+FINE
+----------------------------------------------------------
+Funzione sommare_due_matrici:
+ Input: mat1, prima matrice da sommare, Matrice
+        mat2, seconda matrice da sommare, Matrice
+ Output: mats, matrice somma, Matrice
+Lavoro: r, indice di scorrimento delle righe, intero
+         c, indice di scorrimento delle colonne, intero
+
+INIZIO
+SE((leggere_righe(mat1) = leggere_righe(mat2)) AND (leggere_colonne(mat1) = leggere_colonne(mat2)))
+ALLORA mats = scrivere_righe(mats, leggere_righe(mat1))
+    mats =scrivere_righe(mats, leggere_colonne(mat1))
+
+    r=1
+    MENTRE(r<=leggere_righe(mats))
+        c=1
+        MENTRE(c<=leggere_colonne(mats))
+            mats = scrivere_valore(mats, r, c, leggere_valore(mat1,r,c)+leggere_valore(mat2,r,c))
+            c=c+1
+        FINE
+        r=r+1
+    FINE
+ALTRIMENTI mats = scrivere_righe(mats, 1)
+    mats =scrivere_righe(mats, 1)
+
+    r=1
+    MENTRE(r<=leggere_righe(mats))
+        c=1
+        MENTRE(c<=leggere_colonne(mats))
+            mats = scrivere_valore(mats, r, c, 1)
+            c=c+1
+        FINE
+        r=r+1
+    FINE
+FINE
+-----------------------------------------------------------
+Funzione trova_min_diff_colonna():
+ Input: mat, matrice di cui trovare la minima differenza tra gli elementi consecutivi delle colonne, Matrice
+ Output: min_diff_colonna, colonna dove è presente la minima differenza,  intero
+ Lavoro: min_diff, minima differenza fra gli elementi consecutivi, intero
+         max_diff, massima differenza fra gli elementi consecutivi, intero
+         r, indice di scorrimento delle righe, intero
+         c, indice di scorrimento delle righe, intero
+         diff, differenza temporanea, intero
+
+INIZIO
+min_diff_colonna = 1
+min_diff = calcolare_valore_assoluto(leggere_valore(mat,1,1) - leggere_valore(mat,1,2))
+c = 2
+MENTRE(c <= leggere_colonne(mat))
+    max_diff = calcolare_valore_assoluto(leggere_valore(mat,1,c) - leggere_valore(mat,1,c-1))
+    r = 2
+    MENTRE(r <= leggere_righe(mat))
+        diff = calcolare_valore_assoluto(leggere_valore(mat,r,c) - leggere_valore(mat,r,c-1))
+        SE(diff > max_diff)
+        ALLORA max_diff = diff
+        FINE
+        r = r + 1
+    FINE
+    SE  (max_diff < min_diff)
+    ALLORA min_diff = max_diff
+           min_diff_colonna = c
+    FINE
+    c = c + 1
+FINE
+FINE
+
+
+

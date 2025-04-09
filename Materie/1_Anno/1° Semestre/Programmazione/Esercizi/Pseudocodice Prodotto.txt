@@ -1,0 +1,23 @@
+Prodotto di 2 numeri interi positivi
+Dati di input:
+- A, primo fattore, intero
+- B, secondo fattore, intero
+
+Dati di Output:
+- R risultato del prodotto, intero
+
+Dati di Lavoro:
+- T dato di appoggio, intero
+
+Pseudocodice:
+INIZIO
+	R = 0
+	MENTRE(B>0)
+		T = A
+		MENTRE(T>0)
+			R = R + 1
+			T = T - 1
+		FINE
+		B = B - 1
+	FINE
+FINE

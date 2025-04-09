@@ -1,0 +1,29 @@
+20:54:39 **** Incremental Build of configuration Debug for project Lab5 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\listaordinata.o" "..\\src\\listaordinata.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test.o" "..\\src\\test.cpp" 
+In file included from ..\src\test.cpp:3:0:
+..\src\listaordinata.cpp: In instantiation of 'void listaOrdinata<T>::inserisciOrdinato(const T&) [with T = int]':
+..\src\test.cpp:23:31:   required from here
+..\src\listaordinata.cpp:24:11: error: 'int listaPuntatore<int>::lunghezza' is private within this context
+     this->lunghezza++;
+     ~~~~~~^~~~~~~~~
+In file included from ..\src\listapuntatore.cpp:1:0,
+                 from ..\src\test.cpp:2:
+..\src\listapuntatore.h:61:6: note: declared private here
+  int lunghezza;
+      ^~~~~~~~~
+In file included from ..\src\test.cpp:3:0:
+..\src\listaordinata.cpp: In instantiation of 'void listaOrdinata<T>::rimuoviOrdinato(const T&) [with T = int]':
+..\src\test.cpp:28:29:   required from here
+..\src\listaordinata.cpp:33:15: error: 'int listaPuntatore<int>::lunghezza' is private within this context
+         this->lunghezza--;
+         ~~~~~~^~~~~~~~~
+In file included from ..\src\listapuntatore.cpp:1:0,
+                 from ..\src\test.cpp:2:
+..\src\listapuntatore.h:61:6: note: declared private here
+  int lunghezza;
+      ^~~~~~~~~
+
+20:54:39 Build Failed. 2 errors, 0 warnings. (took 577ms)
+

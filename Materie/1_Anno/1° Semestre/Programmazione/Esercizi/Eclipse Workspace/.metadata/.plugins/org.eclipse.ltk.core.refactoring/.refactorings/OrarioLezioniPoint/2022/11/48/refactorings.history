@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;OrarioLezioniPoint/src/OrarioLezioni1Dim.c&apos; to &apos;OrarioLezioniPoint.c&apos;" description="Rename resource &apos;OrarioLezioni1Dim.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/OrarioLezioni1Dim.c" name="OrarioLezioniPoint.c" stamp="1669745351517" updateReferences="true"/>
+</session>

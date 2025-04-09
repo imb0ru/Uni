@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;OrarioLezioni/OrarioLezione.txt&apos; to &apos;OrarioLezione2Dim.txt&apos;" description="Rename resource &apos;OrarioLezione.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="OrarioLezione.txt" name="OrarioLezione2Dim.txt" stamp="1669745268174" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;OrarioLezioni/src/OrarioLezioni.c&apos; to &apos;OrarioLezioni2Dim.c&apos;" description="Rename resource &apos;OrarioLezioni.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/OrarioLezioni.c" name="OrarioLezioni2Dim.c" stamp="1669745320265" updateReferences="true"/>
+</session>

@@ -1,0 +1,40 @@
+Funzione GeneraPercorso:
+ Input: len, lunghezza del percorso, intero 50<=len<=90
+ Output: percorso, percorso generato, Percorso
+ Lavoro: i, indice di scorrimento dell'array, intero
+
+
+INIZIO
+percorso = ScrivereLunghezza(percorso, len)
+i=1
+MENTRE(i<=LeggereLunghezza(percorso))
+	percorso = ScrivereCasella(percorso,i,0)
+	i=i+1
+FINE
+percorso = ImpostaSpeciali(percorso)
+FINE
+----------------------------------------------------------------
+Funzione ImpostaSpeciali:
+ Input: percorso, percorso su cui calcolare e impostare le caselle speciali, Percorso
+ Output: percorso
+ Lavoro: i, indice di posizionamento delle caselle nell'array, intero
+         
+percorso = ScrivereCasella(percorso, LeggereLunghezza(percorso)*COEFFPONTE, 2)
+percorso = ScrivereCasella(percorso, LeggereLunghezza(percorso)*COEFFLOCANDA, 3)
+percorso = ScrivereCasella(percorso, LeggereLunghezza(percorso)*COEFFPOZZO, 4)	
+percorso = ScrivereCasella(percorso, LeggereLunghezza(percorso)*COEFFPRIGIONE, 5)	
+percorso = ScrivereCasella(percorso, LeggereLunghezza(percorso)*COEFFLABIRINTO, 6)
+percorso = ScrivereCasella(percorso, LeggereLunghezza(percorso)*COEFFSCHELETRO, 7)
+
+i=1
+MENTRE(i<=LeggereLunghezza(percorso))
+	SE( (Modulo(i,9)=0)&&(i!=LeggereLunghezza(percorso)))
+	ALLORA SE(LeggereCasella(percorso,i)!=1)
+		   ALLORA ScambioCaselle(percorso, i, i+1)
+				  percorso = ScrivereCasella(percorso, i, 1)
+	i=i+1
+FINE
+------------------------------------------------------------------
+
+	
+	

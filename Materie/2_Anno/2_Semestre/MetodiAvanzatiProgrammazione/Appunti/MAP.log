@@ -1,0 +1,1457 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.13)  18 JUN 2024 19:10
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"c:/Users/marco/Desktop/Cartelle Desktop/Universita/Materie/2° Anno/2° Semestre/Metodi Avanzati Programmazione/Appunti/MAP.tex"
+(c:/Users/marco/Desktop/Cartelle Desktop/Universita/Materie/2° Anno/2° Semestre/Metodi Avanzati Programmazione/Appunti/MAP.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count188
+\c@section=\count189
+\c@subsection=\count190
+\c@subsubsection=\count191
+\c@paragraph=\count192
+\c@subparagraph=\count193
+\c@figure=\count194
+\c@table=\count195
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/genmisc\nth.sty
+Package: nth 2002/02/27
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+\f@nch@headwidth=\skip50
+\f@nch@O@elh=\skip51
+\f@nch@O@erh=\skip52
+\f@nch@O@olh=\skip53
+\f@nch@O@orh=\skip54
+\f@nch@O@elf=\skip55
+\f@nch@O@erf=\skip56
+\f@nch@O@olf=\skip57
+\f@nch@O@orf=\skip58
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2023/10/27 v2.16 Sectioning titles
+\ttl@box=\box51
+\beforetitleunit=\skip59
+\aftertitleunit=\skip60
+\ttl@plus=\dimen141
+\ttl@minus=\dimen142
+\ttl@toksa=\toks17
+\titlewidth=\dimen143
+\titlewidthlast=\dimen144
+\titlewidthfirst=\dimen145
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip61
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen146
+)) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen147
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count196
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count197
+\leftroot@=\count198
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count199
+\DOTSCASE@=\count266
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen148
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count267
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count268
+\dotsspace@=\muskip16
+\c@parentequation=\count269
+\dspbrk@lvl=\count270
+\tag@help=\toks19
+\row@=\count271
+\column@=\count272
+\maxfields@=\count273
+\andhelp@=\toks20
+\eqnshift@=\dimen149
+\alignsep@=\dimen150
+\tagshift@=\dimen151
+\tagwidth@=\dimen152
+\totwidth@=\dimen153
+\lineht@=\dimen154
+\@envbody=\toks21
+\multlinegap=\skip62
+\multlinetaggap=\skip63
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks23
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen155
+\Gin@req@width=\dimen156
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip64
+\multirow@cntb=\count274
+\multirow@dima=\skip65
+\bigstrutjot=\dimen157
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2024/02/20 v1.0g Color table columns (DPC)
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen158
+\ar@mcellbox=\box54
+\extrarowheight=\dimen159
+\NC@list=\toks24
+\extratabsurround=\skip66
+\backup@length=\skip67
+\ar@cellbox=\box55
+)
+\everycr=\toks25
+\minrowclearance=\skip68
+\rownum=\count275
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count276
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count277
+)
+\@linkdim=\dimen160
+\Hy@linkcounter=\count278
+\Hy@pagecounter=\count279
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count280
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4179.
+Package hyperref Info: Link nesting OFF on input line 4184.
+Package hyperref Info: Hyper index ON on input line 4187.
+Package hyperref Info: Plain pages OFF on input line 4194.
+Package hyperref Info: Backreferencing OFF on input line 4199.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4446.
+\c@Hy@tempcnt=\count281
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4784.
+\XeTeXLinkMargin=\dimen161
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count282
+\Field@Width=\dimen162
+\Fld@charsize=\dimen163
+Package hyperref Info: Hyper figures OFF on input line 6063.
+Package hyperref Info: Link nesting OFF on input line 6068.
+Package hyperref Info: Hyper index ON on input line 6071.
+Package hyperref Info: backreferencing OFF on input line 6078.
+Package hyperref Info: Link coloring OFF on input line 6083.
+Package hyperref Info: Link coloring with OCG OFF on input line 6088.
+Package hyperref Info: PDF/A mode OFF on input line 6093.
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count283
+\c@Item=\count284
+\c@Hfootnote=\count285
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\Fld@listcount=\count286
+\c@bookmark@seq@number=\count287
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+)
+\Hy@SectionHShift=\skip69
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/tools\afterpage.sty
+Package: afterpage 2023/07/04 v1.08 After-Page Package (DPC)
+\AP@output=\toks26
+\AP@partial=\box56
+\AP@footins=\box57
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count288
+\lst@gtempboxa=\box58
+\lst@token=\toks27
+\lst@length=\count289
+\lst@currlwidth=\dimen164
+\lst@column=\count290
+\lst@pos=\count291
+\lst@lostspace=\dimen165
+\lst@width=\dimen166
+\lst@newlines=\count292
+\lst@lineno=\count293
+\lst@maxwidth=\dimen167
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
+File: lstpatch.sty 2024/02/21 1.10 (Carsten Heinz)
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
+\c@lstnumber=\count294
+\lst@skipnumbers=\count295
+\lst@framebox=\box59
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2024/02/21 1.10 listings configuration
+))
+Package: listings 2024/02/21 1.10 (Carsten Heinz)
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen168
+\captionmargin=\dimen169
+\caption@leftmargin=\dimen170
+\caption@rightmargin=\dimen171
+\caption@width=\dimen172
+\caption@indent=\dimen173
+\caption@parindent=\dimen174
+\caption@hangindent=\dimen175
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count296
+\c@continuedfloat=\count297
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+)
+\c@KVtest=\count298
+\sf@farskip=\skip70
+\sf@captopadj=\dimen176
+\sf@capskip=\skip71
+\sf@nearskip=\skip72
+\c@subfigure=\count299
+\c@subfigure@save=\count300
+\c@lofdepth=\count301
+\c@subtable=\count302
+\c@subtable@save=\count303
+\c@lotdepth=\count304
+\sf@top=\skip73
+\sf@bottom=\skip74
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip75
+\enit@outerparindent=\dimen177
+\enit@toks=\toks28
+\enit@inbox=\box60
+\enit@count@id=\count305
+\enitdp@description=\count306
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
+Package: tcolorbox 2024/01/10 version 6.2.0 text color boxes
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks29
+\pgfutil@tempdima=\dimen178
+\pgfutil@tempdimb=\dimen179
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+\pgfutil@abb=\box61
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks32
+))
+\pgf@x=\dimen180
+\pgf@y=\dimen181
+\pgf@xa=\dimen182
+\pgf@ya=\dimen183
+\pgf@xb=\dimen184
+\pgf@yb=\dimen185
+\pgf@xc=\dimen186
+\pgf@yc=\dimen187
+\pgf@xd=\dimen188
+\pgf@yd=\dimen189
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count307
+\c@pgf@countb=\count308
+\c@pgf@countc=\count309
+\c@pgf@countd=\count310
+\t@pgf@toka=\toks33
+\t@pgf@tokb=\toks34
+\t@pgf@tokc=\toks35
+\pgf@sys@id@count=\count311
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+))) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count312
+\pgfsyssoftpath@bigbuffer@items=\count313
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen190
+\pgfmath@count=\count314
+\pgfmath@box=\box62
+\pgfmath@toks=\toks36
+\pgfmath@stack@operand=\toks37
+\pgfmath@stack@operation=\toks38
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count315
+)) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen191
+\pgf@picmaxx=\dimen192
+\pgf@picminy=\dimen193
+\pgf@picmaxy=\dimen194
+\pgf@pathminx=\dimen195
+\pgf@pathmaxx=\dimen196
+\pgf@pathminy=\dimen197
+\pgf@pathmaxy=\dimen198
+\pgf@xx=\dimen199
+\pgf@xy=\dimen256
+\pgf@yx=\dimen257
+\pgf@yy=\dimen258
+\pgf@zx=\dimen259
+\pgf@zy=\dimen260
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen261
+\pgf@path@lasty=\dimen262
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen263
+\pgf@shorten@start@additional=\dimen264
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box63
+\pgf@hbox=\box64
+\pgf@layerbox@main=\box65
+\pgf@picture@serial@count=\count316
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen265
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen266
+\pgf@pt@y=\dimen267
+\pgf@pt@temp=\dimen268
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen269
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen270
+\pgf@sys@shading@range@num=\count317
+\pgf@shadingcount=\count318
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box66
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box67
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen271
+\pgf@nodesepend=\dimen272
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks39
+\verbatim@line=\toks40
+\verbatim@in@stream=\read3
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box68
+\tcb@upperbox=\box69
+\tcb@lowerbox=\box70
+\tcb@phantombox=\box71
+\c@tcbbreakpart=\count319
+\c@tcblayer=\count320
+\c@tcolorbox@number=\count321
+\l__tcobox_tmpa_box=\box72
+\l__tcobox_tmpa_dim=\dimen273
+\tcb@temp=\box73
+\tcb@temp=\box74
+\tcb@temp=\box75
+\tcb@temp=\box76
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count322
+\l__pdf_internal_box=\box77
+) (MAP.aux
+
+LaTeX Warning: Label `fig:etichetta' multiply defined.
+
+
+LaTeX Warning: Label `fig:etichetta' multiply defined.
+
+
+LaTeX Warning: Label `fig:etichetta' multiply defined.
+
+
+LaTeX Warning: Label `fig:etichetta' multiply defined.
+
+
+LaTeX Warning: Label `fig:subfig' multiply defined.
+
+)
+\openout1 = `MAP.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count323
+\scratchdimen=\dimen274
+\scratchbox=\box78
+\nofMPsegments=\count324
+\nofMParguments=\count325
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count326
+\MPscratchDim=\dimen275
+\MPnumerator=\count327
+\makeMPintoPDFobject=\count328
+\everyMPtoPDFconversion=\toks42
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package hyperref Info: Link coloring OFF on input line 29.
+ (MAP.out) (MAP.out)
+\@outlinefile=\write4
+\openout4 = `MAP.out'.
+
+\c@lstlisting=\count329
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (MAP.toc [1
+
+{C:/Users/marco/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2])
+\tf@toc=\write5
+\openout5 = `MAP.toc'.
+
+ [3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 71--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--108
+
+ []
+
+[5]
+<assets/immagine1.png, id=480, 281.25075pt x 130.086pt>
+File: assets/immagine1.png Graphic file (type png)
+<use assets/immagine1.png>
+Package pdftex.def Info: assets/immagine1.png  used on input line 120.
+(pdftex.def)             Requested size: 172.5pt x 79.78505pt.
+ [6 <./assets/immagine1.png>]
+<assets/immagine2.png, id=488, 225.84375pt x 225.84375pt>
+File: assets/immagine2.png Graphic file (type png)
+<use assets/immagine2.png>
+Package pdftex.def Info: assets/immagine2.png  used on input line 136.
+(pdftex.def)             Requested size: 68.99895pt x 69.00113pt.
+
+Overfull \hbox (26.36182pt too wide) in paragraph at lines 131--140
+\OT1/cmr/m/n/10 Il prin-ci-pio dell'astrazione dati iden-ti-fica nella rap-p-re-sen-tazione del dato l'informazione
+ []
+
+
+Overfull \hbox (13.80623pt too wide) in paragraph at lines 165--167
+\OT1/cmr/m/n/10 Andando a com-binare il prin-ci-pio di as-trazione dati e la tec-nica dell'incapsulamento,
+ []
+
+[7 <./assets/immagine2.png>]
+<assets/immagine3.png, id=499, 163.20975pt x 171.64125pt>
+File: assets/immagine3.png Graphic file (type png)
+<use assets/immagine3.png>
+Package pdftex.def Info: assets/immagine3.png  used on input line 181.
+(pdftex.def)             Requested size: 103.50105pt x 108.84953pt.
+ [8 <./assets/immagine3.png>]
+Overfull \hbox (1.97935pt too wide) in paragraph at lines 219--224
+\OT1/cmr/m/n/10 Per ren-dere migliore l'efficacia di un'astrazione, si pos-sono uti-liz-zare i \OT1/cmr/bx/n/10 parametri
+ []
+
+
+Overfull \hbox (7.30585pt too wide) in paragraph at lines 219--224
+\OT1/cmr/bx/n/10 Attenzione: \OT1/cmr/m/n/10 Ri-tor-nando all'astrazione dati, an-che quest'ultima (come qualunque
+ []
+
+[9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 283--286
+
+ []
+
+[11] [12]
+Overfull \hbox (17.95955pt too wide) in paragraph at lines 355--359
+[]\OT1/cmr/bx/n/10 Specifica se-man-tica\OT1/cmr/m/n/10 : Nella speci-fica se-man-tica oc-corre dichiarare i parametri
+ []
+
+
+Overfull \hbox (0.22278pt too wide) in paragraph at lines 380--383
+\OT1/cmr/m/n/10 Nelle speci-fiche se-man-tiche ^^Re im-por-tante in-di-care l'insieme min-i-male di equazioni
+ []
+
+[13] [14]
+Overfull \hbox (6.75554pt too wide) in paragraph at lines 446--454
+ [] 
+ []
+
+[15] [16] [17]
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 561.
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
+File: omlcmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 561.
+ [18] [19]
+Underfull \hbox (badness 10000) in paragraph at lines 600--602
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 605--608
+
+ []
+
+
+Overfull \hbox (16.89465pt too wide) in paragraph at lines 609--616
+ [] 
+ []
+
+[20]
+Overfull \hbox (9.52835pt too wide) in paragraph at lines 629--630
+[]\OT1/cmr/m/n/10 inserisci(Libretto, Esame, Voto) $\OMS/cmsy/m/n/10 !$ \OT1/cmr/m/n/10 Li-bretto //reg-is-tra la cop-pia Esame-
+ []
+
+
+Overfull \hbox (30.94499pt too wide) in paragraph at lines 650--651
+[]\OT1/cmr/m/n/10 contieneEsame(inserisci(l,e,v),e') = if e'=e then true else con-tie-neEsame(l,e') 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 652--653
+
+ []
+
+[21]
+Overfull \hbox (67.66747pt too wide) in paragraph at lines 661--662
+[]\OT1/cmr/m/n/10 mediaVoti(inserisci(l,e,v)) = som-maVoti(inserisci(l,e,v))/contaEsami(inserisci(l,e,v)) 
+ []
+
+
+Overfull \hbox (74.74678pt too wide) in paragraph at lines 669--669
+ []    \OT1/cmtt/m/n/10 leggiVoto(inserisci(l,e,v),e'') = leggiVoto(inserisci(l',e'v'),e'')[] 
+ []
+
+[22]
+Overfull \hbox (5.22302pt too wide) in paragraph at lines 682--683
+[]\OT1/cmr/m/n/10 aggiungiLegame(SocialBook,Contatto,Contatto) $\OMS/cmsy/m/n/10 !$ \OT1/cmr/m/n/10 So-cial-Book //crea
+ []
+
+
+Overfull \hbox (18.30638pt too wide) in paragraph at lines 688--689
+[]\OT1/cmr/m/n/10 rimuoviLegame(SocialBook,Contatto,Contatto) $\OMS/cmsy/m/n/10 !$ \OT1/cmr/m/n/10 So-cial-Book //rimuove
+ []
+
+
+Overfull \hbox (4.58401pt too wide) in paragraph at lines 689--690
+[]\OT1/cmr/m/n/10 contiene(SocialBook,SocialBook) $\OMS/cmsy/m/n/10 !$ \OT1/cmr/m/n/10 Boolean //resti-tu-isce vero se tutti
+ []
+
+[23]
+Overfull \hbox (25.83405pt too wide) in paragraph at lines 707--708
+[]\OT1/cmr/m/n/10 contieneContatto(aggiungiLegame(s,c,c'),c'') = con-tieneCon-tatto(s,c'') //perch^^Re
+ []
+
+
+Overfull \hbox (30.13959pt too wide) in paragraph at lines 709--710
+[]\OT1/cmr/m/n/10 contieneLegame(aggiungiContatto(s,c),c',c'') = con-tieneL-egame(s,c',c'') //perch^^Re
+ []
+
+
+Overfull \hbox (13.77846pt too wide) in paragraph at lines 728--729
+[]\OT1/cmr/m/n/10 contaLegami(aggiungiContatto(s,c),c') = if c=c' then 0 else con-taLegami(s,c') 
+ []
+
+[24]
+Overfull \hbox (131.4961pt too wide) in paragraph at lines 758--758
+ []   \OT1/cmtt/m/n/10 contieneContatto(aggiungiContatto(s',c'),c) and contiene(s,aggiungiContatto(s',c'))[] 
+ []
+
+
+Overfull \hbox (90.58427pt too wide) in paragraph at lines 760--761
+[]\OT1/cmr/m/n/10 contiene(aggiungiContatto(s,c), ag-giungi-Legame(s',c',c'')) = con-tiene(aggiungiContatto(s,c),s') 
+ []
+
+
+Overfull \hbox (93.13985pt too wide) in paragraph at lines 762--763
+[]\OT1/cmr/m/n/10 contiene(aggiungiLegame(s,c,c'),aggiungiContatto(s',c'')) = con-tiene(s,aggiungiContatto(s',c'')) 
+ []
+
+
+Overfull \hbox (6.61182pt too wide) in paragraph at lines 763--764
+[]\OT1/cmr/m/n/10 contiene(aggiungiLegame(s,c,c'),aggiungiLegame(s',c'',c''')) = con-tiene(s,s') 
+ []
+
+[25]
+Overfull \hbox (1.5284pt too wide) in paragraph at lines 779--780
+[]\OT1/cmr/m/n/10 max(Albero) $\OMS/cmsy/m/n/10 !$ \OT1/cmr/m/n/10 In-tero // resti-tu-isce la pro-fon-dit^^Ra mas-sima dell'albero 
+ []
+
+[26] [27]
+Overfull \hbox (0.83412pt too wide) in paragraph at lines 856--858
+\OT1/cmr/m/n/10 Aggiungiamo nella speci-fica sin-tat-tica: an-te-nato(Albero,Nodo,Nodo) $\OMS/cmsy/m/n/10 !$ \OT1/cmr/m/n/10 Boolean 
+ []
+
+
+Overfull \hbox (14.63971pt too wide) in paragraph at lines 887--889
+\OT1/cmr/m/n/10 Aggiungiamo nella speci-fica sin-tat-tica: an-te-na-to-Bis(Albero,Nodo,Nodo) $\OMS/cmsy/m/n/10 !$ \OT1/cmr/m/n/10 Boolean 
+ []
+
+[28] [29] [30]
+
+LaTeX Warning: Characters dropped after `\end{verbatim}' on input line 983.
+
+
+Overfull \hbox (36.99692pt too wide) in paragraph at lines 989--989
+ []     \OT1/cmtt/m/n/10 else modifica(somma(assegna(m,r,c,v),m'),r',c',v'+leggi(m,r,c))[] 
+ []
+
+[31] [32]
+Overfull \hbox (28.79689pt too wide) in paragraph at lines 1049--1050
+\OT1/cmr/m/n/10 cal-colo che resti-tu-isce un val-ore. L'astrazione di fun-zione con-siste nell'organizzare
+ []
+
+
+Overfull \hbox (2.45163pt too wide) in paragraph at lines 1050--1051
+[]\OT1/cmr/bx/n/10 Comando $\OMS/cmsy/m/n/10 !$ \OT1/cmr/m/n/10 As-trazione di pro-ce-dura: Un co-mando rap-p-re-senta un'azione
+ []
+
+
+Overfull \hbox (2.51901pt too wide) in paragraph at lines 1050--1051
+\OT1/cmr/m/n/10 che deve es-sere es-e-guita. L'astrazione di pro-ce-dura con-siste nell'incapsulare
+ []
+
+
+Overfull \hbox (3.658pt too wide) in paragraph at lines 1051--1052
+\OT1/cmr/m/n/10 quenza de-ter-mina l'ordine in cui ven-gono es-e-guite le istruzioni. L'astrazione
+ []
+
+
+Overfull \hbox (15.40982pt too wide) in paragraph at lines 1054--1055
+[]\OT1/cmr/bx/n/10 Dichiarazione $\OMS/cmsy/m/n/10 !$ \OT1/cmr/m/n/10 As-trazione gener-ica: Una dichiarazione in-tro-duce un'entit^^Ra
+ []
+
+[33]
+Overfull \hbox (29.1256pt too wide) in paragraph at lines 1078--1081
+\OT1/cmr/m/n/10 L'algoritmo cod-i-fi-cato nell'espressione $\OML/cmm/m/it/10 E$ \OT1/cmr/m/n/10 ^^Re di par-ti-co-lare in-ter-esse per l'implementatore,
+ []
+
+
+Overfull \hbox (2.77838pt too wide) in paragraph at lines 1078--1081
+\OT1/cmr/m/n/10 Le fun-zioni, come as-trazioni di espres-sioni, pos-sono com-par-ire ovunque si richieda
+ []
+
+[34]
+Overfull \hbox (64.49643pt too wide) in paragraph at lines 1088--1088
+[] \OT1/cmtt/m/n/10 function Sommatoria(F:function(R:real,M:integer):real;X:real;N:integer):real;[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1106--1109
+
+ []
+
+[35] [36] [37] [38] (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2024/02/21 1.10 listings language file
+) (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 1192.
+ (assets/bubble.c
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 8.
+ (C:\Users\marco\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
+File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
+ [39]
+Overfull \hbox (75.00427pt too wide) in paragraph at lines 41--42
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (81.00433pt too wide) in paragraph at lines 51--52
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 56--57
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 58--59
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (39.0039pt too wide) in paragraph at lines 59--60
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) [40]
+Overfull \hbox (1.15804pt too wide) in paragraph at lines 1212--1215
+\OT1/cmr/m/n/10 trollo. Queste definis-cono l'ordine in cui le sin-gole istruzioni o gruppi di istruzioni
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1216--1220
+
+ []
+
+[41] [42]
+<assets/selettore1.png, id=755, 449.88075pt x 138.5175pt>
+File: assets/selettore1.png Graphic file (type png)
+<use assets/selettore1.png>
+Package pdftex.def Info: assets/selettore1.png  used on input line 1287.
+(pdftex.def)             Requested size: 345.0pt x 106.2255pt.
+<assets/selettore2.png, id=756, 206.57175pt x 155.98276pt>
+File: assets/selettore2.png Graphic file (type png)
+<use assets/selettore2.png>
+Package pdftex.def Info: assets/selettore2.png  used on input line 1288.
+(pdftex.def)             Requested size: 172.5pt x 130.2606pt.
+ [43] [44 <./assets/selettore1.png> <./assets/selettore2.png>] [45]
+Overfull \hbox (12.35252pt too wide) in paragraph at lines 1363--1370
+\OT1/cmr/m/n/10 di es-e-cuzione delle istruzioni nel pro-gramma. Lin-guaggi che sup-por-t-ano l'astrazione
+ []
+
+
+Overfull \hbox (4.08057pt too wide) in paragraph at lines 1371--1371
+|[]\OT1/cmr/bx/n/12 Tecniche di pro-gram-mazione a sup-porto dell'astrazione
+ []
+
+
+Overfull \hbox (5.66731pt too wide) in paragraph at lines 1372--1374
+\OT1/cmr/m/n/10 Le tec-niche di pro-gram-mazione che sup-por-t-ano l'astrazione dei dati nel paradigma
+ []
+
+[46] [47]
+<assets/package.png, id=786, 316.7835pt x 245.718pt>
+File: assets/package.png Graphic file (type png)
+<use assets/package.png>
+Package pdftex.def Info: assets/package.png  used on input line 1427.
+(pdftex.def)             Requested size: 172.5pt x 133.79929pt.
+ [48] [49 <./assets/package.png>] [50]
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 1518--1518
+[] \OT1/cmtt/m/n/10 package Type_stack is    //il nome del package pu^^Ro essere casuale[] 
+ []
+
+
+Overfull \hbox (27.74675pt too wide) in paragraph at lines 1519--1519
+[]     \OT1/cmtt/m/n/10 type Stack is private; //il nome del dato astratto ^^Re da rispettare[] 
+ []
+
+[51] [52] [53] [54] [55]
+Overfull \hbox (9.88196pt too wide) in paragraph at lines 1670--1673
+\OT1/cmr/bx/n/10 trazione gener-ica\OT1/cmr/m/n/10 , cio^^Re di as-trazione ap-pli-cata alla classe sin-tat-tica dichiarazione.
+ []
+
+[56]
+<assets/tipiastratticlassi.png, id=837, 502.87875pt x 170.43675pt>
+File: assets/tipiastratticlassi.png Graphic file (type png)
+<use assets/tipiastratticlassi.png>
+Package pdftex.def Info: assets/tipiastratticlassi.png  used on input line 1695.
+(pdftex.def)             Requested size: 276.00105pt x 93.54283pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1692--1699
+
+ []
+
+[57 <./assets/tipiastratticlassi.png>] [58] [59] [60] [61]
+Overfull \hbox (19.04684pt too wide) in paragraph at lines 1901--1905
+\OT1/cmr/m/n/10 Il generic pack-age di Ada ^^Re una es-em-pli-fi-cazione di as-trazione gener-ica. L'espressione: 
+ []
+
+
+Overfull \hbox (5.16719pt too wide) in paragraph at lines 1908--1911
+\OT1/cmr/m/n/10 Le as-trazioni gener-iche, come qual-si-asi al-tra as-trazione pos-sono es-sere parametriz-
+ []
+
+[62] [63] [64] [65] [66]
+Overfull \hbox (7.91733pt too wide) in paragraph at lines 2106--2108
+\OT1/cmr/m/n/10 Se un'astrazione ^^Re parametriz-zata rispetto a un val-ore, pos-si-amo us-are l'argomento
+ []
+
+
+Overfull \hbox (29.77736pt too wide) in paragraph at lines 2118--2120
+\OT1/cmr/m/n/10 Se T fosse stato definito come lim-ited pri-vate avremmo dovuto speci-fi-care un'operazione
+ []
+
+[67]
+Overfull \hbox (48.74657pt too wide) in paragraph at lines 2137--2137
+[]   \OT1/cmtt/m/n/10 procedure aggiungi(d: inout Dizionario, c: in Integer, v: in Character);[] 
+ []
+
+
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 2138--2138
+[]   \OT1/cmtt/m/n/10 function leggi(d: in Dizionario, c: in Integer) return Character;[] 
+ []
+
+
+Overfull \hbox (38.24666pt too wide) in paragraph at lines 2140--2140
+[]   \OT1/cmtt/m/n/10 function uguale( d1: in Dizionario, d2: in Dizionario) return Boolean;[] 
+ []
+
+
+Overfull \hbox (1.49698pt too wide) in paragraph at lines 2152--2152
+[]   \OT1/cmtt/m/n/10 function cerca(d: in Dizionario, c: in Integer) return Positive[] 
+ []
+
+
+Overfull \hbox (43.49661pt too wide) in paragraph at lines 2162--2162
+[]   \OT1/cmtt/m/n/10 procedura aggiungi(d: inout Dizionario, c: in Integer, v: in Character)[] 
+ []
+
+[68]
+Overfull \hbox (6.74693pt too wide) in paragraph at lines 2173--2173
+[]   \OT1/cmtt/m/n/10 function leggi(d: in Dizionario, c: in Integer) return Character[] 
+ []
+
+
+Overfull \hbox (32.9967pt too wide) in paragraph at lines 2197--2197
+[]   \OT1/cmtt/m/n/10 function uguale( d1: in Dizionario, d2: in Dizionario) return Boolean[] 
+ []
+
+[69] [70] [71] [72]
+Overfull \hbox (20.8619pt too wide) in paragraph at lines 2308--2313
+\OT1/cmr/m/n/10 paradigma ori-en-tato agli oggetti, per-me-t-tendo una migliore or-ga-niz-zazione, manuten-
+ []
+
+
+Overfull \hbox (6.69508pt too wide) in paragraph at lines 2308--2313
+\OT1/cmr/m/n/10 mag-giore mod-u-larit^^Ra e rius-abilit^^Ra del codice at-traverso con-cetti come l'ereditariet^^Ra
+ []
+
+[73]
+Underfull \hbox (badness 10000) in paragraph at lines 2329--2336
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2329--2336
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2329--2336
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2342--2343
+
+ []
+
+[74] [75]
+<assets/uml_oggetto.png, id=931, 544.28343pt x 131.74219pt>
+File: assets/uml_oggetto.png Graphic file (type png)
+<use assets/uml_oggetto.png>
+Package pdftex.def Info: assets/uml_oggetto.png  used on input line 2378.
+(pdftex.def)             Requested size: 435.42734pt x 105.39388pt.
+
+Overfull \hbox (90.42734pt too wide) in paragraph at lines 2378--2379
+ [] 
+ []
+
+
+Overfull \hbox (13.11174pt too wide) in paragraph at lines 2384--2385
+[]\OT1/cmr/m/n/10 solo il nome dell'astrazione, qualora non si conosca a pri-ori il nome dell'istanza 
+ []
+
+<assets/uml_stato.png, id=932, 306.39468pt x 67.0003pt>
+File: assets/uml_stato.png Graphic file (type png)
+<use assets/uml_stato.png>
+Package pdftex.def Info: assets/uml_stato.png  used on input line 2391.
+(pdftex.def)             Requested size: 245.11607pt x 53.6003pt.
+[76 <./assets/uml_oggetto.png>]
+<assets/uml_stato_esplicito.png, id=938, 332.74312pt x 97.11281pt>
+File: assets/uml_stato_esplicito.png Graphic file (type png)
+<use assets/uml_stato_esplicito.png>
+Package pdftex.def Info: assets/uml_stato_esplicito.png  used on input line 2395.
+(pdftex.def)             Requested size: 266.19484pt x 77.69034pt.
+<assets/uml_attr_derivati.png, id=939, 426.09187pt x 123.46124pt>
+File: assets/uml_attr_derivati.png Graphic file (type png)
+<use assets/uml_attr_derivati.png>
+Package pdftex.def Info: assets/uml_attr_derivati.png  used on input line 2420.
+(pdftex.def)             Requested size: 340.87395pt x 98.7691pt.
+ [77 <./assets/uml_stato.png> <./assets/uml_stato_esplicito.png>]
+<assets/uml_operazioni.png, id=946, 578.16pt x 149.05687pt>
+File: assets/uml_operazioni.png Graphic file (type png)
+<use assets/uml_operazioni.png>
+Package pdftex.def Info: assets/uml_operazioni.png  used on input line 2428.
+(pdftex.def)             Requested size: 346.89867pt x 89.4348pt.
+
+Overfull \hbox (1.89867pt too wide) in paragraph at lines 2428--2429
+ [] 
+ []
+
+<assets/uml_classi_attr_met.png, id=947, 596.2275pt x 171.64125pt>
+File: assets/uml_classi_attr_met.png Graphic file (type png)
+<use assets/uml_classi_attr_met.png>
+Package pdftex.def Info: assets/uml_classi_attr_met.png  used on input line 2461.
+(pdftex.def)             Requested size: 357.73926pt x 102.98552pt.
+
+Overfull \hbox (37.73929pt too wide) in paragraph at lines 2461--2462
+ [] 
+ []
+
+[78 <./assets/uml_attr_derivati.png> <./assets/uml_operazioni.png>] [79 <./assets/uml_classi_attr_met.png>]
+<assets/uml_visibilita.png, id=960, 542.77782pt x 150.5625pt>
+File: assets/uml_visibilita.png Graphic file (type png)
+<use assets/uml_visibilita.png>
+Package pdftex.def Info: assets/uml_visibilita.png  used on input line 2494.
+(pdftex.def)             Requested size: 325.6692pt x 90.33818pt.
+<assets/uml_molteplicita_classi.png, id=961, 473.51906pt x 173.14688pt>
+File: assets/uml_molteplicita_classi.png Graphic file (type png)
+<use assets/uml_molteplicita_classi.png>
+Package pdftex.def Info: assets/uml_molteplicita_classi.png  used on input line 2502.
+(pdftex.def)             Requested size: 284.11362pt x 103.88892pt.
+ [80 <./assets/uml_visibilita.png> <./assets/uml_molteplicita_classi.png>]
+<assets/uml_molteplicita_attr.png, id=968, 336.50719pt x 168.63pt>
+File: assets/uml_molteplicita_attr.png Graphic file (type png)
+<use assets/uml_molteplicita_attr.png>
+Package pdftex.def Info: assets/uml_molteplicita_attr.png  used on input line 2509.
+(pdftex.def)             Requested size: 201.90585pt x 101.17877pt.
+
+Overfull \hbox (19.22284pt too wide) in paragraph at lines 2540--2542
+\OT1/cmr/m/n/10 Prima di pro-cedere con la definizione dello schema per la definizione di un'operazione,
+ []
+
+[81 <./assets/uml_molteplicita_attr.png>]
+Overfull \hbox (27.11171pt too wide) in paragraph at lines 2564--2565
+[]\OT1/cmr/bx/n/10 out\OT1/cmr/m/n/10 : parametro di out-put, pu^^Ro es-sere mod-i-fi-cato per co-mu-ni-care un'informazione
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2577--2583
+
+ []
+
+[82]
+<assets/uml_classi_attive.png, id=978, 126.4725pt x 137.01187pt>
+File: assets/uml_classi_attive.png Graphic file (type png)
+<use assets/uml_classi_attive.png>
+Package pdftex.def Info: assets/uml_classi_attive.png  used on input line 2584.
+(pdftex.def)             Requested size: 88.53014pt x 95.90765pt.
+
+Overfull \hbox (15.8709pt too wide) in paragraph at lines 2588--2592
+\OT1/cmr/m/n/10 Una \OT1/cmr/bx/n/10 classe tem-plate \OT1/cmr/m/n/10 definisce una famiglia di classi parametriz-zate (con parametro
+ []
+
+<assets/uml_classe_template.png, id=979, 482.55281pt x 133.24782pt>
+File: assets/uml_classe_template.png Graphic file (type png)
+<use assets/uml_classe_template.png>
+Package pdftex.def Info: assets/uml_classe_template.png  used on input line 2597.
+(pdftex.def)             Requested size: 337.78465pt x 93.27283pt.
+<assets/uml_classe_template_2.png, id=980, 590.95781pt x 191.9672pt>
+File: assets/uml_classe_template_2.png Graphic file (type png)
+<use assets/uml_classe_template_2.png>
+Package pdftex.def Info: assets/uml_classe_template_2.png  used on input line 2609.
+(pdftex.def)             Requested size: 413.66765pt x 134.37611pt.
+
+Overfull \hbox (68.66765pt too wide) in paragraph at lines 2609--2610
+ [] 
+ []
+
+[83 <./assets/uml_classi_attive.png> <./assets/uml_classe_template.png>]
+<assets/responsabilita_interna.png, id=988, 180.675pt x 134.75343pt>
+File: assets/responsabilita_interna.png Graphic file (type png)
+<use assets/responsabilita_interna.png>
+Package pdftex.def Info: assets/responsabilita_interna.png  used on input line 2619.
+(pdftex.def)             Requested size: 126.47162pt x 94.32675pt.
+<assets/responsabilita_note.png, id=989, 413.29407pt x 123.46124pt>
+File: assets/responsabilita_note.png Graphic file (type png)
+<use assets/responsabilita_note.png>
+Package pdftex.def Info: assets/responsabilita_note.png  used on input line 2623.
+(pdftex.def)             Requested size: 289.30386pt x 86.42226pt.
+<assets/uml_instanceof1.png, id=990, 312.41719pt x 131.74219pt>
+File: assets/uml_instanceof1.png Graphic file (type png)
+<use assets/uml_instanceof1.png>
+Package pdftex.def Info: assets/uml_instanceof1.png  used on input line 2635.
+(pdftex.def)             Requested size: 172.5pt x 72.74185pt.
+<assets/uml_instanceof2.png, id=991, 309.40594pt x 374.14781pt>
+File: assets/uml_instanceof2.png Graphic file (type png)
+<use assets/uml_instanceof2.png>
+Package pdftex.def Info: assets/uml_instanceof2.png  used on input line 2636.
+(pdftex.def)             Requested size: 172.5pt x 208.60217pt.
+ [84 <./assets/uml_classe_template_2.png> <./assets/responsabilita_interna.png> <./assets/responsabilita_note.png>] [85 <./assets/uml_instanceof1.png> <./assets/uml_instanceof2.png>]
+<assets/ereditarieta_estensione.png, id=1010, 430.60875pt x 235.63031pt>
+File: assets/ereditarieta_estensione.png Graphic file (type png)
+<use assets/ereditarieta_estensione.png>
+Package pdftex.def Info: assets/ereditarieta_estensione.png  used on input line 2654.
+(pdftex.def)             Requested size: 301.42406pt x 164.94008pt.
+
+Overfull \hbox (1.63931pt too wide) in paragraph at lines 2659--2664
+\OT1/cmr/m/n/10 La ridefinizione (\OT1/cmr/bx/n/10 override\OT1/cmr/m/n/10 ) del metodo ered-i-tato riguarda solo l'implementazione
+ []
+
+
+Overfull \hbox (9.8385pt too wide) in paragraph at lines 2664--2666
+\OT1/cmr/m/n/10 non vada in rosso. Il metodo \OT1/cmr/m/it/10 prel-eva \OT1/cmr/m/n/10 della classe \OT1/cmr/m/it/10 Con-to-Cor-rente-Con-Fido \OT1/cmr/m/n/10 ridefinisce
+ []
+
+<assets/ereditarieta_variazione_funzionale.png, id=1011, 266.49562pt x 196.48407pt>
+File: assets/ereditarieta_variazione_funzionale.png Graphic file (type png)
+<use assets/ereditarieta_variazione_funzionale.png>
+Package pdftex.def Info: assets/ereditarieta_variazione_funzionale.png  used on input line 2667.
+(pdftex.def)             Requested size: 186.54565pt x 137.5379pt.
+[86 <./assets/ereditarieta_estensione.png>]
+Overfull \hbox (2.19505pt too wide) in paragraph at lines 2675--2686
+\OT1/cmr/m/n/10 In al-tri ter-mini, l'istanza di una sot-to-classe pu^^Ro es-sere us-ata al posto di un'istanza
+ []
+
+
+Overfull \hbox (10.75064pt too wide) in paragraph at lines 2675--2686
+\OT1/cmr/m/n/10 Di con-seguenza, una sot-to-classe non pu^^Ro rimuo-vere o ri-n-un-ciare a pro-priet^^Ra/metodi
+ []
+
+[87 <./assets/ereditarieta_variazione_funzionale.png>]
+Overfull \hbox (0.73099pt too wide) in paragraph at lines 2694--2705
+\OT1/cmr/m/n/10 Grazie all'ereditariet^^Ra per im-ple-men-tazione, la re-al-iz-zazione degli op-er-a-tori \OT1/cmr/m/it/10 push,
+ []
+
+
+Overfull \hbox (12.7077pt too wide) in paragraph at lines 2694--2705
+\OT1/cmr/m/it/10 Vet-tore\OT1/cmr/m/n/10 . L'ereditariet^^Ra riguarda solo la re-al-iz-zazione del vet-tore e l'implementazione
+ []
+
+<assets/ereditarieta_base_pubblica.png, id=1022, 534.49687pt x 85.82062pt>
+File: assets/ereditarieta_base_pubblica.png Graphic file (type png)
+<use assets/ereditarieta_base_pubblica.png>
+Package pdftex.def Info: assets/ereditarieta_base_pubblica.png  used on input line 2706.
+(pdftex.def)             Requested size: 374.14525pt x 60.074pt.
+
+Overfull \hbox (29.14525pt too wide) in paragraph at lines 2706--2707
+ [] 
+ []
+
+[88 <./assets/ereditarieta_base_pubblica.png>]
+<assets/ereditarieta_base_privata.png, id=1028, 536.75531pt x 85.82062pt>
+File: assets/ereditarieta_base_privata.png Graphic file (type png)
+<use assets/ereditarieta_base_privata.png>
+Package pdftex.def Info: assets/ereditarieta_base_privata.png  used on input line 2710.
+(pdftex.def)             Requested size: 375.72614pt x 60.074pt.
+
+Overfull \hbox (30.72614pt too wide) in paragraph at lines 2710--2711
+ [] 
+ []
+
+
+Overfull \hbox (15.66739pt too wide) in paragraph at lines 2712--2713
+\OT1/cmr/m/n/10 della gen-er-al-iz-zazione, ma speci-f-i-cando a fi-anco lo stereotipo $\OML/cmm/m/it/10 <<$\OT1/cmr/m/n/10 implementation$\OML/cmm/m/it/10 >>$\OT1/cmr/m/n/10 . 
+ []
+
+<assets/ereditarieta_impl.png, id=1029, 222.8325pt x 326.72063pt>
+File: assets/ereditarieta_impl.png Graphic file (type png)
+<use assets/ereditarieta_impl.png>
+Package pdftex.def Info: assets/ereditarieta_impl.png  used on input line 2714.
+(pdftex.def)             Requested size: 155.98167pt x 228.70287pt.
+<assets/ereditarieta_combinazione.png, id=1030, 281.55188pt x 242.40562pt>
+File: assets/ereditarieta_combinazione.png Graphic file (type png)
+<use assets/ereditarieta_combinazione.png>
+Package pdftex.def Info: assets/ereditarieta_combinazione.png  used on input line 2724.
+(pdftex.def)             Requested size: 197.08496pt x 169.68277pt.
+[89 <./assets/ereditarieta_base_privata.png> <./assets/ereditarieta_impl.png>]
+<assets/ereditarieta_grafo.png, id=1037, 627.09282pt x 316.93407pt>
+File: assets/ereditarieta_grafo.png Graphic file (type png)
+<use assets/ereditarieta_grafo.png>
+Package pdftex.def Info: assets/ereditarieta_grafo.png  used on input line 2735.
+(pdftex.def)             Requested size: 313.54564pt x 158.46664pt.
+ [90 <./assets/ereditarieta_combinazione.png> <./assets/ereditarieta_grafo.png>]
+<assets/ereditarieta_multipla.png, id=1044, 360.59718pt x 304.88907pt>
+File: assets/ereditarieta_multipla.png Graphic file (type png)
+<use assets/ereditarieta_multipla.png>
+Package pdftex.def Info: assets/ereditarieta_multipla.png  used on input line 2756.
+(pdftex.def)             Requested size: 180.29814pt x 152.44415pt.
+ [91 <./assets/ereditarieta_multipla.png>]
+<assets/ereditarieta_multipla_problema.png, id=1053, 215.30438pt x 194.97844pt>
+File: assets/ereditarieta_multipla_problema.png Graphic file (type png)
+<use assets/ereditarieta_multipla_problema.png>
+Package pdftex.def Info: assets/ereditarieta_multipla_problema.png  used on input line 2761.
+(pdftex.def)             Requested size: 150.71204pt x 136.48396pt.
+<assets/ereditarieta_multipla_modularita.png, id=1054, 592.46344pt x 192.72pt>
+File: assets/ereditarieta_multipla_modularita.png Graphic file (type png)
+<use assets/ereditarieta_multipla_modularita.png>
+Package pdftex.def Info: assets/ereditarieta_multipla_modularita.png  used on input line 2788.
+(pdftex.def)             Requested size: 296.23099pt x 96.35976pt.
+ [92 <./assets/ereditarieta_multipla_problema.png>]
+<assets/classi_astratte_notazione.png, id=1062, 562.35094pt x 231.86626pt>
+File: assets/classi_astratte_notazione.png Graphic file (type png)
+<use assets/classi_astratte_notazione.png>
+Package pdftex.def Info: assets/classi_astratte_notazione.png  used on input line 2808.
+(pdftex.def)             Requested size: 281.17477pt x 115.93283pt.
+ [93 <./assets/ereditarieta_multipla_modularita.png>]
+<assets/classi_astratte_esempio.png, id=1068, 376.40625pt x 201.75375pt>
+File: assets/classi_astratte_esempio.png Graphic file (type png)
+<use assets/classi_astratte_esempio.png>
+Package pdftex.def Info: assets/classi_astratte_esempio.png  used on input line 2816.
+(pdftex.def)             Requested size: 263.48257pt x 141.22665pt.
+<assets/classi_astratte_esempio_update.png, id=1069, 397.485pt x 224.33812pt>
+File: assets/classi_astratte_esempio_update.png Graphic file (type png)
+<use assets/classi_astratte_esempio_update.png>
+Package pdftex.def Info: assets/classi_astratte_esempio_update.png  used on input line 2820.
+(pdftex.def)             Requested size: 278.2376pt x 157.03561pt.
+ [94 <./assets/classi_astratte_notazione.png> <./assets/classi_astratte_esempio.png>]
+Overfull \hbox (6.50996pt too wide) in paragraph at lines 2822--2823
+\OT1/cmr/m/n/10 an-che la classe \OT1/cmr/m/it/10 Let-ter\OT1/cmr/m/n/10 ) il pro-get-tista ver-rebbe in-for-mato della ne-ces-sit^^Ra di ridefinire
+ []
+
+<assets/class_diagram.png, id=1076, 599.99156pt x 402.75468pt>
+File: assets/class_diagram.png Graphic file (type png)
+<use assets/class_diagram.png>
+Package pdftex.def Info: assets/class_diagram.png  used on input line 2832.
+(pdftex.def)             Requested size: 299.99504pt x 201.37685pt.
+[95 <./assets/classi_astratte_esempio_update.png>]
+<assets/interfacce.png, id=1082, 578.91281pt x 258.21469pt>
+File: assets/interfacce.png Graphic file (type png)
+<use assets/interfacce.png>
+Package pdftex.def Info: assets/interfacce.png  used on input line 2847.
+(pdftex.def)             Requested size: 289.45569pt x 129.10703pt.
+ [96 <./assets/class_diagram.png>]
+<assets/relazione_realizzazione_esempio.png, id=1088, 324.46219pt x 66.2475pt>
+File: assets/relazione_realizzazione_esempio.png Graphic file (type png)
+<use assets/relazione_realizzazione_esempio.png>
+Package pdftex.def Info: assets/relazione_realizzazione_esempio.png  used on input line 2851.
+(pdftex.def)             Requested size: 162.23068pt x 33.12366pt.
+<assets/relazione_realizzazione_esempio2.png, id=1089, 345.54094pt x 77.53969pt>
+File: assets/relazione_realizzazione_esempio2.png Graphic file (type png)
+<use assets/relazione_realizzazione_esempio2.png>
+Package pdftex.def Info: assets/relazione_realizzazione_esempio2.png  used on input line 2864.
+(pdftex.def)             Requested size: 172.77003pt x 38.76973pt.
+ [97 <./assets/interfacce.png> <./assets/relazione_realizzazione_esempio.png> <./assets/relazione_realizzazione_esempio2.png>]
+<assets/relazione_realizzazione_esempio3.png, id=1098, 563.10374pt x 178.41656pt>
+File: assets/relazione_realizzazione_esempio3.png Graphic file (type png)
+<use assets/relazione_realizzazione_esempio3.png>
+Package pdftex.def Info: assets/relazione_realizzazione_esempio3.png  used on input line 2868.
+(pdftex.def)             Requested size: 281.55118pt x 89.20805pt.
+<assets/relazione_realizzazione_esempio4.png, id=1099, 521.69907pt x 116.68594pt>
+File: assets/relazione_realizzazione_esempio4.png Graphic file (type png)
+<use assets/relazione_realizzazione_esempio4.png>
+Package pdftex.def Info: assets/relazione_realizzazione_esempio4.png  used on input line 2872.
+(pdftex.def)             Requested size: 260.84889pt x 58.34282pt.
+
+Overfull \hbox (5.97281pt too wide) in paragraph at lines 2874--2880
+\OT1/cmr/m/n/10 Le in-ter-facce sono re-al-iz-z-abili in java e non pre-sen-tano il prob-lema dell'ereditariet^^Ra
+ []
+
+
+Overfull \hbox (17.88962pt too wide) in paragraph at lines 2874--2880
+\OT1/cmr/m/n/10 Per questo al-cuni lin-guaggi di pro-gram-mazione, come Java, per-me-t-tono l'ereditariet^^Ra
+ []
+
+<assets/realizzazione_piu_interfacce.png, id=1100, 255.95625pt x 162.6075pt>
+File: assets/realizzazione_piu_interfacce.png Graphic file (type png)
+<use assets/realizzazione_piu_interfacce.png>
+Package pdftex.def Info: assets/realizzazione_piu_interfacce.png  used on input line 2881.
+(pdftex.def)             Requested size: 127.9778pt x 81.30354pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2883--2885
+
+ []
+
+[98 <./assets/relazione_realizzazione_esempio3.png> <./assets/relazione_realizzazione_esempio4.png> <./assets/realizzazione_piu_interfacce.png>]
+<assets/realizzazione_multiple_interfaccia.png, id=1108, 569.12625pt x 155.83218pt>
+File: assets/realizzazione_multiple_interfaccia.png Graphic file (type png)
+<use assets/realizzazione_multiple_interfaccia.png>
+Package pdftex.def Info: assets/realizzazione_multiple_interfaccia.png  used on input line 2886.
+(pdftex.def)             Requested size: 284.56242pt x 77.9159pt.
+ [99 <./assets/realizzazione_multiple_interfaccia.png>]
+<assets/aggregazione_notazione.png, id=1114, 567.62062pt x 169.38281pt>
+File: assets/aggregazione_notazione.png Graphic file (type png)
+<use assets/aggregazione_notazione.png>
+Package pdftex.def Info: assets/aggregazione_notazione.png  used on input line 2903.
+(pdftex.def)             Requested size: 283.8096pt x 84.6912pt.
+<assets/composizione_punto.png, id=1115, 560.0925pt x 47.42719pt>
+File: assets/composizione_punto.png Graphic file (type png)
+<use assets/composizione_punto.png>
+Package pdftex.def Info: assets/composizione_punto.png  used on input line 2926.
+(pdftex.def)             Requested size: 280.04556pt x 23.71353pt.
+ [100 <./assets/aggregazione_notazione.png>]
+Overfull \hbox (4.94498pt too wide) in paragraph at lines 2937--2940
+\OT1/cmr/m/n/10 In molti casi ^^Re pos-si-bile as-so-ciare due classi me-di-ante ered-i-ta-riet^^Ra o ag-gregazione/-
+ []
+
+
+Overfull \hbox (8.10254pt too wide) in paragraph at lines 2937--2940
+\OT1/cmr/m/n/10 che rap-p-re-sen-tano e ma-nipolano, rispet-ti-va-mente, date e is-tanti di tempo. Volendo
+ []
+
+[101 <./assets/composizione_punto.png>]
+<assets/ereditarieta_vs_aggregazione.png, id=1130, 200.24812pt x 256.70906pt>
+File: assets/ereditarieta_vs_aggregazione.png Graphic file (type png)
+<use assets/ereditarieta_vs_aggregazione.png>
+Package pdftex.def Info: assets/ereditarieta_vs_aggregazione.png  used on input line 2958.
+(pdftex.def)             Requested size: 100.12381pt x 128.3542pt.
+
+Overfull \hbox (2.36981pt too wide) in paragraph at lines 2960--2961
+\OT1/cmr/bx/n/10 Il mec-ca-n-ismo di ag-gregazione/-com-po-sizione \OT1/cmr/m/n/10 ^^Re gen-eral-mente us-ato quando
+ []
+
+[102 <./assets/ereditarieta_vs_aggregazione.png>]
+<assets/package_uml.png, id=1136, 390.70969pt x 121.95563pt>
+File: assets/package_uml.png Graphic file (type png)
+<use assets/package_uml.png>
+Package pdftex.def Info: assets/package_uml.png  used on input line 2967.
+(pdftex.def)             Requested size: 195.35435pt x 60.97765pt.
+<assets/package_uml_contenuto.png, id=1137, 647.41875pt x 158.09062pt>
+File: assets/package_uml_contenuto.png Graphic file (type png)
+<use assets/package_uml_contenuto.png>
+Package pdftex.def Info: assets/package_uml_contenuto.png  used on input line 2972.
+(pdftex.def)             Requested size: 323.70857pt x 79.0451pt.
+<assets/package_import.png, id=1138, 627.84563pt x 209.28188pt>
+File: assets/package_import.png Graphic file (type png)
+<use assets/package_import.png>
+Package pdftex.def Info: assets/package_import.png  used on input line 2978.
+(pdftex.def)             Requested size: 313.92204pt x 104.64067pt.
+ [103 <./assets/package_uml.png> <./assets/package_uml_contenuto.png>]
+Overfull \hbox (10.25064pt too wide) in paragraph at lines 2984--2985
+\OT1/cmr/m/n/10 mento definito lo-cal-mente (in-ter-na-mente) a un pack-age, il nome dell'elemento
+ []
+
+<assets/package_visibilita.png, id=1146, 657.95813pt x 223.58531pt>
+File: assets/package_visibilita.png Graphic file (type png)
+<use assets/package_visibilita.png>
+Package pdftex.def Info: assets/package_visibilita.png  used on input line 2994.
+(pdftex.def)             Requested size: 328.97826pt x 111.79237pt.
+[104 <./assets/package_import.png> <./assets/package_visibilita.png>]
+<assets/classi_interne.png, id=1153, 270.25969pt x 147.55125pt>
+File: assets/classi_interne.png Graphic file (type png)
+<use assets/classi_interne.png>
+Package pdftex.def Info: assets/classi_interne.png  used on input line 3001.
+(pdftex.def)             Requested size: 135.1295pt x 73.77544pt.
+ [105 <./assets/classi_interne.png>] [106]
+<assets/overloading.png, id=1163, 667.74469pt x 357.58594pt>
+File: assets/overloading.png Graphic file (type png)
+<use assets/overloading.png>
+Package pdftex.def Info: assets/overloading.png  used on input line 3051.
+(pdftex.def)             Requested size: 333.87152pt x 178.79253pt.
+ [107 <./assets/overloading.png>]
+Overfull \hbox (17.5285pt too wide) in paragraph at lines 3067--3070
+\OT1/cmr/m/n/10 Questi due uti-lizzi del polimor-fismo di in-clu-sione non sono molto dis-tanti dall'utilizzo
+ []
+
+[108]
+Overfull \hbox (33.00385pt too wide) in paragraph at lines 3107--3108
+[][][][][][][][][][][][][][][][][][][] 
+ []
+
+[109]
+Overfull \hbox (51.00403pt too wide) in paragraph at lines 3112--3113
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+<assets/binding_dinamico_poli_inclusione.png, id=1209, 512.91624pt x 182.6825pt>
+File: assets/binding_dinamico_poli_inclusione.png Graphic file (type png)
+<use assets/binding_dinamico_poli_inclusione.png>
+Package pdftex.def Info: assets/binding_dinamico_poli_inclusione.png  used on input line 3129.
+(pdftex.def)             Requested size: 256.45749pt x 91.34102pt.
+[110 <./assets/binding_dinamico_poli_inclusione.png>] (MAP.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+ ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `MAP.out' has not changed.
+(rerunfilecheck)             Checksum: 01C8A6A40FC8DDFA336CE443BF1C7B48;16217.
+ ) 
+Here is how much of TeX's memory you used:
+ 24869 strings out of 474457
+ 460490 string characters out of 5742754
+ 1975190 words of memory out of 5000000
+ 46415 multiletter control sequences out of 15000+600000
+ 567853 words of font info for 74 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 83i,17n,87p,889b,2063s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1000.pk> <C:\Users\marco\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/marco/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on MAP.pdf (110 pages, 1696599 bytes).
+PDF statistics:
+ 1391 PDF objects out of 1440 (max. 8388607)
+ 394 named destinations out of 1000 (max. 500000)
+ 987 words of extra memory for PDF output out of 10000 (max. 10000000)
+

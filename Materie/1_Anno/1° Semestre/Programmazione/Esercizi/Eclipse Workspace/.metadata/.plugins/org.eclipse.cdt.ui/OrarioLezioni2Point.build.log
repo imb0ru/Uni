@@ -1,0 +1,7 @@
+17:40:40 **** Rebuild of configuration Debug for project OrarioLezioni2Point ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\OrarioLezioni2Point.o" "..\\src\\OrarioLezioni2Point.c" 
+gcc -o OrarioLezioni2Point.exe "src\\OrarioLezioni2Point.o" 
+
+17:40:41 Build Finished. 0 errors, 0 warnings. (took 470ms)
+

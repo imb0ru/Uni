@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+			<title>Algoritmi e Strutture Dati</title>
+            <meta charset="UTF-8">
+            <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+	</head>
+
+<body>
+
+<h1>Lab 2</h1>
+
+<p><b>NB:</b> <i>Risolvere il seguente esercizio anche (o direttamente) in C++ utilizzando classi e metodi piuttosto che strutture e funzioni.</i></p>
+
+Definire il tipo di dato studente, utilizzando il costrutto <b>struct</b>, contenente le seguenti
+componenti:
+<ul>
+	<li>matricola: intero</li>
+ 	<li>nome: stringa</li>
+	<li>cognome: stringa</li>
+	<li>eta: intero</li>
+</ul>
+<p>Implementare, inoltre, le funzioni per l'inserimento e la stampa delle componenti
+della struttura.</p>
+
+<p><b>Vincoli da rispettare:</b></p>
+<ul>
+  <li>il numero di matricola è un numero a sei cifre, che varia fra 255312 e 499999;</li>
+  <li>nome e cognome sono stringhe di max 30 caratteri;</li>
+  <li>l'età è un intero positivo che varia fra 12 e 105.</li>
+</ul>
+
+<p><b>Suggerimenti</b></p>
+<ol>
+	<li>Definire un progetto Dev-C++ contente i file <b>studente.h</b>,
+	<b>studente.cpp</b> e <b>provastudente.cpp</b></li>
+	<li>Nel file <b>studente.h</b> definire la struttura e i prototipi delle funzioni<br>
+	Stralcio del file <b>studente.h</b>:
+	<pre>
+#ifndef _STUDENTE
+#define _STUDENTE
+
+struct tipostudente{
+	int matricola;
+	char nome[30];
+	...
+};
+
+typedef struct tipostudente studente;
+
+/* funzioni per l'inserimento dei valori degli elementi della struttura */
+int setNome(studente *);
+int setCognome(studente *);
+...
+/* funzioni per ottenere i valori degli elementi della struttura */
+char * getNome(studente *);
+...
+
+#endif /* _STUDENTE */
+
+	</pre>
+	</li>
+	<li>Nel file <b>studente.cpp</b> implementare le funzioni<br>
+	Stralcio del file <b>studente.cpp</b>:
+	<pre>
+#include "studente.h"
+...
+
+/* funzioni per l'inserimento dei valori degli elementi della struttura */
+...
+int setMatricola(studente *Studente){
+	...
+	cin >> Studente->matricola;
+	...
+}
+
+...
+
+/* funzioni per ottenere i valori degli elementi della struttura */
+char * getNome(studente *Studente){
+	return (Studente->Nome);
+}
+...
+	</pre>
+	</li>
+	<li>Nel file <b>provastudente.cpp</b> implementare il main che definisce variabili di tipo
+	<b>studente</b> e utilizza le funzioni definite nella libreria <b>studente.h</b>.</li>
+</ol>
+
+</body>
+</html>

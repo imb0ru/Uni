@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>Laboratorio di Algoritmi e Strutture Dati</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body bgcolor="#ffffff">
+<h3>Esercizio 1</h3>
+Implementare un algoritmo  che data una coda di interi ne costruisca un'altra ottenuta dalla
+prima considerando solo i valori positivi.
+
+<h3>Esercizio 2</h3>
+Progettare ed implementare un calsse <tt>MultipleStack</tt> che fornisca la gestione di m stack. La dichiarazione della classe dovrebbe essere simile a qualcosa del genere:
+
+<pre>
+template &#9001;class T&#9002;
+class MultipleStack
+{
+    // ...
+public:
+    MultipleStack (unsigned int);
+    void Push (T&, unsigned int);
+    T& Pop (unsigned int);
+    // ...
+};
+</pre>
+
+<ul>
+  <LI>Il costruttore ha in input un argomento di tipo intero che specifica il numero di stack da gestire</LI>
+  <li>la funzione <tt>Push</tt> ha due argomenti. Il primo è l'oggetto da inserire e il secondo specifica lo stack in cui inserirlo</li>
+  <li>la funzione <tt>Pop</tt> ha in input un solo intero che specifica lo stack da cui eliminare un oggetto</li>
+</ul>
+
+Scegliere una delle seguenti implementazioni:
+<ul>
+  <li>tenere tutti gli stack in un solo array</li>
+  <li>usare un array di oggetti di tipo <tt>Stack</tt></li>
+  <li>Usare una lista collegata di oggetti di tipo <tt>Stack</tt></li> 
+</ul>
+
+<h3>Esercizio 3</h3>
+Implementare un  algoritmo che data  una coda di interi  ne costruisca
+un'altra ottenuta  dalla prima considerando  solo i valori  positivi e
+conservando la coda originaria.
+
+<h3>Esercizio 4</h3>
+Il tipo  di dato  <b>dequeue</b> (double ended  queue) è  una sequenza
+modificabile ad entrambi  gli estremi, in cui è  possibile inserire un
+elemento  in testa  o inserirlo  in fondo,  e cancellare  un elemento
+dalla testa o cancellarlo dal  fondo. Si fornisca una realizzazione in
+C++ (operatori con tempo O(1)). 
+
+<pre>
+template &#9001;class T&#9002;
+class dequeue
+{
+public:
+    void push_back(T);
+    void push_front(T);
+    T pop_back();
+    T pop_front();
+    // ...
+};
+</pre>
+
+<h3>Esercizio 5</h3>
+<b>Pila senza duplicati</b> modificare l'operatore inPila (con tempo O(n)) per una Pila che non ammette elementi duplicati.
+<pre>
+ L     L
+ A     L A
+ *  A  L
+ S     L S
+ T     L S T 
+ I	    L S T I
+ *  I  L S T 
+ N     L S T N
+ S     L S T N      <i>(S già presente)</i>
+ *  N  L S T
+ L     L S T
+ I     L S T I      <i>(I già presente)</i>
+</pre>
+
+<h3>Esercizio 6</h3>
+Implementare un interprete per un linguaggio di programmazione, in cui ogni programma consista
+di una singola operazione aritmetica, preceduta da una sequenza di istruzioni di assegnamento
+in cui possono comparire espressioni aritmetiche che coinvolgono interi e variabili in cui nome
+è dato da una singola lettera minuscola. Per esempio dato l'ingresso
+<pre>
+ (x = 1)
+ (y = (x + 1))
+ (((x + y) * 3) + (4 * x))
+</pre>
+il programma dovrebbe dare in uscita il valore 13.
+
+<h3>Esercizio 7</h3>
+Convertire un'espressione aritmetica da notazione infissa alla corrispondente
+notazione postfissa utilizzando una coda come risultato della conversione.
+<pre>
+ espressione               pila            coda
+ 35 + 17 * (40 - 9) - 7
+ + 17 * (40 - 9) - 7                       35
+ 17 * (40 - 9) - 7         +               35
+ * (40 - 9) - 7            +               17 35
+ (40 - 9) - 7              + *             17 35
+ 40 - 9) - 7               + * (           17 35
+ - 9) - 7                  + * (           40 17 35
+ 9) - 7                    + * ( -         40 17 35
+ ) - 7                     + * ( -         9 40 17 35
+ - 7                       + * (           - 9 40 17 35
+ 7                         -               + * - 9 40 17 35
+                           -               7 + * - 9 40 17 35
+                                           - 7 + * - 9 40 17 35
+</pre>
+
+
+</body>
+</html>

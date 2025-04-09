@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="linee"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="lines"/>
+			<item value="words"/>
+			<item value="caracters"/>
+			<item value="characters"/>
+			<item value="ch"/>
+			<item value="%s"/>
+			<item value="static"/>
+			<item value="strcmp"/>
+			<item value="scanf(&quot;%s"/>
+			<item value="materia"/>
+			<item value="stampaArraylezioneioniConsult12"/>
+			<item value="stampalezione"/>
+			<item value="newlezione"/>
+			<item value="scriverelezione"/>
+			<item value="remlezione"/>
+		</list>
+		<list key="replacehistory">
+			<item value="linee"/>
+			<item value="parole"/>
+			<item value="caratteri"/>
+			<item value="c"/>
+			<item value="scanf(&quot;%19s"/>
+			<item value="stampaArrayLezioniConsult12"/>
+			<item value="stampaLezione"/>
+			<item value="newLezione"/>
+			<item value="scrivereLezione"/>
+			<item value="remLezione"/>
+			<item value="lezione"/>
+			<item value="nLezioni"/>
+			<item value="leggereLezione"/>
+			<item value="tabella"/>
+			<item value="tab"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="897"/>
+		<item key="DIALOG_Y_ORIGIN" value="287"/>
+		<item key="DIALOG_WIDTH" value="414"/>
+		<item key="DIALOG_HEIGHT" value="454"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

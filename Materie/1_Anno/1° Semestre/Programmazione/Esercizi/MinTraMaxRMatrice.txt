@@ -1,0 +1,28 @@
+Dato un vettore a due dimensioni di interi, trovare il minimo tra i massimi delle righe
+
+Input:
+- V, vettore di due dimensioni di interi, array a due dimensioni di interi
+- r, numero di righe di V, naturale >0
+- c, numero di colonne di V, naturale >0
+
+Output: Minimo, minimo tra i massimi di ogni riga, intero
+
+minimo = +infinito
+pos=1
+mentre(pos<=r)
+ m=searchMax(V, m, pos)
+ se(m<minimo)
+ allora minimo=m
+ fine
+ pos=pos+1
+fine
+
+searchMax():
+pos2=1
+m=-infinito
+mentre(pos2<=c)
+    se(m<elemento di V in posizione pos, pos2)
+    allora m=elemento di V in posizione pos, pos2
+    fine
+    pos2=pos2+1
+fine

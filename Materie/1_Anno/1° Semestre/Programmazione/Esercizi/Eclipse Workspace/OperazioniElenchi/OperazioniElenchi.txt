@@ -1,0 +1,119 @@
+Esercitazione del 1 dicembre 2022
+
+
+Record Elenco:
+-dim, numero di elementi nell'elenco, naturale >0
+-val, elenco di numeri interi, array di interi
+
+Input: e1, primo elenco di numeri, Elenco
+	 e2, secondo elenco di numeri, Elenco
+	 t, dimensione degli elenchi, naturale >0
+
+Output: somma, somma degli elementi corrispondenti dei due elenchi, Elenco
+	  diff, differenza degli elementi corrispondenti dei due elenchi, Elenco
+	  max1, massimo tra gli elementi del primo elenco, intero
+	  max2, massimo tra gli elementi del secondo elenco, intero
+
+//Stampa a video "Di quanti numeri è composto il primo elenco?"
+t = //Input da tastiera
+e1=scrivereDimensione(e1, t)
+e1=scrivereElenco(e1, t)
+
+//Stampa a video "Di quanti numeri è composto il secondo elenco?"
+t = //Input da tastiera
+e2=scrivereDimensione(e2, t)
+e2=scrivereElenco(e2, t)
+
+se(leggereDimensione(e1)=leggereDimensione(e2)
+allora somma=scrivereDimensione(somma, leggereDimensione(e1)
+	   diff=scrivereDimensione(diff, leggereDimensione(e2))
+	   
+	   somma = calcolaSommaCorrispondenti(e1,e2)
+	   diff = calcolaDifferenzaCorrispondenti(e1,e2)
+	   
+	   //Visualizza a video "Somma degli elementi corrispondenti dei due elenchi:"
+	   //visualizza a video stampaElenco(somma)
+
+	   //Visualizza a video "Differenza degli elementi corrispondenti dei due elenchi:"
+	   //visualizza a video stampaElenco(somma)
+fine
+
+max1 = maxElenco(e1)
+max2 = maxElenco(e2)
+
+//Visualizza a video "Elemento massimo del primo elenco:"
+//visualizza a video max1
+
+//Visualizza a video "Elemento massimo del primo elenco:"
+//visualizza a video max2
+
+--------------------------------------------------------------------------------------------
+Funzione scrivereElenco:
+Input: e, elenco da riempire con numeri presi in input, Elenco
+	n, numero da inserire, intero
+Output: e
+Lavoro: i, indice di scorrimento, naturale
+
+i=1
+mentre(i<leggereDimensione(e))
+	n=//Input da tastiera
+	e=scrivereValore(e,i,n)
+	i=i+1
+fine
+	 
+--------------------------------------------------------------------------------------------
+Funzione calcolaSommaCorrispondenti:
+Input: e1, primo elenco su cui operare, Elenco
+	   e2, secondo elenco su cui operare, Elenco
+       somma, elenco delle somme corrispondenti, Elenco
+Output: somma
+Lavoro: i, indice di scorrimento, naturale
+
+i=1
+mentre(i<=leggereDimensione(e1))
+	scrivereValore(somma, i, (leggereValore(e1,i)+leggereValore(e2,i))
+	i=i+1
+fine
+
+------------------------------------------------------------------------------------
+
+Funzione calcolaDifferenzaCorrispondenti:
+Input: e1, primo elenco su cui operare, Elenco
+	   e2, secondo elenco su cui operare, Elenco
+	   diff, elenco delle differenze corrispondenti, Elenco
+Output: diff
+Lavoro: i, indice di scorrimento, naturale
+
+i=1
+mentre(i<=leggereDimensione(e1))
+	scrivereValore(diff, i, (leggereValore(e1,i)-leggereValore(e2,i))
+	i=i+1
+fine
+
+---------------------------------------------------------------------------------------
+
+Funzione maxElenco:
+Input: e, elenco di cui cercare il massimo, Elenco
+Output max, elemento massimo dell'elenco, intero
+Lavoro: i, indice di scorrimento, naturale
+
+max=leggereValore(e,1)
+i=2
+mentre(i<=leggereDimensione(e))
+    se(max<leggereValore(e,i))
+    allora max=leggereValore(e,i)
+    fine
+    i=i+1
+fine
+
+---------------------------------------------------------------------------------------
+
+Funzione stampaElenco:
+Input: e, elemento di cui stampare i valori, Elenco
+Lavoro: i, indice di scorrimento, naturale
+
+i=1
+mentre(i<=leggereDimensione(e))
+	//visualizza a video leggereValore(e,i)
+	i=i+1
+fine

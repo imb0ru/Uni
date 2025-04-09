@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+			<title>Algoritmi e Strutture Dati</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	</head>
+
+<body>
+
+<h1>Lab 3</h1>
+
+Realizzare in C++ la struttura dati <b>matrice</b> (che rappresenti l'ente geometrico matrice e 
+le operazioni che la matematica prevede). 
+<p>In particolare:</p>
+<ul>
+	<li>definire il tipo <b>tipoelem</b>
+	<pre>
+	typedef double tipoelem;</pre></li>
+	<li>definire la classe <b>matrice</b></li>
+	<pre>
+class matrice {
+  public:
+    matrice(int, int); /* costruttore */
+    tipoelem leggimatrice(int, int);
+    void scrivimatrice(int, int, tipoelem);
+  private:
+    int righe;
+    int colonne;
+    tipoelem **elementi;
+};
+
+// costruttore
+matrice::matrice(int c, int r){
+  colonne = c;
+  righe = r;
+  // allocazione dinamica della matrice
+  int i;
+  elementi = new tipoelem* [righe];
+  for (i=0; i < righe; i++)
+    elementi[i] = new tipoelem[colonne];
+  // inizializzazione degli elementi
+     ...
+}
+	</pre>
+</ul>
+ESERCIZI
+
+	<ol>
+		<li>completare la definizione della classe fornendo le implementazioni per il costruttore, e per
+		i  metodi  leggimatrice  (restituisce  l'elemento  in  posizone  i,j)  e  scrivimatrice  (scrive
+		l'elemento in posizione i,j)
+	<li>realizzare  il  metodo  prodottoScalare(double  scalare)  che moltiplica  ogni  elemento  della
+	matrice con uno scalare</li>
+   <li>realizzare il metodo trasposta(), che restituisce la trasposta di una matrice</li>
+   <li>realizzare il metodo prodotto(matrice M), che restituisce il prodotto di due matrici</li>
+	</ol>
+
+ATTENZIONE
+<ol>
+	<li>Definire nel file header <b>matrice.h</b> la definizione della classe</li>
+	<li>Implementare nel file <b>matrice.cpp</b> i metodi della classe matrice</li>
+	<li>Testare la classe matrice nel file <b>TestMatrice.cpp</b></li>
+</ol>
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+Dati di Input:
+- C, cozze, da pulire, 2.5kg
+- R, riso, arboreo/carnaroli, 200gr
+- CB, cipolle bianche, 250gr
+- A, aglio, 2 spicchi
+- P, pomodorini, ciliegini/fiaschetti, 400gr
+- PT, patate, 1kg
+- PR, pecorino romano, grattuggiato, 40gr
+- SF, sale fino, quanto basta
+- PP, pepe, quanto basta
+- O, olio, evo pugliese
+- PRZ, prezzemolo, quanto basta
+
+Dato di Output:
+- T, teglia pronta alla cottura
+
+Dati di Lavoro:
+- ACZ, acqua cozze
+- AC, acqua, corrente
+- AQ, acqua, fredda
+- CI, ciotole
+- PM, paglietta metallica
+- CL, coltellino
+- PF, passino fine
+
+Pseudocodice:
+CI1 = CI1 + AQ + R
+FINCHE'(C) RIPETI
+	Pulisci C con PM sotto AC
+	MENTRE(Schiaccia C)
+		Fai scivolare C/2
+		Inserisci CL tra C/2
+		Fai scorrere CL
+	FINE
+	Separa C/2
+	MENTRE(Butta C/2)
+		Fai cadere ACZ in CI2
+	FINE
+Filtra ACZ con PF dentro CI2
+Taglia CB a rondelle
+T = T + 1/2CB + O
+Pela  PT
+Taglia PT a fette di 0.5cm
+T = T + 1/2PT
+T = T + PRZ + 1/4P
+T = T + PR + PP + O
+T = T + C
+T = T + R
+Trita A
+T = T + A + CB + PRZ + PR + O
+MENTRE(Macina PP)
+	T = T + PP
+FINE
+T = T + PT 
+T = T + 3/4P + PR + O
+T = T + ACZ (ai lati) + O
+AC = AC + 7grSF
+T = T + AC
+FINE
+
+
+
+
+
+
